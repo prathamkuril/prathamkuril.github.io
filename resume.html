@@ -2,36 +2,147 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Pratham Kuril's Resume" />
+    <meta name="author" content="Pratham Kuril" />
     <title>Pratham's Resume Portfolio</title>
-    <!-- Favicon-->
+
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Custom Google font-->
+
+    <!-- Custom Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Bootstrap icons-->
+
+    <!-- Bootstrap icons -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <!-- Core theme CSS (includes Bootstrap)-->
+
+    <!-- Core theme CSS (includes Bootstrap) -->
     <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+      /* Global Styles */
+      body {
+        background-color: #ffffff;
+        color: #1c1c1c;
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+
+      /* Navbar */
+      .navbar-light {
+        background-color: #ffffff;
+        border-bottom: 1px solid #e0e0e0;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      .navbar-light .navbar-brand,
+      .navbar-light .nav-link {
+        color: #1c1c1c;
+      }
+
+      .navbar-light .nav-link:hover {
+        color: #007aff;
+      }
+
+      /* Hero Section */
+      .container h1 {
+        color: #1c1c1c;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 40px;
+      }
+
+      .text-gradient {
+        background: -webkit-linear-gradient(#007aff, #5ac8fa);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* Section Heading */
+      h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #007aff;
+        margin-bottom: 20px;
+      }
+
+      .text-primary {
+        color: #007aff;
+      }
+
+      /* Card Styles */
+      .card {
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        margin-bottom: 30px;
+        overflow: hidden;
+      }
+
+      .card-body {
+        padding: 2rem;
+      }
+
+      .card-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #1c1c1c;
+      }
+
+      .card-subtitle {
+        color: #6d6d6d;
+        font-size: 1rem;
+      }
+
+      /* Button Styles */
+      .btn-primary {
+        background-color: #007aff;
+        border: none;
+        padding: 12px 30px;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background-color: #005bb5;
+      }
+
+      .text-muted {
+        color: #6d6d6d;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #f9fafb;
+        color: #6d6d6d;
+        padding: 2rem 0;
+        text-align: center;
+        border-top: 1px solid #e0e0e0;
+      }
+
+      footer small {
+        color: #6d6d6d;
+      }
+    </style>
   </head>
-  <body class="d-flex flex-column h-100 bg-light">
+
+  <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
-      <!-- Navigation-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+      <!-- Navigation -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm"
+      >
         <div class="container px-5">
-          <!-- <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Home</span></a> -->
+          <a class="navbar-brand fw-bold" href="index.html">Pratham Kuril</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -44,7 +155,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 small fw-bolder">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
@@ -64,817 +175,111 @@
           </div>
         </div>
       </nav>
-      <!-- Page Content-->
-      <div class="pb-5"></div>
-      <div class="container px-10 my-5">
+
+      <!-- Page Content -->
+      <div class="container px-5 my-5">
+        <!-- Resume Title -->
         <div class="text-center mb-5">
           <h1 class="display-5 fw-bolder mb-0">
             <span class="text-gradient d-inline">Resume</span>
           </h1>
         </div>
-        <div class="row gx-5 justify-content-center">
-          <div class="col-lg-11 col-xl-10 col-xxl-9">
-            <!-- Experience Section-->
-            <section>
-              <div
-                class="d-flex align-items-center justify-content-between mb-4"
-              >
-                <h2 class="text-primary fw-bolder mb-0">Experience</h2>
-                <!-- Download resume button-->
-                <!-- Note: Set the link href target to a PDF file within your project-->
-                <a
-                  class="btn btn-primary px-4 py-3"
-                  href="https://drive.google.com/file/d/1E5bVGMrGMmsjxcRkl7UmOA83zNcp5drJ/view?usp=sharing"
-                >
-                  <div class="d-inline-block bi bi-download me-2"></div>
-                  Download Resume
-                </a>
-              </div>
 
-              <!-- Experience Card 1-->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-primary fw-bolder mb-2">
-                          July 24' - Present
-                        </div>
-                        <div class="small fw-bolder">AI Technical Intern</div>
-                        <div class="small text-muted">BRAID TECHNOLOGIES</div>
-                        <div class="small text-muted">
-                          London, United Kingdom
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div>
-                        As an AI Technical Intern at Braid Technologies, I
-                        developed an Open AI chat assistant for a world-leading
-                        British telecommunications company with over 500 million
-                        global customers, utilizing Python and Microsoft Azure,
-                        to aid in the training and upskilling of 24 individuals
-                        into AI developers. Additionally, I assisted in building
-                        a learning platform integrating generative AI, Python,
-                        vector databases, and HTML5, streamlining the
-                        development process and improving platform capabilities.
-                        My work included conducting research and development on
-                        applying generative AI to learning systems, providing
-                        actionable insights and solutions that enhanced the
-                        company's AI training methodologies.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <!-- Experience Section -->
+        <section>
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <h2 class="text-primary fw-bolder">Experience</h2>
+            <a
+              class="btn btn-primary"
+              href="https://drive.google.com/file/d/1E5bVGMrGMmsjxcRkl7UmOA83zNcp5drJ/view?usp=sharing"
+              target="_blank"
+            >
+              <i class="bi bi-download me-2"></i> Download Resume
+            </a>
+          </div>
 
-              <!-- Experience Card 2-->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-primary fw-bolder mb-2">
-                          Sept 23' - Oct 24'
-                        </div>
-                        <div class="small fw-bolder">
-                          Program Representative
-                        </div>
-                        <div class="small text-muted">
-                          City, University of London
-                        </div>
-                        <div class="small text-muted">
-                          London, United Kingdom
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div>
-                        As the Program Representative for MSc Data Science
-                        Program, I facilitated communication between students
-                        and faculty, addressing their academic and
-                        administrative concerns promptly. Moreover, I
-                        coordinated with the Student Services and Learning
-                        Centre (SSLC) to resolve student issues effectively.
-                        Additionally, I took charge of organizing various
-                        events, including the School of Science and Technology's
-                        Christmas party, fostering a vibrant and inclusive
-                        community spirit within the department.
-                      </div>
-                    </div>
+          <!-- Experience Card 1 -->
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="text-primary fw-bolder mb-2">
+                    July 24' - Present
                   </div>
+                  <div class="small fw-bolder">AI Technical Intern</div>
+                  <div class="small text-muted">
+                    Braid Technologies | London, UK
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <p class="text-muted">
+                    Developed an Open AI chat assistant for a British
+                    telecommunications company, trained 24 AI developers, and
+                    built a learning platform integrating generative AI and
+                    Python.
+                  </p>
                 </div>
               </div>
-
-              <!-- Experience Card 3-->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-primary fw-bolder mb-2">
-                          July 22' - June 22'
-                        </div>
-                        <div class="small fw-bolder">ML Programmer Trainee</div>
-                        <div class="small text-muted">BITWISE INC.</div>
-                        <div class="small text-muted">Pune, India</div>
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div>
-                        At Bitwise Inc. from July 2022 to June 2023, I assisted
-                        the delivery team, led a project to develop an internal
-                        ETL workflow tool to identify similarities within ETL
-                        workflows, and conducted meetings with developers. I
-                        created Proof of Concepts (PoCs) for Azure Databricks,
-                        optimized Databricks clusters, and collaborated with
-                        cross-functional teams to demonstrate Azure Databricks'
-                        potential.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Experience Card 4-->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-primary fw-bolder mb-2">
-                          March 21' - June 21'
-                        </div>
-                        <div class="small fw-bolder">AI/ML Intern</div>
-                        <div class="small text-muted">
-                          PRESCIENT TECHNOLOGIES
-                        </div>
-                        <div class="small text-muted">Pune, India</div>
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div>
-                        At Prescient Technologies in Pune, India, I worked in
-                        the AI/ML domain. I developed a custom object detection
-                        model tailored to client needs by utilizing a
-                        specialized dataset. Additionally, I evaluated six
-                        different Artificial Neural Networks using transfer
-                        learning techniques to address the problem at hand. I
-                        meticulously documented project details and summarized
-                        key findings. Finally, I presented the project,
-                        providing valuable insights and recommendations for
-                        future improvements.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- Education Section-->
-            <section>
-              <h2 class="text-secondary fw-bolder mb-4">Education</h2>
-              <!-- Education Card 1-->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-secondary fw-bolder mb-2">
-                          2023-2024
-                        </div>
-                        <div class="mb-2">
-                          <div class="small fw-bolder">
-                            CITY, UNIVERSITY OF LONDON
-                          </div>
-                          <div class="small text-muted">
-                            London, United Kingdom
-                          </div>
-                        </div>
-                        <div class="fst-italic">
-                          <div class="small text-muted">MSc Data Science</div>
-                          <!-- <div class="small text-muted">Data Science</div> -->
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div>
-                        Relevant Coursework : <br />
-                        Principles of Data Science, Machine Learning, Computer
-                        Vision, Big Data, Neural Computing, Visual Analytics,
-                        Entrepreneurship in Practice
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Education Card 2-->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-secondary fw-bolder mb-2">
-                          2018-2022
-                        </div>
-                        <div class="mb-2">
-                          <div class="small fw-bolder">MIT-WPU</div>
-                          <div class="small text-muted">Pune, India</div>
-                        </div>
-                        <div class="fst-italic">
-                          <div class="small text-muted">B.Tech</div>
-                          <div class="small text-muted">
-                            Major: Electronics & Communication
-                          </div>
-                          <div class="small text-muted">
-                            Minor: Artificial Intelligence
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div>
-                        Relevant Coursework : <br />Data Structures and
-                        Algorithms, Data Science, Object Oriented
-                        Programming,Artificial Neural Networks, Digital Image
-                        Processing, Natural Language Processing,Math For AI,
-                        Python Programming.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- Divider-->
-            <div class="pb-5"></div>
-            <!-- Skills Section-->
-            <section>
-              <!-- Skillset Card-->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <!-- Languages list-->
-                  <div class="mb-0">
-                    <div class="d-flex align-items-center mb-4">
-                      <div
-                        class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"
-                      >
-                        <i class="bi bi-code-slash"></i>
-                      </div>
-                      <h3 class="fw-bolder mb-0">
-                        <span class="text-gradient d-inline"
-                          >Programming and Development Skills</span
-                        >
-                      </h3>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-3 mb-4">
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          Python
-                        </div>
-                      </div>
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          HTML5
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          JavaScript
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-3">
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          CSS
-                        </div>
-                      </div>
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          R
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          C, C++
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="pb-5"></div>
-                  <!-- Data Management and Analysis Skills list-->
-                  <div class="mb-5">
-                    <div class="d-flex align-items-center mb-4">
-                      <div
-                        class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"
-                      >
-                        <i class="bi bi-tools"></i>
-                      </div>
-                      <h3 class="fw-bolder mb-0">
-                        <span class="text-gradient d-inline"
-                          >Data Management and Analysis Skills</span
-                        >
-                      </h3>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-3 mb-4">
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          MySQL
-                        </div>
-                      </div>
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          MongoDB
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          Microsoft Excel
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-3">
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          Power BI
-                        </div>
-                      </div>
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          Tableau
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          Azure Databricks
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mb-5">
-                    <div class="d-flex align-items-center mb-4">
-                      <div
-                        class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"
-                      >
-                        <i class="bi bi-tools"></i>
-                      </div>
-                      <h3 class="fw-bolder mb-0">
-                        <span class="text-gradient d-inline"
-                          >Other Technical Skills</span
-                        >
-                      </h3>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-3 mb-4">
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          Computer Vision <br />OpenCV <br />PCB Design<br />
-                          Keras<br />
-                          Machine Learning Algorithms<br />
-                          Regression <br />
-                        </div>
-                      </div>
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          Pandas <br />Predictive analytics<br />
-                          Data visualisation<br />
-                          Cloud computing<br />
-                          Keras<br />
-                          Labelimg<br />
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          MATLAB<br />
-                          Arduino<br />
-                          Linux<br />
-                          NumPy<br />
-                          MySQL<br />
-                          NLP
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <style>
-              .card-link {
-                text-decoration: none;
-              }
-
-              .card-link:hover {
-                text-decoration: none;
-              }
-
-              .project-description {
-                color: black;
-              }
-            </style>
-
-            <!-- Projects Section-->
-            <section>
-              <div
-                class="d-flex align-items-center justify-content-between mb-4"
-              >
-                <h2 class="text-primary fw-bolder mb-0">Projects</h2>
-                <!-- Add any additional button or link if needed-->
-              </div>
-              <!-- Project Card 1-->
-              <a href="projects.html" class="card-link">
-                <div class="card shadow border-0 rounded-4 mb-5">
-                  <div class="card-body p-5">
-                    <div class="row align-items-center gx-5">
-                      <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                        <div class="bg-light p-4 rounded-4">
-                          <div class="text-primary fw-bolder mb-2">
-                            Real-Time Face Mask Detection System
-                          </div>
-                          <div class="small fw-bolder">Object Detection</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="project-description">
-                          Developed a real-time Face Mask Detector that captures
-                          input video feed from the provided camera, identifies
-                          faces, and draws a Region of Interest (ROI) around
-                          them while indicating whether individuals in the frame
-                          are wearing masks or not.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <!-- Project Card 2-->
-              <a href="projects.html" class="card-link">
-                <div class="card shadow border-0 rounded-4 mb-5">
-                  <div class="card-body p-5">
-                    <div class="row align-items-center gx-5">
-                      <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                        <div class="bg-light p-4 rounded-4">
-                          <div class="text-primary fw-bolder mb-2">
-                            Indian Vehicle Detection
-                          </div>
-                          <div class="small fw-bolder">Object Detection</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="project-description">
-                          Developed a custom object detection algorithm based on
-                          YOLO architecture which detects Vehicles found on
-                          Indian roads with industry-grade detection accuracy
-                          and speed trained on a dataset created and annotated
-                          from scratch.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <!-- Project Card 3-->
-              <a href="projects.html" class="card-link">
-                <div class="card shadow border-0 rounded-4 mb-5">
-                  <div class="card-body p-5">
-                    <div class="row align-items-center gx-5">
-                      <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                        <div class="bg-light p-4 rounded-4">
-                          <div class="text-primary fw-bolder mb-2">
-                            Object Detection Using YOLO
-                          </div>
-                          <div class="small fw-bolder">Object Detection</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="project-description">
-                          Devised Object Detection on real-time input video
-                          using YOLO algorithm to successfully detect different
-                          objects in the frame.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <!-- Project Card 4-->
-              <a href="projects.html" class="card-link">
-                <div class="card shadow border-0 rounded-4 mb-5">
-                  <div class="card-body p-5">
-                    <div class="row align-items-center gx-5">
-                      <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                        <div class="bg-light p-4 rounded-4">
-                          <div class="text-primary fw-bolder mb-2">
-                            Chatbot for Hospitals and Clinics
-                          </div>
-                          <div class="small fw-bolder">
-                            AI & Machine Learning
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="project-description">
-                          Designed a Chatbot with a user-friendly Graphical user
-                          interface with automated answering to aid patients of
-                          hospitals in tasks such as providing their medical
-                          reports, finding a pharmacy nearby, etc.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <!-- Project Card 5-->
-              <a href="projects.html" class="card-link">
-                <div class="card shadow border-0 rounded-4 mb-5">
-                  <div class="card-body p-5">
-                    <div class="row align-items-center gx-5">
-                      <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                        <div class="bg-light p-4 rounded-4">
-                          <div class="text-primary fw-bolder mb-2">
-                            Underwater Fish Breed Detector
-                          </div>
-                          <div class="small fw-bolder">Computer Vision</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="project-description">
-                          Engineered a classifier that identifies 9 different
-                          types of fish. Trained the model using MobileNet
-                          architecture.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <!-- Project Card 6-->
-              <a href="projects.html" class="card-link">
-                <div class="card shadow border-0 rounded-4 mb-5">
-                  <div class="card-body p-5">
-                    <div class="row align-items-center gx-5">
-                      <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                        <div class="bg-light p-4 rounded-4">
-                          <div class="text-primary fw-bolder mb-2">
-                            Success Prediction of a Film
-                          </div>
-                          <div class="small fw-bolder">Data Analysis</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="project-description">
-                          Developed a predictive algorithm that utilizes linear
-                          regression to forecast a movie's box office earnings
-                          based on its production budget.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </section>
-            <!-- Projects Button-->
-            <div class="text-center">
-              <a href="projects.html" class="btn btn-primary btn-lg px-4"
-                >View All Projects</a
-              >
-            </div>
-            <!-- Divider-->
-            <div class="pb-5"></div>
-            <!-- Projects Section-->
-            <section>
-              <div
-                class="d-flex align-items-center justify-content-between mb-4"
-              >
-                <h2 class="text-primary fw-bolder mb-0">
-                  Volunteering Experience
-                </h2>
-              </div>
-              <!-- Volunteer Experience Card 1 -->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <!-- Date and Location -->
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-primary fw-bolder mb-2">
-                          July 2019 - Oct 2019
-                        </div>
-                        <div class="small fw-bolder">English Tutor</div>
-                        <div class="small text-muted">
-                          JAZZ HANDS FOUNDATION
-                        </div>
-                        <div class="small text-muted">Pune, India</div>
-                      </div>
-                    </div>
-                    <!-- Description -->
-                    <div class="col-lg-8">
-                      <p class="text-muted">
-                        Taught English language to 80+ primary and secondary
-                        grade students from underprivileged backgrounds at the
-                        local Municipality School.
-                      </p>
-                      <p class="text-muted">
-                        Communicated and encouraged the students to learn
-                        English using drama and art-based techniques.
-                      </p>
-                      <p class="text-muted">
-                        Directed a 15-minute long Drama consisting of over 35
-                        participants.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Volunteer Experience Card 2 -->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <!-- Date and Location -->
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-primary fw-bolder mb-2">
-                          July 2020 - Sept 2020
-                        </div>
-                        <div class="small fw-bolder">
-                          Covid-19 Program Volunteer
-                        </div>
-                        <div class="small text-muted">
-                          HUMAN RIGHTS ASSOCIATION FOR PROTECTION
-                        </div>
-                        <div class="small text-muted">Pune, India</div>
-                      </div>
-                    </div>
-                    <!-- Description -->
-                    <div class="col-lg-8">
-                      <p class="text-muted">
-                        Led a team of 8 volunteers by delegating tasks and
-                        planning routes for team members as their leader.
-                      </p>
-                      <p class="text-muted">
-                        Distributed Hand sanitizers, Face masks, and Water among
-                        people from low-income backgrounds and migrating
-                        workers.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Volunteer Experience Card 3 -->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <!-- Date and Location -->
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-primary fw-bolder mb-2">
-                          March 2021 - May 2021
-                        </div>
-                        <div class="small fw-bolder">
-                          Elder Aid Program Volunteer
-                        </div>
-                        <div class="small text-muted">
-                          HUMAN RIGHTS ASSOCIATION FOR PROTECTION
-                        </div>
-                        <div class="small text-muted">Pune, India</div>
-                      </div>
-                    </div>
-                    <!-- Description -->
-                    <div class="col-lg-8">
-                      <p class="text-muted">
-                        Provided assistance to over 50 senior citizens residing
-                        in an elderly care facility, helping them overcome
-                        challenges related to using modern technological
-                        devices.
-                      </p>
-                      <p class="text-muted">
-                        Conducted a seminar to instruct senior citizens on
-                        online safety, including how to recognize and avoid
-                        common online scams and phishing attempts.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Volunteer Experience Card 4 -->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <!-- Date and Location -->
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-primary fw-bolder mb-2">
-                          July 2018 - Sept 2018
-                        </div>
-                        <div class="small fw-bolder">
-                          Food Committee Volunteer
-                        </div>
-                        <div class="small text-muted">
-                          SPORTS SUMMIT MIT-WPU
-                        </div>
-                        <div class="small text-muted">Pune, India</div>
-                      </div>
-                    </div>
-                    <!-- Description -->
-                    <div class="col-lg-8">
-                      <p class="text-muted">
-                        Managed and delivered 3 meals each day to 250+ student
-                        athletes staying at 3 different locations over the
-                        course of sports summit.
-                      </p>
-                      <p class="text-muted">
-                        Recorded the number of student athletes staying and
-                        placed the food orders accordingly.
-                      </p>
-                      <p class="text-muted">
-                        Audited the meal boxes and food items.
-                      </p>
-                      <p class="text-muted">
-                        Contributed as a scorekeeper in 5 cricket matches.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <div class="d-flex justify-content-center fs-2 gap-4">
-              <!-- <a class="text-gradient" href="#!"
-                  ><i class="bi bi-twitter"></i
-                ></a> -->
-              <a class="text-gradient" href="mailto:prathamkuril@gmail.com"
-                ><i class="bi bi-envelope"></i
-              ></a>
-              <a class="text-gradient" href="tel:+447769490555"
-                ><i class="bi bi-telephone"></i
-              ></a>
-
-              <a
-                class="text-gradient"
-                href="https://www.linkedin.com/in/pratham-kuril/"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-              <a
-                class="text-gradient"
-                href="https://github.com/prathamkuril?tab=overview&from=2024-05-01&to=2024-05-01"
-                ><i class="bi bi-github"></i
-              ></a>
             </div>
           </div>
-        </div>
+
+          <!-- Experience Card 2 -->
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="text-primary fw-bolder mb-2">
+                    Sept 23' - Oct 24'
+                  </div>
+                  <div class="small fw-bolder">Program Representative</div>
+                  <div class="small text-muted">
+                    City, University of London | London, UK
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <p class="text-muted">
+                    Facilitated communication between students and faculty for
+                    the MSc Data Science program, and organized events.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+          <h2 class="text-primary fw-bolder">Skills</h2>
+          <div class="row">
+            <div class="col-lg-4">
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check"></i> Python</li>
+                <li><i class="bi bi-check"></i> HTML5</li>
+                <li><i class="bi bi-check"></i> JavaScript</li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check"></i> R</li>
+                <li><i class="bi bi-check"></i> MongoDB</li>
+                <li><i class="bi bi-check"></i> Azure Databricks</li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
-    <!-- Footer-->
+
+    <!-- Footer -->
     <footer class="bg-white py-4 mt-auto">
-      <div class="container px-5">
-        <div
-          class="row align-items-center justify-content-between flex-column flex-sm-row"
-        >
-          <div class="col-auto">
-            <div class="small m-0">Copyright &copy; Your Website 2023</div>
-          </div>
-          <div class="col-auto">
-            <a class="small" href="#!">Privacy</a>
-            <span class="mx-1">&middot;</span>
-            <a class="small" href="#!">Terms</a>
-            <span class="mx-1">&middot;</span>
-            <a class="small" href="#!">Contact</a>
-          </div>
-        </div>
+      <div class="container px-5 text-center">
+        <small>&copy; 2024 Pratham Kuril. All rights reserved.</small>
       </div>
     </footer>
-    <!-- Bootstrap core JS-->
+
+    <!-- Bootstrap core JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
+    <!-- Core theme JS -->
     <script src="js/scripts.js"></script>
   </body>
 </html>
