@@ -2,36 +2,160 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="description"
+      content="Contact Pratham Kuril for collaboration and inquiries"
     />
-    <meta name="description" content />
-    <meta name="author" content />
-    <title>Pratham's Resume Portfolio</title>
-    <!-- Favicon-->
+    <meta name="author" content="Pratham Kuril" />
+    <title>Contact Pratham Kuril</title>
+
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Custom Google font-->
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Bootstrap icons-->
+
+    <!-- Bootstrap Icons -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <!-- Core theme CSS (includes Bootstrap)-->
+
+    <!-- Core theme CSS (includes Bootstrap) -->
     <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+      /* Global Styles */
+      body {
+        background-color: #ffffff;
+        color: #1c1c1c;
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+
+      /* Navbar */
+      .navbar-light {
+        background-color: #ffffff;
+        border-bottom: 1px solid #e0e0e0;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      .navbar-light .navbar-brand,
+      .navbar-light .nav-link {
+        color: #1c1c1c;
+      }
+
+      .navbar-light .nav-link:hover {
+        color: #007aff;
+      }
+
+      /* Hero Section */
+      .container h1 {
+        color: #1c1c1c;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .text-gradient {
+        background: -webkit-linear-gradient(#007aff, #5ac8fa);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* Contact Section */
+      .contact-section {
+        background-color: #f8f9fb;
+        padding: 60px 0;
+      }
+
+      .contact-section .feature {
+        background-color: #007aff;
+        border-radius: 50px;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 20px;
+        color: #fff;
+        font-size: 1.5rem;
+      }
+
+      .contact-section h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+
+      .contact-section p {
+        color: #6d6d6d;
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+      }
+
+      /* Form Styles */
+      .form-floating input,
+      .form-floating textarea {
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        padding: 20px;
+        font-size: 1rem;
+        color: #1c1c1c;
+      }
+
+      .form-floating label {
+        font-size: 1rem;
+        color: #6d6d6d;
+      }
+
+      .form-floating .form-control:focus {
+        border-color: #007aff;
+        box-shadow: 0 0 10px rgba(0, 122, 255, 0.2);
+      }
+
+      /* Button Styles */
+      .btn-primary {
+        background-color: #007aff;
+        border: none;
+        padding: 12px 30px;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background-color: #005bb5;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #f9fafb;
+        color: #6d6d6d;
+        padding: 2rem 0;
+        text-align: center;
+        border-top: 1px solid #e0e0e0;
+      }
+
+      footer small {
+        color: #6d6d6d;
+      }
+    </style>
   </head>
-  <body class="d-flex flex-column">
+
+  <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
-      <!-- Navigation-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+      <!-- Navigation -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm"
+      >
         <div class="container px-5">
-          <!-- <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Home</span></a> -->
+          <a class="navbar-brand fw-bold" href="index.html">Pratham Kuril</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -44,7 +168,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 small fw-bolder">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
@@ -64,170 +188,99 @@
           </div>
         </div>
       </nav>
-      <!-- Page content-->
-      <div class="pb-5"></div>
-      <section class="py-5">
-        <div class="container px-5">
-          <!-- Contact form-->
-          <div class="bg-light rounded-4 py-5 px-4 px-md-5">
-            <div class="text-center mb-5">
-              <div
-                class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"
-              >
-                <i class="bi bi-envelope"></i>
-              </div>
-              <h1 class="fw-bolder">Get in touch</h1>
-              <p class="lead fw-normal text-muted mb-0">Let's work together!</p>
-            </div>
-            <div class="row gx-5 justify-content-center">
-              <div class="col-lg-8 col-xl-6">
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                  <!-- Name input-->
-                  <div class="form-floating mb-3">
-                    <input
-                      class="form-control"
-                      id="name"
-                      type="text"
-                      placeholder="Enter your name..."
-                      data-sb-validations="required"
-                    />
-                    <label for="name">Full name</label>
-                    <div
-                      class="invalid-feedback"
-                      data-sb-feedback="name:required"
-                    >
-                      A name is required.
-                    </div>
-                  </div>
-                  <!-- Email address input-->
-                  <div class="form-floating mb-3">
-                    <input
-                      class="form-control"
-                      id="email"
-                      type="email"
-                      placeholder="name@example.com"
-                      data-sb-validations="required,email"
-                    />
-                    <label for="email">Email address</label>
-                    <div
-                      class="invalid-feedback"
-                      data-sb-feedback="email:required"
-                    >
-                      An email is required.
-                    </div>
-                    <div
-                      class="invalid-feedback"
-                      data-sb-feedback="email:email"
-                    >
-                      Email is not valid.
-                    </div>
-                  </div>
-                  <!-- Phone number input-->
-                  <div class="form-floating mb-3">
-                    <input
-                      class="form-control"
-                      id="phone"
-                      type="tel"
-                      placeholder="(123) 456-7890"
-                      data-sb-validations="required"
-                    />
-                    <label for="phone">Phone number</label>
-                    <div
-                      class="invalid-feedback"
-                      data-sb-feedback="phone:required"
-                    >
-                      A phone number is required.
-                    </div>
-                  </div>
-                  <!-- Message input-->
-                  <div class="form-floating mb-3">
-                    <textarea
-                      class="form-control"
-                      id="message"
-                      type="text"
-                      placeholder="Enter your message here..."
-                      style="height: 10rem"
-                      data-sb-validations="required"
-                    ></textarea>
-                    <label for="message">Message</label>
-                    <div
-                      class="invalid-feedback"
-                      data-sb-feedback="message:required"
-                    >
-                      A message is required.
-                    </div>
-                  </div>
-                  <!-- Submit success message-->
-                  <!---->
-                  <!-- This is what your users will see when the form-->
-                  <!-- has successfully submitted-->
-                  <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center mb-3">
-                      <div class="fw-bolder">
-                        Form submission unsuccessful! Please Try again!
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Submit error message-->
-                  <!---->
-                  <!-- This is what your users will see when there is-->
-                  <!-- an error submitting the form-->
-                  <div class="d-none" id="submitErrorMessage">
-                    <div class="text-center text-danger mb-3">
-                      Error sending message!
-                    </div>
-                  </div>
-                  <!-- Submit Button-->
-                  <div class="d-grid">
-                    <button
-                      class="btn btn-primary btn-lg disabled"
-                      id="submitButton"
-                      type="submit"
-                    >
-                      Submit
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
+
+      <!-- Page Content -->
+      <div class="container py-5 contact-section">
+        <div class="text-center">
+          <div class="feature mb-3">
+            <i class="bi bi-envelope"></i>
           </div>
+          <h1 class="fw-bolder">Get in Touch</h1>
+          <p class="lead fw-normal text-muted mb-5">Let's work together!</p>
         </div>
-      </section>
-    </main>
-    <!-- Footer-->
-    <footer class="bg-white py-4 mt-auto">
-      <div class="container px-5">
-        <div
-          class="row align-items-center justify-content-between flex-column flex-sm-row"
-        >
-          <div class="col-auto">
-            <div class="small m-0">Copyright &copy; Your Website 2023</div>
-          </div>
-          <div class="col-auto">
-            <a class="small" href="#!">Privacy</a>
-            <span class="mx-1">&middot;</span>
-            <a class="small" href="#!">Terms</a>
-            <span class="mx-1">&middot;</span>
-            <a class="small" href="#!">Contact</a>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-xl-6">
+            <!-- Contact Form -->
+            <form id="contactForm">
+              <!-- Name input -->
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  placeholder="Enter your name..."
+                  required
+                />
+                <label for="name">Full Name</label>
+                <div class="invalid-feedback">A name is required.</div>
+              </div>
+
+              <!-- Email input -->
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="email"
+                  type="email"
+                  placeholder="name@example.com"
+                  required
+                />
+                <label for="email">Email Address</label>
+                <div class="invalid-feedback">A valid email is required.</div>
+              </div>
+
+              <!-- Phone input -->
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="phone"
+                  type="tel"
+                  placeholder="(123) 456-7890"
+                  required
+                />
+                <label for="phone">Phone Number</label>
+                <div class="invalid-feedback">A phone number is required.</div>
+              </div>
+
+              <!-- Message input -->
+              <div class="form-floating mb-3">
+                <textarea
+                  class="form-control"
+                  id="message"
+                  type="text"
+                  placeholder="Enter your message here..."
+                  style="height: 10rem"
+                  required
+                ></textarea>
+                <label for="message">Message</label>
+                <div class="invalid-feedback">A message is required.</div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="d-grid">
+                <button
+                  class="btn btn-primary btn-lg"
+                  id="submitButton"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-4 mt-auto">
+      <div class="container px-5 text-center">
+        <small>&copy; 2024 Pratham Kuril. All rights reserved.</small>
+      </div>
     </footer>
-    <!-- Bootstrap core JS-->
+
+    <!-- Bootstrap core JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
+    <!-- Core theme JS -->
     <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
   </body>
 </html>
