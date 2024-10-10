@@ -27,108 +27,175 @@
     <link href="css/styles.css" rel="stylesheet" />
 
     <style>
+      /* Global Styles */
       body {
-        background-color: #F2ECE9;
-        color: #0D0D0D;
+        background-color: #ffffff;
+        color: #1c1c1c; /* Clean, readable black */
+        font-family: "Plus Jakarta Sans", sans-serif;
       }
 
+      /* Navbar */
       .navbar-light {
-        background-color: #F2ECE9;
-        border-bottom: 1px solid #BFB9B8;
+        background-color: #ffffff; /* Minimalist white background */
+        border-bottom: 1px solid #e0e0e0; /* Subtle border for separation */
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
       }
 
       .navbar-light .navbar-brand,
       .navbar-light .nav-link {
-        color: #0D0D0D;
+        color: #1c1c1c; /* High-contrast black text for readability */
       }
 
+      .navbar-light .nav-link:hover {
+        color: #007aff; /* Accent blue for hover effects */
+      }
+
+      /* Hero Section */
       .hero {
-        background-color: #A69E9C;
-        color: #0D0D0D;
-        border-bottom: 1px solid #BFB9B8;
+        background-color: #f8f9fb; /* Light grayish background to create subtle contrast */
+        color: #1c1c1c;
         padding-top: 80px;
+        padding-bottom: 80px;
       }
 
+      .hero h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #1c1c1c; /* Bold black heading */
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+        color: #6d6d6d; /* Softer text for supporting information */
+      }
+
+      /* Button Styles */
       .btn-primary {
-        background-color: #736E6C;
-        border-color: #736E6C;
-        color: #FFFFFF;
+        background-color: #007aff; /* Accent blue */
+        border-color: #007aff;
+        color: #ffffff;
+        padding: 12px 30px;
+        font-weight: 600;
+        border-radius: 8px; /* Soft rounded buttons */
+        box-shadow: 0 4px 10px rgba(0, 122, 255, 0.15); /* Subtle button shadow for depth */
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background-color: #005bb5; /* Darker blue on hover */
       }
 
       .btn-outline-secondary {
-        color: #736E6C;
-        border-color: #736E6C;
+        color: #007aff;
+        border-color: #007aff;
+        padding: 12px 30px;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
       }
 
       .btn-outline-secondary:hover {
-        background-color: #736E6C;
-        color: #FFFFFF;
+        background-color: #007aff;
+        color: #ffffff;
       }
 
-      .text-primary {
-        color: #736E6C !important;
+      /* Section Headings */
+      h2,
+      h5 {
+        color: #1c1c1c; /* High-contrast headings */
+        font-weight: 600;
+        margin-bottom: 20px;
       }
 
+      .text-muted {
+        color: #6d6d6d; /* Softer text for body and descriptive content */
+      }
+
+      /* Experience Section */
       .experience.bg-light {
-        background-color: #F2ECE9;
+        background-color: #f9fafb; /* Very light gray background */
+        padding-top: 60px;
+        padding-bottom: 60px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Soft shadow to lift the section */
       }
 
-      .about {
-        background-color: #F2ECE9;
-        color: #0D0D0D;
+      .card {
+        border: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Light shadow for card depth */
+        border-radius: 10px;
       }
 
-      .footer.bg-light {
-        background-color: #F2ECE9;
-        color: #BFB9B8;
-        border-top: 1px solid #BFB9B8;
+      .card-body {
+        padding: 30px;
       }
 
       /* Call to Action Section */
       .cta-section {
-        background: linear-gradient(135deg, #736E6C, #A69E9C);
-        color: #FFFFFF;
+        background-color: #f0f3f5; /* Light, calming background */
+        color: #1c1c1c;
         padding: 80px 0;
         text-align: center;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.05); /* Soft shadow for subtle emphasis */
         margin-top: 40px;
+        border-radius: 12px; /* Rounded edges for a soft look */
       }
 
       .cta-section h2 {
         font-size: 2.5rem;
         font-weight: 700;
         margin-bottom: 20px;
+        color: #1c1c1c;
       }
 
       .cta-section p {
         font-size: 1.2rem;
         margin-bottom: 30px;
+        color: #6d6d6d;
       }
 
       .cta-section a {
-        color: #FFFFFF;
+        color: #ffffff;
         text-decoration: none;
         padding: 12px 25px;
-        background-color: #0D0D0D;
+        background-color: #007aff;
         border-radius: 25px;
         font-weight: 600;
         transition: background-color 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 122, 255, 0.2); /* Blue shadow for button depth */
       }
 
       .cta-section a:hover {
-        background-color: #736E6C;
+        background-color: #005bb5;
+      }
+
+      /* About Section */
+      .about {
+        background-color: #ffffff;
+        color: #1c1c1c;
+        padding: 60px 0;
+      }
+
+      .about p {
+        color: #6d6d6d;
+        line-height: 1.6; /* Increased line-height for readability */
+      }
+
+      /* Footer */
+      .footer.bg-light {
+        background-color: #f9fafb;
+        color: #6d6d6d;
+        padding: 20px 0;
+        border-top: 1px solid #e0e0e0;
       }
 
       /* Subtle Dividers */
       .section-divider {
         height: 1px;
         width: 100%;
-        background-color: #BFB9B8;
+        background-color: #e0e0e0; /* Very light dividers to separate sections */
         margin: 50px 0;
       }
     </style>
-  </head>
-
   </head>
   <body class="d-flex flex-column h-100">
     <header>
