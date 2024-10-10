@@ -25,6 +25,110 @@
 
     <!-- Core Theme CSS (includes Bootstrap) -->
     <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+      body {
+        background-color: #F2ECE9;
+        color: #0D0D0D;
+      }
+
+      .navbar-light {
+        background-color: #F2ECE9;
+        border-bottom: 1px solid #BFB9B8;
+      }
+
+      .navbar-light .navbar-brand,
+      .navbar-light .nav-link {
+        color: #0D0D0D;
+      }
+
+      .hero {
+        background-color: #A69E9C;
+        color: #0D0D0D;
+        border-bottom: 1px solid #BFB9B8;
+        padding-top: 80px;
+      }
+
+      .btn-primary {
+        background-color: #736E6C;
+        border-color: #736E6C;
+        color: #FFFFFF;
+      }
+
+      .btn-outline-secondary {
+        color: #736E6C;
+        border-color: #736E6C;
+      }
+
+      .btn-outline-secondary:hover {
+        background-color: #736E6C;
+        color: #FFFFFF;
+      }
+
+      .text-primary {
+        color: #736E6C !important;
+      }
+
+      .experience.bg-light {
+        background-color: #F2ECE9;
+      }
+
+      .about {
+        background-color: #F2ECE9;
+        color: #0D0D0D;
+      }
+
+      .footer.bg-light {
+        background-color: #F2ECE9;
+        color: #BFB9B8;
+        border-top: 1px solid #BFB9B8;
+      }
+
+      /* Call to Action Section */
+      .cta-section {
+        background: linear-gradient(135deg, #736E6C, #A69E9C);
+        color: #FFFFFF;
+        padding: 80px 0;
+        text-align: center;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        margin-top: 40px;
+      }
+
+      .cta-section h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .cta-section p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+
+      .cta-section a {
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 12px 25px;
+        background-color: #0D0D0D;
+        border-radius: 25px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-section a:hover {
+        background-color: #736E6C;
+      }
+
+      /* Subtle Dividers */
+      .section-divider {
+        height: 1px;
+        width: 100%;
+        background-color: #BFB9B8;
+        margin: 50px 0;
+      }
+    </style>
+  </head>
+
   </head>
   <body class="d-flex flex-column h-100">
     <header>
@@ -99,6 +203,9 @@
         </div>
       </section>
 
+      <!-- Divider -->
+      <div class="section-divider"></div>
+
       <!-- Experience Section -->
       <section class="experience bg-light py-5">
         <div class="container px-4">
@@ -150,11 +257,25 @@
                 </div>
               </div>
             </div>
-
-            <!-- Add more experience cards as needed -->
           </div>
         </div>
       </section>
+
+      <!-- Call to Action Section -->
+      <section class="cta-section">
+        <div class="container">
+          <h2 class="display-4 fw-bolder">Looking for a Data Scientist?</h2>
+          <p class="lead">
+            Feel free to download my resume or connect with me on LinkedIn.
+          </p>
+          <a href="https://www.linkedin.com/in/pratham-kuril/"
+            >Visit LinkedIn Profile</a
+          >
+        </div>
+      </section>
+
+      <!-- Divider -->
+      <div class="section-divider"></div>
 
       <!-- About Section -->
       <section class="about py-5">
