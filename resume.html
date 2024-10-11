@@ -28,14 +28,12 @@
     <link href="css/styles.css" rel="stylesheet" />
 
     <style>
-      /* Global Styles */
       body {
-        background-color: #ffffff;
+        background-color: #f9fafb;
         color: #1c1c1c;
         font-family: "Plus Jakarta Sans", sans-serif;
       }
 
-      /* Navbar */
       .navbar-light {
         background-color: #ffffff;
         border-bottom: 1px solid #e0e0e0;
@@ -51,7 +49,6 @@
         color: #007aff;
       }
 
-      /* Hero Section */
       .container h1 {
         color: #1c1c1c;
         text-align: center;
@@ -60,12 +57,12 @@
       }
 
       .text-gradient {
-        background: -webkit-linear-gradient(#007aff, #5ac8fa);
+        background: linear-gradient(45deg, #007aff, #5ac8fa);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
 
-      /* Section Heading */
       h2 {
         font-size: 2rem;
         font-weight: 700;
@@ -73,11 +70,6 @@
         margin-bottom: 20px;
       }
 
-      .text-primary {
-        color: #007aff;
-      }
-
-      /* Card Styles */
       .card {
         background-color: #ffffff;
         border: 1px solid #e0e0e0;
@@ -91,18 +83,6 @@
         padding: 2rem;
       }
 
-      .card-title {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: #1c1c1c;
-      }
-
-      .card-subtitle {
-        color: #6d6d6d;
-        font-size: 1rem;
-      }
-
-      /* Button Styles */
       .btn-primary {
         background-color: #007aff;
         border: none;
@@ -120,24 +100,27 @@
         color: #6d6d6d;
       }
 
-      /* Footer */
       footer {
-        background-color: #f9fafb;
-        color: #6d6d6d;
+        background-color: #1c1c1c;
+        color: #f9fafb;
         padding: 2rem 0;
         text-align: center;
-        border-top: 1px solid #e0e0e0;
       }
 
-      footer small {
-        color: #6d6d6d;
+      footer a {
+        color: #5ac8fa;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      footer a:hover {
+        color: #007aff;
       }
     </style>
   </head>
 
   <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
-      <!-- Navigation -->
       <nav
         class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm"
       >
@@ -176,35 +159,69 @@
         </div>
       </nav>
 
-      <!-- Page Content -->
       <div class="container px-5 my-5">
-        <!-- Resume Title -->
         <div class="text-center mb-5">
           <h1 class="display-5 fw-bolder mb-0">
             <span class="text-gradient d-inline">Resume</span>
           </h1>
         </div>
 
+        <!-- Education Section -->
+        <section>
+          <h2 class="text-primary fw-bolder">Education</h2>
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="text-primary fw-bolder mb-2">2023-2024</div>
+                  <div class="small fw-bolder">MSc Data Science</div>
+                  <div class="small text-muted">
+                    City, University of London | London, UK
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <p class="text-muted">
+                    Relevant Coursework: Principles of Data Science, Machine
+                    Learning, Computer Vision, Big Data, Neural Computing,
+                    Visual Analytics, Entrepreneurship in Practice.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="text-primary fw-bolder mb-2">2018-2022</div>
+                  <div class="small fw-bolder">
+                    B.Tech Electronics & Communication
+                  </div>
+                  <div class="small text-muted">
+                    MIT-World Peace University | Pune, India
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <p class="text-muted">
+                    Relevant Coursework: Data Structures, Algorithms, Data
+                    Science, Artificial Neural Networks, Object Oriented
+                    Programming, Digital Image Processing, NLP.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- Experience Section -->
         <section>
-          <div class="d-flex align-items-center justify-content-between mb-4">
-            <h2 class="text-primary fw-bolder">Experience</h2>
-            <a
-              class="btn btn-primary"
-              href="https://drive.google.com/file/d/1E5bVGMrGMmsjxcRkl7UmOA83zNcp5drJ/view?usp=sharing"
-              target="_blank"
-            >
-              <i class="bi bi-download me-2"></i> Download Resume
-            </a>
-          </div>
-
-          <!-- Experience Card 1 -->
+          <h2 class="text-primary fw-bolder">Experience</h2>
           <div class="card">
             <div class="card-body">
               <div class="row">
                 <div class="col-md-4">
                   <div class="text-primary fw-bolder mb-2">
-                    July 24' - Present
+                    July 2024 - Present
                   </div>
                   <div class="small fw-bolder">AI Technical Intern</div>
                   <div class="small text-muted">
@@ -213,73 +230,160 @@
                 </div>
                 <div class="col-md-8">
                   <p class="text-muted">
-                    Developed an Open AI chat assistant for a British
-                    telecommunications company, trained 24 AI developers, and
-                    built a learning platform integrating generative AI and
-                    Python.
+                    Developed AI chat assistants, integrating OpenAI and
+                    generative AI, contributing to the training and upskilling
+                    of 24 developers. Managed version control for AI projects
+                    using Git, Jira, and Confluence.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Experience Card 2 -->
           <div class="card">
             <div class="card-body">
               <div class="row">
                 <div class="col-md-4">
                   <div class="text-primary fw-bolder mb-2">
-                    Sept 23' - Oct 24'
+                    July 2022 - June 2023
                   </div>
-                  <div class="small fw-bolder">Program Representative</div>
-                  <div class="small text-muted">
-                    City, University of London | London, UK
-                  </div>
+                  <div class="small fw-bolder">ML Programmer Trainee</div>
+                  <div class="small text-muted">Bitwise Inc | Pune, India</div>
                 </div>
                 <div class="col-md-8">
                   <p class="text-muted">
-                    Facilitated communication between students and faculty for
-                    the MSc Data Science program, and organized events.
+                    Spearheaded ETL analysis tool development, optimizing
+                    workflow efficiency, and built over 50 proofs of concept in
+                    Azure Databricks for real-time data pipelines.
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section>
+          <h2 class="text-primary fw-bolder">Projects</h2>
+          <div class="card">
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li>
+                  <strong>Europe's Industry Financial Health Analysis:</strong>
+                  Comprehensive post-COVID and Brexit financial analysis using
+                  metrics like tax rates, cost of capital, and operational
+                  indicators.
+                </li>
+                <li>
+                  <strong>Real-Time Face Mask Detection:</strong> Developed a
+                  real-time face mask detection system using live video feeds,
+                  leveraging computer vision techniques.
+                </li>
+                <li>
+                  <strong>Bankruptcy Prediction:</strong> Implemented logistic
+                  regression and random forest models to forecast company
+                  bankruptcies using historical financial data.
+                </li>
+                <li>
+                  <strong>Indian Vehicle Detection:</strong> Built a custom
+                  object detection model using YOLO to identify the most common
+                  vehicle types on Indian roads.
+                </li>
+                <li>
+                  <strong>Film Success Prediction:</strong> Developed a linear
+                  regression model to predict movie box office performance based
+                  on production budget and other factors.
+                </li>
+                <li>
+                  <strong>Online News Popularity Analysis:</strong> Conducted a
+                  visual analytics approach on 39,644 news articles to identify
+                  factors contributing to article virality.
+                </li>
+              </ul>
             </div>
           </div>
         </section>
 
         <!-- Skills Section -->
         <section>
-          <h2 class="text-primary fw-bolder">Skills</h2>
+          <h2 class="text-primary fw-bolder">Skills & Certifications</h2>
           <div class="row">
             <div class="col-lg-4">
               <ul class="list-unstyled">
                 <li><i class="bi bi-check"></i> Python</li>
-                <li><i class="bi bi-check"></i> HTML5</li>
+                <li><i class="bi bi-check"></i> HTML5 & CSS</li>
                 <li><i class="bi bi-check"></i> JavaScript</li>
+                <li><i class="bi bi-check"></i> React</li>
               </ul>
             </div>
             <div class="col-lg-4">
               <ul class="list-unstyled">
-                <li><i class="bi bi-check"></i> R</li>
-                <li><i class="bi bi-check"></i> MongoDB</li>
+                <li><i class="bi bi-check"></i> Azure Data Factory</li>
                 <li><i class="bi bi-check"></i> Azure Databricks</li>
+                <li><i class="bi bi-check"></i> MongoDB & mySQL</li>
+                <li><i class="bi bi-check"></i> AWS (SageMaker, Lambda)</li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check"></i> Machine Learning (ML)</li>
+                <li>
+                  <i class="bi bi-check"></i> Deep Learning (DL) with Keras
+                </li>
+                <li>
+                  <i class="bi bi-check"></i> Transformer Models (HuggingFace)
+                </li>
+                <li>
+                  <i class="bi bi-check"></i> Data Visualization (Tableau, Power
+                  BI)
+                </li>
               </ul>
             </div>
           </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section>
+          <h2 class="text-primary fw-bolder">Certifications</h2>
+          <ul class="list-unstyled">
+            <li>
+              <i class="bi bi-check"></i> IBM Python Basics for Data Science
+            </li>
+            <li>
+              <i class="bi bi-check"></i> IBM Deep Learning Fundamentals with
+              Keras
+            </li>
+            <li>
+              <i class="bi bi-check"></i> Udemy AWS Certified Solutions
+              Architect
+            </li>
+            <li><i class="bi bi-check"></i> IBM AI for Everyone</li>
+          </ul>
         </section>
       </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white py-4 mt-auto">
-      <div class="container px-5 text-center">
+    <footer>
+      <div class="container px-5">
         <small>&copy; 2024 Pratham Kuril. All rights reserved.</small>
+        <p>
+          Want to get in touch? <a href="contact.html">Contact Me</a> or
+          <a href="mailto:prathamkuril@gmail.com">Email Me</a>.
+        </p>
+        <p>
+          Connect with me on
+          <a
+            href="https://www.linkedin.com/in/pratham-kuril-2b1182171/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          or check my work on
+          <a href="https://github.com/prathamkuril" target="_blank">GitHub</a>.
+        </p>
       </div>
     </footer>
 
-    <!-- Bootstrap core JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS -->
     <script src="js/scripts.js"></script>
   </body>
 </html>
