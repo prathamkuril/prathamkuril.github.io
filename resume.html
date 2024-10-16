@@ -32,12 +32,15 @@
         background-color: #f9fafb;
         color: #1c1c1c;
         font-family: "Plus Jakarta Sans", sans-serif;
+        line-height: 1.6; /* Increased line height for readability */
+        margin: 0;
+        padding: 0;
       }
 
       .navbar-light {
         background-color: #ffffff;
         border-bottom: 1px solid #e0e0e0;
-        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+        box-shadow: none; /* Removed shadow for a cleaner look */
       }
 
       .navbar-light .navbar-brand,
@@ -46,7 +49,7 @@
       }
 
       .navbar-light .nav-link:hover {
-        color: #007aff;
+        color: #6aa7ff; /* Subtler hover effect */
       }
 
       .container h1 {
@@ -54,27 +57,36 @@
         text-align: center;
         font-weight: 700;
         margin-bottom: 40px;
+        font-size: 3rem; /* Increased font size for hierarchy */
       }
 
       .text-gradient {
-        background: linear-gradient(45deg, #007aff, #5ac8fa);
+        background: linear-gradient(
+          45deg,
+          #007aff,
+          #6aa7ff
+        ); /* Refined gradient */
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
 
       h2 {
-        font-size: 2rem;
+        font-size: 1.75rem; /* Slightly smaller for visual hierarchy */
         font-weight: 700;
         color: #007aff;
         margin-bottom: 20px;
+      }
+
+      section {
+        margin-bottom: 60px; /* More space between sections */
       }
 
       .card {
         background-color: #ffffff;
         border: 1px solid #e0e0e0;
         border-radius: 10px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
         margin-bottom: 30px;
         overflow: hidden;
       }
@@ -116,14 +128,292 @@
       footer a:hover {
         color: #007aff;
       }
+
+      .social-icons {
+        font-size: 1.5rem;
+        margin: 10px;
+      }
+
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2.5rem;
+        }
+        h2 {
+          font-size: 1.5rem;
+        }
+        .container {
+          padding: 0 15px;
+        }
+        .navbar-light .navbar-brand {
+          font-size: 1.25rem;
+        }
+      }
+
+      /* Experience section */
+      #experience {
+        margin-bottom: 60px;
+      }
+
+      .experience-card {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .experience-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .company-logo {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+      }
+
+      .experience-card .card-body {
+        padding: 1.5rem;
+      }
+
+      .experience-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .experience-card p {
+        margin-bottom: 0.5rem;
+      }
+
+      .experience-card ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+
+      .experience-card ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      /* Key project section */
+      .key-project {
+        margin-top: 15px;
+      }
+
+      .key-project h4 {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+      }
+
+      .project-details p {
+        margin-bottom: 0.5rem;
+      }
+
+      /* Achievement Badges */
+      .badge-container {
+        margin-top: 15px;
+      }
+
+      .badge {
+        margin-right: 10px;
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+      }
+
+      /* Responsive for smaller screens */
+      @media (max-width: 768px) {
+        .experience-card .row {
+          flex-direction: column;
+        }
+
+        .company-logo {
+          margin-bottom: 15px;
+        }
+      }
+
+      /* Education section */
+      #education {
+        margin-bottom: 60px;
+      }
+
+      .education-card {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .education-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .institute-logo {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+      }
+
+      .education-card .card-body {
+        padding: 1.5rem;
+      }
+
+      .education-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .education-card p {
+        margin-bottom: 0.5rem;
+      }
+
+      .education-card ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+
+      .education-card ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      /* Key modules section */
+      .key-modules {
+        margin-top: 15px;
+      }
+
+      .key-modules h4 {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+      }
+
+      /* Achievement Badges */
+      .badge-container {
+        margin-top: 15px;
+      }
+
+      .badge {
+        margin-right: 10px;
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+      }
+
+      /* Responsive for smaller screens */
+      @media (max-width: 768px) {
+        .education-card .row {
+          flex-direction: column;
+        }
+
+        .institute-logo {
+          margin-bottom: 15px;
+        }
+      }
+
+      /* Projects section */
+      #projects {
+        margin-bottom: 60px;
+      }
+
+      .project-card {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .project-card .stretched-link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      .project-card .card-body {
+        padding: 1.5rem;
+      }
+
+      .project-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .project-card p {
+        margin-bottom: 0.5rem;
+      }
+
+      .project-card ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+
+      .project-card ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      /* Button for viewing project report */
+      .btn-outline-primary {
+        border-width: 2px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .btn-outline-primary:hover {
+        background-color: #007aff;
+        color: #fff;
+      }
+
+      /* Button to navigate to projects.html */
+      .animated-button {
+        background-color: #007aff;
+        color: #fff;
+        padding: 15px 30px;
+        transition: background-color 0.4s ease, transform 0.3s ease;
+        border-radius: 50px;
+      }
+
+      .animated-button:hover {
+        background-color: #005bb5;
+        transform: scale(1.05);
+      }
+
+      /* Skills Used Section */
+      .skills-used h5 {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+      }
+
+      .skills-used p {
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+
+      /* Responsive for smaller screens */
+      @media (max-width: 768px) {
+        .project-card .row {
+          flex-direction: column;
+        }
+
+        .project-card .col-md-3 {
+          margin-top: 15px;
+        }
+
+        .project-card .card-body {
+          padding: 1.5rem;
+        }
+      }
     </style>
   </head>
 
   <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm"
-      >
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container px-5">
           <a class="navbar-brand fw-bold" href="index.html">Pratham Kuril</a>
           <button
@@ -167,46 +457,130 @@
         </div>
 
         <!-- Education Section -->
-        <section>
-          <h2 class="text-primary fw-bolder">Education</h2>
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="text-primary fw-bolder mb-2">2023-2024</div>
-                  <div class="small fw-bolder">MSc Data Science</div>
-                  <div class="small text-muted">
-                    City, University of London | London, UK
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <p class="text-muted">
-                    Relevant Coursework: Principles of Data Science, Machine
-                    Learning, Computer Vision, Big Data, Neural Computing,
-                    Visual Analytics, Entrepreneurship in Practice.
+        <section id="education">
+          <h2 class="fw-bolder">Education</h2>
+
+          <!-- Education 1: MSc Data Science - City, University of London -->
+          <div class="card mb-4 education-card">
+            <div class="row g-0">
+              <div class="col-md-2 text-center my-auto">
+                <img
+                  src="assets/city_university_london_logo.jpeg"
+                  class="img-fluid institute-logo"
+                  alt="City University of London Logo"
+                />
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">MSc Data Science</h3>
+                  <p class="card-text">
+                    <strong>City, University of London | London, UK</strong>
                   </p>
+                  <p class="card-text">September 2023 - October 2024</p>
+                  <ul class="text-muted">
+                    <li>
+                      Served as the <strong>Program Representative</strong> for
+                      the MSc Data Science cohort, representing over 100
+                      students in academic and social settings.
+                    </li>
+                    <li>
+                      Awarded <strong>3rd Place at Pitch Day 2024</strong> for
+                      presenting a business pitch with a Minimum Viable Product.
+                    </li>
+                    <li>
+                      Led a group project on
+                      <strong>AI for Environmental Monitoring</strong>,
+                      utilizing machine learning and data visualization
+                      techniques.
+                    </li>
+                  </ul>
+
+                  <!-- Key Modules -->
+                  <div class="key-modules mb-3">
+                    <h4 class="text-primary">Key Modules:</h4>
+                    <p class="text-muted">
+                      Principles of Data Science, Machine Learning, Computer
+                      Vision, Big Data, Neural Computing, Visual Analytics,
+                      Research Methods and Practices, Entrepreneurship in
+                      Practice.
+                    </p>
+                  </div>
+
+                  <!-- Achievement Badges -->
+                  <div class="badge-container">
+                    <span class="badge bg-success"
+                      >3rd Place - Pitch Day 2024</span
+                    >
+                    <span class="badge bg-info">Program Representative</span>
+                    <span class="badge bg-primary"
+                      >AI for Environmental Monitoring Project</span
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="text-primary fw-bolder mb-2">2018-2022</div>
-                  <div class="small fw-bolder">
-                    B.Tech Electronics & Communication
-                  </div>
-                  <div class="small text-muted">
-                    MIT-World Peace University | Pune, India
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <p class="text-muted">
-                    Relevant Coursework: Data Structures, Algorithms, Data
-                    Science, Artificial Neural Networks, Object Oriented
-                    Programming, Digital Image Processing, NLP.
+
+          <!-- Education 2: BTech Electronics & Communications - MIT WPU -->
+          <div class="card mb-4 education-card">
+            <div class="row g-0">
+              <div class="col-md-2 text-center my-auto">
+                <img
+                  src="assets/mitwpuofficial_logo.jpeg"
+                  class="img-fluid institute-logo"
+                  alt="MIT World Peace University Logo"
+                />
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">
+                    BTech in Electronics & Communication
+                  </h3>
+                  <p class="card-text">
+                    <strong>MIT-World Peace University | Pune, India</strong>
                   </p>
+                  <p class="card-text">2018 - June 2022 | Grade: 8.53 CGPA</p>
+                  <ul class="text-muted">
+                    <li>
+                      Runner-up at <strong>HackMITWPU-2022</strong>, developing
+                      an AI-based app for efficient energy consumption in urban
+                      settings.
+                    </li>
+                    <li>
+                      Volunteered as part of the
+                      <strong>Food Committee</strong> for MIT-WPU Summit 2019,
+                      organizing logistics for over 500 participants.
+                    </li>
+                    <li>
+                      Led a final year project on
+                      <strong>Real-Time Object Detection</strong> using YOLO for
+                      traffic analysis in urban areas.
+                    </li>
+                  </ul>
+
+                  <!-- Relevant Modules -->
+                  <div class="key-modules mb-3">
+                    <h4 class="text-primary">Relevant Modules:</h4>
+                    <p class="text-muted">
+                      Data Structures and Algorithms, Data Science,
+                      Object-Oriented Programming, Artificial Neural Networks,
+                      Digital Image Processing, Natural Language Processing,
+                      Math for AI, Python Programming.
+                    </p>
+                  </div>
+
+                  <!-- Achievement Badges -->
+                  <div class="badge-container">
+                    <span class="badge bg-warning"
+                      >Runner-up - HackMITWPU 2022</span
+                    >
+                    <span class="badge bg-success"
+                      >Volunteer - MIT-WPU Summit 2019</span
+                    >
+                    <span class="badge bg-info"
+                      >Real-Time Object Detection Project</span
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -214,98 +588,260 @@
         </section>
 
         <!-- Experience Section -->
-        <section>
-          <h2 class="text-primary fw-bolder">Experience</h2>
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="text-primary fw-bolder mb-2">
-                    July 2024 - Present
-                  </div>
-                  <div class="small fw-bolder">AI Technical Intern</div>
-                  <div class="small text-muted">
-                    Braid Technologies | London, UK
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <p class="text-muted">
-                    Developed AI chat assistants, integrating OpenAI and
-                    generative AI, contributing to the training and upskilling
-                    of 24 developers. Managed version control for AI projects
-                    using Git, Jira, and Confluence.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="text-primary fw-bolder mb-2">
-                    July 2022 - June 2023
-                  </div>
-                  <div class="small fw-bolder">ML Programmer Trainee</div>
-                  <div class="small text-muted">Bitwise Inc | Pune, India</div>
-                </div>
-                <div class="col-md-8">
-                  <p class="text-muted">
-                    Spearheaded ETL analysis tool development, optimizing
-                    workflow efficiency, and built over 50 proofs of concept in
-                    Azure Databricks for real-time data pipelines.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <section id="experience">
+          <h2 class="fw-bolder">Experience</h2>
 
-        <!-- Projects Section -->
-        <section>
-          <h2 class="text-primary fw-bolder">Projects</h2>
-          <div class="card">
-            <div class="card-body">
-              <ul class="list-unstyled">
-                <li>
-                  <strong>Europe's Industry Financial Health Analysis:</strong>
-                  Comprehensive post-COVID and Brexit financial analysis using
-                  metrics like tax rates, cost of capital, and operational
-                  indicators.
-                </li>
-                <li>
-                  <strong>Real-Time Face Mask Detection:</strong> Developed a
-                  real-time face mask detection system using live video feeds,
-                  leveraging computer vision techniques.
-                </li>
-                <li>
-                  <strong>Bankruptcy Prediction:</strong> Implemented logistic
-                  regression and random forest models to forecast company
-                  bankruptcies using historical financial data.
-                </li>
-                <li>
-                  <strong>Indian Vehicle Detection:</strong> Built a custom
-                  object detection model using YOLO to identify the most common
-                  vehicle types on Indian roads.
-                </li>
-                <li>
-                  <strong>Film Success Prediction:</strong> Developed a linear
-                  regression model to predict movie box office performance based
-                  on production budget and other factors.
-                </li>
-                <li>
-                  <strong>Online News Popularity Analysis:</strong> Conducted a
-                  visual analytics approach on 39,644 news articles to identify
-                  factors contributing to article virality.
-                </li>
-              </ul>
+          <!-- Experience 1: Braid Technologies -->
+          <div class="card mb-4 experience-card">
+            <div class="row g-0">
+              <div class="col-md-2 text-center my-auto">
+                <img
+                  src="assets/prescient_technologies_logo.jpeg"
+                  class="img-fluid company-logo"
+                  alt="Braid Technologies Logo"
+                />
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">
+                    Generative AI Technical Intern
+                  </h3>
+                  <p class="card-text">
+                    <strong>Braid Technologies | London, UK (Hybrid)</strong>
+                  </p>
+                  <p class="card-text">July 2024 - Present</p>
+                  <ul class="text-muted">
+                    <li>
+                      Developed an AI chat assistant servicing over
+                      <strong>500M global customers</strong> for a leading
+                      telecommunications company.
+                    </li>
+                    <li>
+                      Reduced development time by <strong>30%</strong> by
+                      integrating generative AI and Python into a learning
+                      platform, streamlining project workflows.
+                    </li>
+                    <li>
+                      Upskilled <strong>24 junior AI developers</strong>,
+                      guiding them to become proficient AI engineers.
+                    </li>
+                  </ul>
+                  <!-- Key Project -->
+                  <div class="key-project mb-3">
+                    <h4 class="text-primary">
+                      Key Project: AI Learning Platform
+                    </h4>
+                    <div class="project-details">
+                      <p class="text-muted">
+                        Spearheaded the creation of an AI-powered learning
+                        platform that integrated Python, vector databases, and
+                        generative AI, reducing project delivery time by 30%.
+                      </p>
+                      <p>
+                        <strong>Skills Used:</strong> Python, Microsoft Azure,
+                        Generative AI, Vector Databases
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Achievement Badge -->
+                  <div class="badge-container">
+                    <span class="badge bg-success"
+                      >Impact: Reduced Development Time</span
+                    >
+                    <span class="badge bg-info">Team Leadership</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2: City University of London -->
+          <div class="card mb-4 experience-card">
+            <div class="row g-0">
+              <div class="col-md-2 text-center my-auto">
+                <img
+                  src="assets/city_university_london_logo.jpeg"
+                  class="img-fluid company-logo"
+                  alt="City University of London Logo"
+                />
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">
+                    Program Representative - MSc Data Science
+                  </h3>
+                  <p class="card-text">
+                    <strong>City, University of London | London, UK</strong>
+                  </p>
+                  <p class="card-text">September 2023 - Present</p>
+                  <ul class="text-muted">
+                    <li>
+                      Represented over <strong>100+ students</strong> at the
+                      Student-Staff Liaison Committee, improving student-faculty
+                      communication.
+                    </li>
+                    <li>
+                      Organized workshops on <strong>AI Ethics</strong> and
+                      <strong>Data Privacy</strong>, attended by 150+ students
+                      and AI researchers.
+                    </li>
+                    <li>
+                      Led the coordination of student events, fostering a sense
+                      of community and engagement within the faculty.
+                    </li>
+                  </ul>
+                  <!-- Key Project -->
+                  <div class="key-project mb-3">
+                    <h4 class="text-primary">
+                      Key Achievement: AI Ethics Workshop
+                    </h4>
+                    <div class="project-details">
+                      <p class="text-muted">
+                        Organized and moderated a university-wide workshop on AI
+                        Ethics and Data Privacy, attended by leading AI
+                        researchers and over 150 participants.
+                      </p>
+                      <p>
+                        <strong>Skills Used:</strong> Leadership, Event
+                        Planning, Public Speaking, AI Ethics
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Achievement Badge -->
+                  <div class="badge-container">
+                    <span class="badge bg-primary">Leadership</span>
+                    <span class="badge bg-success">Impact: 150+ Attendees</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 3: Bitwise Inc -->
+          <div class="card mb-4 experience-card">
+            <div class="row g-0">
+              <div class="col-md-2 text-center my-auto">
+                <img
+                  src="assets/bitwise_inc_logo.jpeg"
+                  class="img-fluid company-logo"
+                  alt="Bitwise Inc Logo"
+                />
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">
+                    Machine Learning Programmer Trainee
+                  </h3>
+                  <p class="card-text">
+                    <strong>Bitwise Inc | Pune, India (Hybrid)</strong>
+                  </p>
+                  <p class="card-text">July 2022 - June 2023</p>
+                  <ul class="text-muted">
+                    <li>
+                      Engineered a Python-based ETL tool, reducing manual
+                      workflow analysis time by
+                      <strong>20 hours per week</strong>.
+                    </li>
+                    <li>
+                      Created over 50 Proof of Concepts (PoCs) for real-time
+                      data processing pipelines using Azure Databricks.
+                    </li>
+                    <li>
+                      Improved ETL efficiency by implementing similarity
+                      algorithms such as Jaccard and Levenshtein distances.
+                    </li>
+                  </ul>
+                  <!-- Key Project -->
+                  <div class="key-project mb-3">
+                    <h4 class="text-primary">
+                      Key Project: Python-based ETL Tool
+                    </h4>
+                    <div class="project-details">
+                      <p class="text-muted">
+                        Developed a Python-based ETL analysis tool that
+                        automated workflow comparisons, saving over 20 hours of
+                        manual work per week and providing visualized insights
+                        for developers.
+                      </p>
+                      <p>
+                        <strong>Skills Used:</strong> Python, ETL Processes,
+                        Data Analysis, Azure Databricks
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Achievement Badge -->
+                  <div class="badge-container">
+                    <span class="badge bg-warning">Impact: Time Savings</span>
+                    <span class="badge bg-success">Automation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 4: Prescient Technologies -->
+          <div class="card mb-4 experience-card">
+            <div class="row g-0">
+              <div class="col-md-2 text-center my-auto">
+                <img
+                  src="assets/prescient_technologies_logo.jpeg"
+                  class="img-fluid company-logo"
+                  alt="Prescient Technologies Logo"
+                />
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">AI/ML Intern</h3>
+                  <p class="card-text">
+                    <strong>Prescient Technologies | Pune, India</strong>
+                  </p>
+                  <p class="card-text">March 2021 - June 2021</p>
+                  <ul class="text-muted">
+                    <li>
+                      Developed a YOLO-based object detection model, improving
+                      accuracy by <strong>15%</strong> for real-time
+                      applications.
+                    </li>
+                    <li>
+                      Conducted research on transfer learning for neural
+                      networks, boosting model efficiency and accuracy.
+                    </li>
+                    <li>
+                      Presented key findings and proposed further improvements
+                      to senior leadership.
+                    </li>
+                  </ul>
+                  <!-- Key Project -->
+                  <div class="key-project mb-3">
+                    <h4 class="text-primary">
+                      Key Project: Object Detection Model
+                    </h4>
+                    <div class="project-details">
+                      <p class="text-muted">
+                        Developed a YOLO-based object detection model,
+                        increasing object recognition accuracy by 15%, and
+                        applied transfer learning to improve efficiency.
+                      </p>
+                      <p>
+                        <strong>Skills Used:</strong> Python, Computer Vision,
+                        YOLO, Transfer Learning
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Achievement Badge -->
+                  <div class="badge-container">
+                    <span class="badge bg-info">Research & Development</span>
+                    <span class="badge bg-success">Model Accuracy</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
         <!-- Skills Section -->
         <section>
-          <h2 class="text-primary fw-bolder">Skills & Certifications</h2>
+          <h2 class="fw-bolder">Skills & Certifications</h2>
           <div class="row">
             <div class="col-lg-4">
               <ul class="list-unstyled">
@@ -340,26 +876,226 @@
             </div>
           </div>
         </section>
-
-        <!-- Certifications Section -->
-        <section>
-          <h2 class="text-primary fw-bolder">Certifications</h2>
-          <ul class="list-unstyled">
-            <li>
-              <i class="bi bi-check"></i> IBM Python Basics for Data Science
-            </li>
-            <li>
-              <i class="bi bi-check"></i> IBM Deep Learning Fundamentals with
-              Keras
-            </li>
-            <li>
-              <i class="bi bi-check"></i> Udemy AWS Certified Solutions
-              Architect
-            </li>
-            <li><i class="bi bi-check"></i> IBM AI for Everyone</li>
-          </ul>
-        </section>
       </div>
+
+      <!-- Projects Section -->
+      <section id="projects" class="my-5">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="fw-bolder">Projects</h2>
+            <!-- Button to navigate to projects.html -->
+            <a
+              href="projects.html"
+              class="btn btn-primary btn-lg animated-button"
+            >
+              Explore All Projects
+            </a>
+          </div>
+
+          <!-- Project 1: Assessing Europe's Industry Financial Health -->
+          <div class="card project-card mb-4">
+            <div class="row g-0">
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">
+                    Assessing Europe's Industry Financial Health in 2022
+                  </h3>
+                  <p class="card-text text-muted">Data Analysis</p>
+                  <p class="card-text">
+                    Conducted a comprehensive comparative analysis of Europe's
+                    industries post-COVID-19 and BREXIT, utilizing datasets on
+                    financial metrics, tax rates, cost of capital, and
+                    operational indicators to assess financial health.
+                  </p>
+                  <ul class="text-muted">
+                    <li>
+                      Highlighted top-performing industries and correlations
+                      between tax rates and financial outcomes.
+                    </li>
+                    <li>
+                      Employed clustering and principal component analysis (PCA)
+                      to identify tax efficiency profiles and influential
+                      financial variables.
+                    </li>
+                  </ul>
+                  <!-- Skills Used -->
+                  <div class="skills-used mb-3">
+                    <h5 class="text-primary">Skills Used:</h5>
+                    <p class="text-muted">
+                      Data Analysis, Clustering, PCA, Financial Metrics, Tax
+                      Efficiency Analysis
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 text-center my-auto">
+                <!-- View Project Report Button -->
+                <a href="#" class="btn btn-outline-primary btn-lg"
+                  >View Project Report</a
+                >
+              </div>
+            </div>
+            <!-- Hyperlinked Card -->
+            <a href="projects.html" class="stretched-link"></a>
+          </div>
+
+          <!-- Project 2: Online News Popularity: A Visual Analytics Approach -->
+          <div class="card project-card mb-4">
+            <div class="row g-0">
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">
+                    Online News Popularity: A Visual Analytics Approach
+                  </h3>
+                  <p class="card-text text-muted">Data Visualization</p>
+                  <p class="card-text">
+                    Analyzed the 'OnlineNewsPopularity' dataset to identify key
+                    factors influencing the virality and sharing metrics of
+                    online news content, using advanced data visualization
+                    techniques.
+                  </p>
+                  <ul class="text-muted">
+                    <li>
+                      Investigated patterns in article sharing across weekdays
+                      and channels, revealing critical insights for content
+                      strategy.
+                    </li>
+                    <li>
+                      Utilized K-Means clustering and PCA to analyze article
+                      virality, offering predictions based on content
+                      attributes.
+                    </li>
+                  </ul>
+                  <!-- Skills Used -->
+                  <div class="skills-used mb-3">
+                    <h5 class="text-primary">Skills Used:</h5>
+                    <p class="text-muted">
+                      Data Visualization, K-Means Clustering, PCA, Online
+                      Content Analysis
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 text-center my-auto">
+                <!-- View Project Report Button -->
+                <a href="#" class="btn btn-outline-primary btn-lg"
+                  >View Project Report</a
+                >
+              </div>
+            </div>
+            <!-- Hyperlinked Card -->
+            <a href="projects.html" class="stretched-link"></a>
+          </div>
+
+          <!-- Project 3: Car Evaluation for Insurance Firms -->
+          <div class="card project-card mb-4">
+            <div class="row g-0">
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">
+                    Car Evaluation for Insurance Firms
+                  </h3>
+                  <p class="card-text text-muted">Machine Learning - Finance</p>
+                  <p class="card-text">
+                    Conducted a comprehensive comparative analysis between
+                    Support Vector Machines (SVM) and Convolutional Neural
+                    Networks (CNN) for car evaluation, crucial in insurance risk
+                    assessment, utilizing a dataset from the UCI Machine
+                    Learning Repository with 1728 samples and seven attributes.
+                  </p>
+                  <ul class="text-muted">
+                    <li>
+                      Handled class imbalance through SMOTE, feature
+                      engineering, and categorical variable encoding to ensure
+                      data quality and model compatibility.
+                    </li>
+                    <li>
+                      Designed a custom CNN architecture and used SVM for
+                      comparative analysis, highlighting interpretability,
+                      computational efficiency, and scalability.
+                    </li>
+                    <li>
+                      Provided insights into trade-offs between SVM's simplicity
+                      and CNN's ability to capture non-linear relationships,
+                      with implications for insurance risk assessment.
+                    </li>
+                  </ul>
+                  <!-- Skills Used -->
+                  <div class="skills-used mb-3">
+                    <h5 class="text-primary">Skills Used:</h5>
+                    <p class="text-muted">
+                      Machine Learning, SVM, CNN, SMOTE, Feature Engineering,
+                      Insurance Risk Assessment
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 text-center my-auto">
+                <!-- View Project Report Button -->
+                <a href="#" class="btn btn-outline-primary btn-lg"
+                  >View Project Report</a
+                >
+              </div>
+            </div>
+            <!-- Hyperlinked Card -->
+            <a href="projects.html" class="stretched-link"></a>
+          </div>
+
+          <!-- Project 4: Bankruptcy Prediction using Logistic Regression and Random Forest Classifier -->
+          <div class="card project-card mb-4">
+            <div class="row g-0">
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">
+                    Bankruptcy Prediction using Logistic Regression and Random
+                    Forest Classifier
+                  </h3>
+                  <p class="card-text text-muted">Machine Learning - Finance</p>
+                  <p class="card-text">
+                    Developed predictive models using logistic regression and
+                    random forest classifier to forecast the likelihood of a
+                    company facing bankruptcy, utilizing Taiwan's economic data
+                    from 1999 to 2009.
+                  </p>
+                  <ul class="text-muted">
+                    <li>
+                      Performed data preprocessing, including handling class
+                      imbalance through SMOTE, feature selection, and 5-fold
+                      cross-validation.
+                    </li>
+                    <li>
+                      Identified trade-offs between model interpretability and
+                      performance, employing techniques like partial dependence
+                      plots and permutation importance for interpretability.
+                    </li>
+                    <li>
+                      Provided insights for improving model performance and
+                      understanding the implications for economic and financial
+                      forecasting.
+                    </li>
+                  </ul>
+                  <!-- Skills Used -->
+                  <div class="skills-used mb-3">
+                    <h5 class="text-primary">Skills Used:</h5>
+                    <p class="text-muted">
+                      Logistic Regression, Random Forest, SMOTE, Financial Data
+                      Analysis, Feature Selection, Model Interpretability
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 text-center my-auto">
+                <!-- View Project Report Button -->
+                <a href="#" class="btn btn-outline-primary btn-lg"
+                  >View Project Report</a
+                >
+              </div>
+            </div>
+            <!-- Hyperlinked Card -->
+            <a href="projects.html" class="stretched-link"></a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
@@ -375,10 +1111,12 @@
           <a
             href="https://www.linkedin.com/in/pratham-kuril-2b1182171/"
             target="_blank"
-            >LinkedIn</a
           >
-          or check my work on
-          <a href="https://github.com/prathamkuril" target="_blank">GitHub</a>.
+            <i class="bi bi-linkedin social-icons"></i>
+          </a>
+          <a href="https://github.com/prathamkuril" target="_blank">
+            <i class="bi bi-github social-icons"></i>
+          </a>
         </p>
       </div>
     </footer>
