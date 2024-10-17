@@ -195,6 +195,35 @@
         background-color: #e0e0e0; /* Very light dividers to separate sections */
         margin: 50px 0;
       }
+
+      /* Carousel for Featured Projects */
+      .carousel-item img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for images */
+      }
+
+      .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 15px;
+        border-radius: 10px;
+      }
+
+      .carousel-caption h5 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #ffffff;
+      }
+
+      .carousel-caption p {
+        color: #d3d3d3;
+      }
+
+      .carousel-indicators [data-bs-target] {
+        background-color: #007aff;
+      }
     </style>
   </head>
   <body class="d-flex flex-column h-100">
@@ -324,6 +353,191 @@
                 </div>
               </div>
             </div>
+
+            <!-- New Experience: Bitwise Inc -->
+            <div class="col-lg-6">
+              <div class="card border-0 shadow-sm rounded">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">
+                    Machine Learning Programmer Trainee
+                  </h5>
+                  <p class="card-subtitle text-muted mb-2">
+                    Bitwise Inc | Pune, India
+                  </p>
+                  <p class="card-text small mb-0">Jul 2022 - Jun 2023</p>
+                  <p>
+                    Engineered a Python-based tool to analyze similarities
+                    across ETL workflows in XML files, delivering a linked Excel
+                    sheet visualizing workflow structures. Developed a
+                    similarity logic using point-based systems, Jaccard
+                    similarity, and Levenshtein distance. Built 50+ Proof of
+                    Concepts in Azure Databricks.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- New Experience: Prescient Technologies -->
+            <div class="col-lg-6">
+              <div class="card border-0 shadow-sm rounded">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">AI/ML Intern</h5>
+                  <p class="card-subtitle text-muted mb-2">
+                    Prescient Technologies | Pune, India
+                  </p>
+                  <p class="card-text small mb-0">Mar 2021 - Jun 2021</p>
+                  <p>
+                    Developed a custom object detector using a custom dataset.
+                    Reviewed performance of 6 Artificial Neural Networks,
+                    employing transfer learning. Documented project findings and
+                    provided future scope suggestions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider -->
+      <div class="section-divider"></div>
+
+      <!-- Featured Projects Carousel -->
+      <section class="py-5 text-center bg-light">
+        <div class="container px-4">
+          <h2 class="fw-bold text-primary">Featured Projects</h2>
+
+          <div
+            id="featuredProjectsCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#featuredProjectsCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#featuredProjectsCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#featuredProjectsCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#featuredProjectsCarousel"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="assets\950x350-catalina-blue-solid-color-background.jpg"
+                  class="d-block w-100"
+                  alt="Story Generator Project"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Story Generator using Gemini LLM</h5>
+                  <p>
+                    Create unique, AI-generated stories using Gemini 1.5 Pro and
+                    Flash.
+                  </p>
+                  <a href="story_generator.html" class="btn btn-primary"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="assets\950x350-catalina-blue-solid-color-background.jpg"
+                  class="d-block w-100"
+                  alt="Europe Industry Health"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Europe Industry Financial Health Analysis</h5>
+                  <p>
+                    Comprehensive financial analysis of Europe's industries
+                    post-COVID and BREXIT.
+                  </p>
+                  <a href="europe_analysis.html" class="btn btn-primary"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="assets\950x350-catalina-blue-solid-color-background.jpg"
+                  class="d-block w-100"
+                  alt="Online News Popularity"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Online News Popularity</h5>
+                  <p>
+                    Visual analytics approach to discover patterns behind viral
+                    news articles.
+                  </p>
+                  <a href="news_popularity.html" class="btn btn-primary"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="assets\950x350-catalina-blue-solid-color-background.jpg"
+                  class="d-block w-100"
+                  alt="Car Evaluation"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Car Evaluation for Insurance Firms</h5>
+                  <p>
+                    Comparison of CNN and SVM models for car risk assessment.
+                  </p>
+                  <a href="car_evaluation.html" class="btn btn-primary"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#featuredProjectsCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#featuredProjectsCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </section>
