@@ -358,6 +358,45 @@
         margin-bottom: 0.5rem;
       }
 
+      /* Call to Action Section */
+      .cta-section {
+        background-color: #f0f3f5; /* Light, calming background */
+        color: #1c1c1c;
+        padding: 80px 0;
+        text-align: center;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.05); /* Soft shadow for subtle emphasis */
+        margin-top: 40px;
+        border-radius: 12px; /* Rounded edges for a soft look */
+      }
+
+      .cta-section h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #1c1c1c;
+      }
+
+      .cta-section p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #6d6d6d;
+      }
+
+      .cta-section a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 12px 25px;
+        background-color: #007aff;
+        border-radius: 25px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 122, 255, 0.2); /* Blue shadow for button depth */
+      }
+
+      .cta-section a:hover {
+        background-color: #005bb5;
+      }
+
       /* Button for viewing project report */
       .btn-outline-primary {
         border-width: 2px;
@@ -455,137 +494,6 @@
             <span class="text-gradient d-inline">Resume</span>
           </h1>
         </div>
-
-        <!-- Education Section -->
-        <section id="education">
-          <h2 class="fw-bolder">Education</h2>
-
-          <!-- Education 1: MSc Data Science - City, University of London -->
-          <div class="card mb-4 education-card">
-            <div class="row g-0">
-              <div class="col-md-2 text-center my-auto">
-                <img
-                  src="assets/city_university_london_logo.jpeg"
-                  class="img-fluid institute-logo"
-                  alt="City University of London Logo"
-                />
-              </div>
-              <div class="col-md-10">
-                <div class="card-body">
-                  <h3 class="card-title text-primary">MSc Data Science</h3>
-                  <p class="card-text">
-                    <strong>City, University of London | London, UK</strong>
-                  </p>
-                  <p class="card-text">September 2023 - October 2024</p>
-                  <ul class="text-muted">
-                    <li>
-                      Served as the <strong>Program Representative</strong> for
-                      the MSc Data Science cohort, representing over 100
-                      students in academic and social settings.
-                    </li>
-                    <li>
-                      Awarded <strong>3rd Place at Pitch Day 2024</strong> for
-                      presenting a business pitch with a Minimum Viable Product.
-                    </li>
-                    <li>
-                      Led a group project on
-                      <strong>AI for Environmental Monitoring</strong>,
-                      utilizing machine learning and data visualization
-                      techniques.
-                    </li>
-                  </ul>
-
-                  <!-- Key Modules -->
-                  <div class="key-modules mb-3">
-                    <h4 class="text-primary">Key Modules:</h4>
-                    <p class="text-muted">
-                      Principles of Data Science, Machine Learning, Computer
-                      Vision, Big Data, Neural Computing, Visual Analytics,
-                      Research Methods and Practices, Entrepreneurship in
-                      Practice.
-                    </p>
-                  </div>
-
-                  <!-- Achievement Badges -->
-                  <div class="badge-container">
-                    <span class="badge bg-success"
-                      >3rd Place - Pitch Day 2024</span
-                    >
-                    <span class="badge bg-info">Program Representative</span>
-                    <span class="badge bg-primary"
-                      >AI for Environmental Monitoring Project</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Education 2: BTech Electronics & Communications - MIT WPU -->
-          <div class="card mb-4 education-card">
-            <div class="row g-0">
-              <div class="col-md-2 text-center my-auto">
-                <img
-                  src="assets/mitwpuofficial_logo.jpeg"
-                  class="img-fluid institute-logo"
-                  alt="MIT World Peace University Logo"
-                />
-              </div>
-              <div class="col-md-10">
-                <div class="card-body">
-                  <h3 class="card-title text-primary">
-                    BTech in Electronics & Communication
-                  </h3>
-                  <p class="card-text">
-                    <strong>MIT-World Peace University | Pune, India</strong>
-                  </p>
-                  <p class="card-text">2018 - June 2022 | Grade: 8.53 CGPA</p>
-                  <ul class="text-muted">
-                    <li>
-                      Runner-up at <strong>HackMITWPU-2022</strong>, developing
-                      an AI-based app for efficient energy consumption in urban
-                      settings.
-                    </li>
-                    <li>
-                      Volunteered as part of the
-                      <strong>Food Committee</strong> for MIT-WPU Summit 2019,
-                      organizing logistics for over 500 participants.
-                    </li>
-                    <li>
-                      Led a final year project on
-                      <strong>Real-Time Object Detection</strong> using YOLO for
-                      traffic analysis in urban areas.
-                    </li>
-                  </ul>
-
-                  <!-- Relevant Modules -->
-                  <div class="key-modules mb-3">
-                    <h4 class="text-primary">Relevant Modules:</h4>
-                    <p class="text-muted">
-                      Data Structures and Algorithms, Data Science,
-                      Object-Oriented Programming, Artificial Neural Networks,
-                      Digital Image Processing, Natural Language Processing,
-                      Math for AI, Python Programming.
-                    </p>
-                  </div>
-
-                  <!-- Achievement Badges -->
-                  <div class="badge-container">
-                    <span class="badge bg-warning"
-                      >Runner-up - HackMITWPU 2022</span
-                    >
-                    <span class="badge bg-success"
-                      >Volunteer - MIT-WPU Summit 2019</span
-                    >
-                    <span class="badge bg-info"
-                      >Real-Time Object Detection Project</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <!-- Experience Section -->
         <section id="experience">
@@ -832,6 +740,137 @@
                   <div class="badge-container">
                     <span class="badge bg-info">Research & Development</span>
                     <span class="badge bg-success">Model Accuracy</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+          <h2 class="fw-bolder">Education</h2>
+
+          <!-- Education 1: MSc Data Science - City, University of London -->
+          <div class="card mb-4 education-card">
+            <div class="row g-0">
+              <div class="col-md-2 text-center my-auto">
+                <img
+                  src="assets/city_university_london_logo.jpeg"
+                  class="img-fluid institute-logo"
+                  alt="City University of London Logo"
+                />
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">MSc Data Science</h3>
+                  <p class="card-text">
+                    <strong>City, University of London | London, UK</strong>
+                  </p>
+                  <p class="card-text">September 2023 - October 2024</p>
+                  <ul class="text-muted">
+                    <li>
+                      Served as the <strong>Program Representative</strong> for
+                      the MSc Data Science cohort, representing over 100
+                      students in academic and social settings.
+                    </li>
+                    <li>
+                      Awarded <strong>3rd Place at Pitch Day 2024</strong> for
+                      presenting a business pitch with a Minimum Viable Product.
+                    </li>
+                    <li>
+                      Led a group project on
+                      <strong>AI for Environmental Monitoring</strong>,
+                      utilizing machine learning and data visualization
+                      techniques.
+                    </li>
+                  </ul>
+
+                  <!-- Key Modules -->
+                  <div class="key-modules mb-3">
+                    <h4 class="text-primary">Key Modules:</h4>
+                    <p class="text-muted">
+                      Principles of Data Science, Machine Learning, Computer
+                      Vision, Big Data, Neural Computing, Visual Analytics,
+                      Research Methods and Practices, Entrepreneurship in
+                      Practice.
+                    </p>
+                  </div>
+
+                  <!-- Achievement Badges -->
+                  <div class="badge-container">
+                    <span class="badge bg-success"
+                      >3rd Place - Pitch Day 2024</span
+                    >
+                    <span class="badge bg-info">Program Representative</span>
+                    <span class="badge bg-primary"
+                      >AI for Environmental Monitoring Project</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education 2: BTech Electronics & Communications - MIT WPU -->
+          <div class="card mb-4 education-card">
+            <div class="row g-0">
+              <div class="col-md-2 text-center my-auto">
+                <img
+                  src="assets/mitwpuofficial_logo.jpeg"
+                  class="img-fluid institute-logo"
+                  alt="MIT World Peace University Logo"
+                />
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">
+                    BTech in Electronics & Communication
+                  </h3>
+                  <p class="card-text">
+                    <strong>MIT-World Peace University | Pune, India</strong>
+                  </p>
+                  <p class="card-text">2018 - June 2022 | Grade: 8.53 CGPA</p>
+                  <ul class="text-muted">
+                    <li>
+                      Runner-up at <strong>HackMITWPU-2022</strong>, developing
+                      an AI-based app for efficient energy consumption in urban
+                      settings.
+                    </li>
+                    <li>
+                      Volunteered as part of the
+                      <strong>Food Committee</strong> for MIT-WPU Summit 2019,
+                      organizing logistics for over 500 participants.
+                    </li>
+                    <li>
+                      Led a final year project on
+                      <strong>Real-Time Object Detection</strong> using YOLO for
+                      traffic analysis in urban areas.
+                    </li>
+                  </ul>
+
+                  <!-- Relevant Modules -->
+                  <div class="key-modules mb-3">
+                    <h4 class="text-primary">Relevant Modules:</h4>
+                    <p class="text-muted">
+                      Data Structures and Algorithms, Data Science,
+                      Object-Oriented Programming, Artificial Neural Networks,
+                      Digital Image Processing, Natural Language Processing,
+                      Math for AI, Python Programming.
+                    </p>
+                  </div>
+
+                  <!-- Achievement Badges -->
+                  <div class="badge-container">
+                    <span class="badge bg-warning"
+                      >Runner-up - HackMITWPU 2022</span
+                    >
+                    <span class="badge bg-success"
+                      >Volunteer - MIT-WPU Summit 2019</span
+                    >
+                    <span class="badge bg-info"
+                      >Real-Time Object Detection Project</span
+                    >
                   </div>
                 </div>
               </div>
@@ -1096,6 +1135,20 @@
           </div>
         </div>
       </section>
+
+      <!-- Call to Action Section -->
+      <section class="cta-section">
+        <div class="container">
+          <h2 class="display-4 fw-bolder">Looking for a hire with these skills?</h2>
+          <p class="lead">
+            Feel free to download my resume or connect with me on LinkedIn.
+          </p>
+          <a href="https://www.linkedin.com/in/pratham-kuril/"
+            >Visit LinkedIn Profile</a
+          >
+        </div>
+      </section>
+    </main>
     </main>
 
     <!-- Footer -->
