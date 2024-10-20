@@ -25,6 +25,207 @@
 
     <!-- Core Theme CSS (includes Bootstrap) -->
     <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+      /* Global Styles */
+      body {
+        background-color: #ffffff;
+        color: #1c1c1c; /* Clean, readable black */
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+
+      /* Navbar */
+      .navbar-light {
+        background-color: #ffffff; /* Minimalist white background */
+        border-bottom: 1px solid #e0e0e0; /* Subtle border for separation */
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
+      }
+
+      .navbar-light .navbar-brand,
+      .navbar-light .nav-link {
+        color: #1c1c1c; /* High-contrast black text for readability */
+      }
+
+      .navbar-light .nav-link:hover {
+        color: #007aff; /* Accent blue for hover effects */
+      }
+
+      /* Hero Section */
+      .hero {
+        background-color: #f8f9fb; /* Light grayish background to create subtle contrast */
+        color: #1c1c1c;
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #1c1c1c; /* Bold black heading */
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+        color: #6d6d6d; /* Softer text for supporting information */
+      }
+
+      /* Button Styles */
+      .btn-primary {
+        background-color: #007aff; /* Accent blue */
+        border-color: #007aff;
+        color: #ffffff;
+        padding: 12px 30px;
+        font-weight: 600;
+        border-radius: 8px; /* Soft rounded buttons */
+        box-shadow: 0 4px 10px rgba(0, 122, 255, 0.15); /* Subtle button shadow for depth */
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background-color: #005bb5; /* Darker blue on hover */
+      }
+
+      .btn-outline-secondary {
+        color: #007aff;
+        border-color: #007aff;
+        padding: 12px 30px;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-outline-secondary:hover {
+        background-color: #007aff;
+        color: #ffffff;
+      }
+
+      /* Section Headings */
+      h2,
+      h5 {
+        color: #1c1c1c; /* High-contrast headings */
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      .text-muted {
+        color: #6d6d6d; /* Softer text for body and descriptive content */
+      }
+
+      /* Experience Section */
+      .experience.bg-light {
+        background-color: #f9fafb; /* Very light gray background */
+        padding-top: 60px;
+        padding-bottom: 60px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Soft shadow to lift the section */
+      }
+
+      .card {
+        border: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Light shadow for card depth */
+        border-radius: 10px;
+      }
+
+      .card-body {
+        padding: 30px;
+      }
+
+      /* Call to Action Section */
+      .cta-section {
+        background-color: #f0f3f5; /* Light, calming background */
+        color: #1c1c1c;
+        padding: 80px 0;
+        text-align: center;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.05); /* Soft shadow for subtle emphasis */
+        margin-top: 40px;
+        border-radius: 12px; /* Rounded edges for a soft look */
+      }
+
+      .cta-section h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #1c1c1c;
+      }
+
+      .cta-section p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #6d6d6d;
+      }
+
+      .cta-section a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 12px 25px;
+        background-color: #007aff;
+        border-radius: 25px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 122, 255, 0.2); /* Blue shadow for button depth */
+      }
+
+      .cta-section a:hover {
+        background-color: #005bb5;
+      }
+
+      /* About Section */
+      .about {
+        background-color: #ffffff;
+        color: #1c1c1c;
+        padding: 60px 0;
+      }
+
+      .about p {
+        color: #6d6d6d;
+        line-height: 1.6; /* Increased line-height for readability */
+      }
+
+      /* Footer */
+      .footer.bg-light {
+        background-color: #f9fafb;
+        color: #6d6d6d;
+        padding: 20px 0;
+        border-top: 1px solid #e0e0e0;
+      }
+
+      /* Subtle Dividers */
+      .section-divider {
+        height: 1px;
+        width: 100%;
+        background-color: #e0e0e0; /* Very light dividers to separate sections */
+        margin: 50px 0;
+      }
+
+      /* Carousel for Featured Projects */
+      .carousel-item img {
+        max-width: 100%;
+        width: 950px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for images */
+      }
+
+      .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 15px;
+        border-radius: 10px;
+      }
+
+      .carousel-caption h5 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #ffffff;
+      }
+
+      .carousel-caption p {
+        color: #d3d3d3;
+      }
+
+      .carousel-indicators [data-bs-target] {
+        background-color: #007aff;
+      }
+    </style>
   </head>
   <body class="d-flex flex-column h-100">
     <header>
@@ -71,7 +272,7 @@
     <main class="flex-shrink-0">
       <!-- Hero Section -->
       <section class="hero py-5 text-center text-md-start">
-        <div class="container px-4 py-5">
+        <div class="container px-4 py-4">
           <div class="row align-items-center">
             <div class="col-md-6">
               <h1 class="display-4">Welcome to My Portfolio</h1>
@@ -99,11 +300,14 @@
         </div>
       </section>
 
+      <!-- Divider -->
+      <div class="section-divider"></div>
+
       <!-- Experience Section -->
       <section class="experience bg-light py-5">
         <div class="container px-4">
           <div class="d-flex align-items-center justify-content-between mb-4">
-            <h2 class="fw-bold text-primary">Experience</h2>
+            <h2 class="fw-bold text-primary">Work Experience</h2>
             <a
               class="btn btn-primary"
               href="https://drive.google.com/file/d/1E5bVGMrGMmsjxcRkl7UmOA83zNcp5drJ/view?usp=sharing"
@@ -151,10 +355,221 @@
               </div>
             </div>
 
-            <!-- Add more experience cards as needed -->
+            <!-- New Experience: Bitwise Inc -->
+            <div class="col-lg-6">
+              <div class="card border-0 shadow-sm rounded">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">
+                    Machine Learning Programmer Trainee
+                  </h5>
+                  <p class="card-subtitle text-muted mb-2">
+                    Bitwise Inc | Pune, India
+                  </p>
+                  <p class="card-text small mb-0">Jul 2022 - Jun 2023</p>
+                  <p>
+                    Engineered a Python-based tool to analyze similarities
+                    across ETL workflows in XML files, delivering a linked Excel
+                    sheet visualizing workflow structures, using a point-based
+                    systems based Jaccard similarity, and Levenshtein distance.
+                    Built 50+ Proof of Concepts in Azure Databricks.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- New Experience: Prescient Technologies -->
+            <div class="col-lg-6">
+              <div class="card border-0 shadow-sm rounded">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">AI/ML Intern</h5>
+                  <p class="card-subtitle text-muted mb-2">
+                    Prescient Technologies | Pune, India
+                  </p>
+                  <p class="card-text small mb-0">Mar 2021 - Jun 2021</p>
+                  <p>
+                    Developed a custom object detector using a custom dataset.
+                    Reviewed performance of 6 Artificial Neural Networks,
+                    employing transfer learning. Documented project findings and
+                    provided future scope suggestions.
+                    <br /><br />
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- Divider -->
+      <div class="section-divider"></div>
+
+      <!-- Featured Projects Carousel -->
+      <section class="py-5 text-center bg-light">
+        <div class="container px-4">
+          <h2 class="fw-bold text-primary">Featured Projects</h2>
+
+          <div
+            id="featuredProjectsCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#featuredProjectsCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#featuredProjectsCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#featuredProjectsCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#featuredProjectsCarousel"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="assets\StoryGeneratorIndexCard.png"
+                  class="d-block w-100"
+                  alt="Story Generator Project"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Story Generator using Gemini LLM</h5>
+                  <p>
+                    An end-to-end AI-powered story generation app that lets
+                    users create, customize, and continue writing stories. Built
+                    with Streamlit, it allows for interactive story generation
+                    with support for saving and loading progress.
+                  </p>
+                  <a href="story_generator.html" class="btn btn-primary"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="assets\ImageGeneratorVectorXIndexCard.png"
+                  class="d-block w-100"
+                  alt="Europe Industry Health"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Image Generator WebApp with Google Vertex AI</h5>
+                  <p>
+                    A web application powered by Google Vertex AI that generates
+                    AI-driven images based on user prompts. Users can customize
+                    the number of images, size, and prompt. The app provides
+                    real-time image generation and displays results directly in
+                    the browser.
+                  </p>
+                  <a href="europe_analysis.html" class="btn btn-primary"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="assets\950x350-deep-ruby-solid-color-background.jpg"
+                  class="d-block w-100"
+                  alt="Online News Popularity"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Online News Popularity</h5>
+                  <p>
+                    Visual analytics approach to discover patterns behind viral
+                    news articles.
+                  </p>
+                  <a href="news_popularity.html" class="btn btn-primary"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="assets\IndianVehicleDetectionIndexCard.jpg"
+                  class="d-block w-100"
+                  alt="Car Evaluation"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Indian Vehicle Detection</h5>
+                  <p>
+                    A project to train and deploy YOLOv4 for detecting Indian
+                    vehicles using custom datasets. Built with Google Colab and
+                    Darknet, this project enables efficient GPU-based training
+                    and real-time object detection, tailored for vehicles in
+                    Indian traffic scenarios.
+                  </p>
+                  <a href="car_evaluation.html" class="btn btn-primary"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#featuredProjectsCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#featuredProjectsCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider -->
+      <div class="section-divider"></div>
+
+      <!-- Call to Action Section -->
+      <section class="cta-section">
+        <div class="container">
+          <h2 class="display-4 fw-bolder">Looking for a Data Scientist?</h2>
+          <p class="lead">
+            Feel free to download my resume or connect with me on LinkedIn.
+          </p>
+          <a href="https://www.linkedin.com/in/pratham-kuril/"
+            >Visit LinkedIn Profile</a
+          >
+        </div>
+      </section>
+
+      <!-- Divider -->
+      <div class="section-divider"></div>
 
       <!-- About Section -->
       <section class="about py-5">
@@ -168,7 +583,7 @@
                 Science from City, University of London, I have developed
                 expertise in AI, machine learning, and generative technologies.
               </p>
-              <div class="d-flex justify-content-center fs-4 gap-3">
+              <div class="d-flex justify-content-center fs-4 gap-1">
                 <a class="text-primary" href="mailto:prathamkuril@gmail.com"
                   ><i class="bi bi-envelope"></i
                 ></a>

@@ -2,36 +2,459 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Pratham Kuril's Resume" />
+    <meta name="author" content="Pratham Kuril" />
     <title>Pratham's Resume Portfolio</title>
-    <!-- Favicon-->
+
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Custom Google font-->
+
+    <!-- Custom Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Bootstrap icons-->
+
+    <!-- Bootstrap icons -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <!-- Core theme CSS (includes Bootstrap)-->
+
+    <!-- Core theme CSS (includes Bootstrap) -->
     <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+      body {
+        background-color: #f9fafb;
+        color: #1c1c1c;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        line-height: 1.6; /* Increased line height for readability */
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar-light {
+        background-color: #ffffff;
+        border-bottom: 1px solid #e0e0e0;
+        box-shadow: none; /* Removed shadow for a cleaner look */
+      }
+
+      .navbar-light .navbar-brand,
+      .navbar-light .nav-link {
+        color: #1c1c1c;
+      }
+
+      .navbar-light .nav-link:hover {
+        color: #6aa7ff; /* Subtler hover effect */
+      }
+
+      .container h1 {
+        color: #1c1c1c;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 40px;
+        font-size: 3rem; /* Increased font size for hierarchy */
+      }
+
+      .text-gradient {
+        background: linear-gradient(
+          45deg,
+          #007aff,
+          #6aa7ff
+        ); /* Refined gradient */
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      h2 {
+        font-size: 1.75rem; /* Slightly smaller for visual hierarchy */
+        font-weight: 700;
+        color: #007aff;
+        margin-bottom: 20px;
+      }
+
+      section {
+        margin-bottom: 60px; /* More space between sections */
+      }
+
+      .card {
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+        margin-bottom: 30px;
+        overflow: hidden;
+      }
+
+      .card-body {
+        padding: 2rem;
+      }
+
+      .btn-primary {
+        background-color: #007aff;
+        border: none;
+        padding: 12px 30px;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background-color: #005bb5;
+      }
+
+      .text-muted {
+        color: #6d6d6d;
+      }
+
+      footer {
+        background-color: #1c1c1c;
+        color: #f9fafb;
+        padding: 2rem 0;
+        text-align: center;
+      }
+
+      footer a {
+        color: #5ac8fa;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      footer a:hover {
+        color: #007aff;
+      }
+
+      .social-icons {
+        font-size: 1.5rem;
+        margin: 10px;
+      }
+
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2.5rem;
+        }
+        h2 {
+          font-size: 1.5rem;
+        }
+        .container {
+          padding: 0 15px;
+        }
+        .navbar-light .navbar-brand {
+          font-size: 1.25rem;
+        }
+      }
+
+      /* Experience section */
+      #experience {
+        margin-bottom: 60px;
+      }
+
+      .experience-card {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .experience-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .company-logo {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+      }
+
+      .experience-card .card-body {
+        padding: 1.5rem;
+      }
+
+      .experience-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .experience-card p {
+        margin-bottom: 0.5rem;
+      }
+
+      .experience-card ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+
+      .experience-card ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      /* Key project section */
+      .key-project {
+        margin-top: 15px;
+      }
+
+      .key-project h4 {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+      }
+
+      .project-details p {
+        margin-bottom: 0.5rem;
+      }
+
+      /* Achievement Badges */
+      .badge-container {
+        margin-top: 15px;
+      }
+
+      .badge {
+        margin-right: 10px;
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+      }
+
+      /* Responsive for smaller screens */
+      @media (max-width: 768px) {
+        .experience-card .row {
+          flex-direction: column;
+        }
+
+        .company-logo {
+          margin-bottom: 15px;
+        }
+      }
+
+      /* Education section */
+      #education {
+        margin-bottom: 60px;
+      }
+
+      .education-card {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .education-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .institute-logo {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+      }
+
+      .education-card .card-body {
+        padding: 1.5rem;
+      }
+
+      .education-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .education-card p {
+        margin-bottom: 0.5rem;
+      }
+
+      .education-card ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+
+      .education-card ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      /* Key modules section */
+      .key-modules {
+        margin-top: 15px;
+      }
+
+      .key-modules h4 {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+      }
+
+      /* Achievement Badges */
+      .badge-container {
+        margin-top: 15px;
+      }
+
+      .badge {
+        margin-right: 10px;
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+      }
+
+      /* Responsive for smaller screens */
+      @media (max-width: 768px) {
+        .education-card .row {
+          flex-direction: column;
+        }
+
+        .institute-logo {
+          margin-bottom: 15px;
+        }
+      }
+
+      /* Projects section */
+      #projects {
+        margin-bottom: 60px;
+      }
+
+      .project-card {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .project-card .stretched-link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      .project-card .card-body {
+        padding: 1.5rem;
+      }
+
+      .project-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .project-card p {
+        margin-bottom: 0.5rem;
+      }
+
+      .project-card ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+
+      .project-card ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      /* Call to Action Section */
+      .cta-section {
+        background-color: #f0f3f5; /* Light, calming background */
+        color: #1c1c1c;
+        padding: 80px 0;
+        text-align: center;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.05); /* Soft shadow for subtle emphasis */
+        margin-top: 40px;
+        border-radius: 12px; /* Rounded edges for a soft look */
+      }
+
+      .cta-section h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #1c1c1c;
+      }
+
+      .cta-section p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #6d6d6d;
+      }
+
+      .cta-section a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 12px 25px;
+        background-color: #007aff;
+        border-radius: 25px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 122, 255, 0.2); /* Blue shadow for button depth */
+      }
+
+      .cta-section a:hover {
+        background-color: #005bb5;
+      }
+
+      /* Button for viewing project report */
+      .btn-outline-primary {
+        border-width: 2px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .btn-outline-primary:hover {
+        background-color: #007aff;
+        color: #fff;
+      }
+
+      /* Button to navigate to projects.html */
+      .animated-button {
+        background-color: #007aff;
+        color: #fff;
+        padding: 15px 30px;
+        transition: background-color 0.4s ease, transform 0.3s ease;
+        border-radius: 50px;
+      }
+
+      .animated-button:hover {
+        background-color: #005bb5;
+        transform: scale(1.05);
+      }
+
+      /* Skills Used Section */
+      .skills-used h5 {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+      }
+
+      .skills-used p {
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+
+      /* Responsive for smaller screens */
+      @media (max-width: 768px) {
+        .project-card .row {
+          flex-direction: column;
+        }
+
+        .project-card .col-md-3 {
+          margin-top: 15px;
+        }
+
+        .project-card .card-body {
+          padding: 1.5rem;
+        }
+      }
+    </style>
   </head>
-  <body class="d-flex flex-column h-100 bg-light">
+
+  <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
-      <!-- Navigation-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container px-5">
-          <!-- <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Home</span></a> -->
+          <a class="navbar-brand fw-bold" href="index.html">Pratham Kuril</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -44,7 +467,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 small fw-bolder">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
@@ -64,817 +487,702 @@
           </div>
         </div>
       </nav>
-      <!-- Page Content-->
-      <div class="pb-5"></div>
-      <div class="container px-10 my-5">
+
+      <div class="container px-5 my-5">
         <div class="text-center mb-5">
           <h1 class="display-5 fw-bolder mb-0">
             <span class="text-gradient d-inline">Resume</span>
           </h1>
         </div>
-        <div class="row gx-5 justify-content-center">
-          <div class="col-lg-11 col-xl-10 col-xxl-9">
-            <!-- Experience Section-->
-            <section>
-              <div
-                class="d-flex align-items-center justify-content-between mb-4"
-              >
-                <h2 class="text-primary fw-bolder mb-0">Experience</h2>
-                <!-- Download resume button-->
-                <!-- Note: Set the link href target to a PDF file within your project-->
-                <a
-                  class="btn btn-primary px-4 py-3"
-                  href="https://drive.google.com/file/d/1E5bVGMrGMmsjxcRkl7UmOA83zNcp5drJ/view?usp=sharing"
-                >
-                  <div class="d-inline-block bi bi-download me-2"></div>
-                  Download Resume
-                </a>
-              </div>
 
-              <!-- Experience Card 1-->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-primary fw-bolder mb-2">
-                          July 24' - Present
-                        </div>
-                        <div class="small fw-bolder">AI Technical Intern</div>
-                        <div class="small text-muted">BRAID TECHNOLOGIES</div>
-                        <div class="small text-muted">
-                          London, United Kingdom
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div>
-                        As an AI Technical Intern at Braid Technologies, I
-                        developed an Open AI chat assistant for a world-leading
-                        British telecommunications company with over 500 million
-                        global customers, utilizing Python and Microsoft Azure,
-                        to aid in the training and upskilling of 24 individuals
-                        into AI developers. Additionally, I assisted in building
-                        a learning platform integrating generative AI, Python,
-                        vector databases, and HTML5, streamlining the
-                        development process and improving platform capabilities.
-                        My work included conducting research and development on
-                        applying generative AI to learning systems, providing
-                        actionable insights and solutions that enhanced the
-                        company's AI training methodologies.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <!-- Experience Section -->
+        <section id="experience">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+          <h2 class="fw-bolder">Work Experience</h2>
+          <a
+              class="btn btn-primary"
+              href="https://drive.google.com/file/d/1E5bVGMrGMmsjxcRkl7UmOA83zNcp5drJ/view?usp=sharing"
+            >
+              <i class="bi bi-download me-2"></i> Download Resume
+            </a>
+          </div>
 
-              <!-- Experience Card 2-->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-primary fw-bolder mb-2">
-                          Sept 23' - Oct 24'
-                        </div>
-                        <div class="small fw-bolder">
-                          Program Representative
-                        </div>
-                        <div class="small text-muted">
-                          City, University of London
-                        </div>
-                        <div class="small text-muted">
-                          London, United Kingdom
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div>
-                        As the Program Representative for MSc Data Science
-                        Program, I facilitated communication between students
-                        and faculty, addressing their academic and
-                        administrative concerns promptly. Moreover, I
-                        coordinated with the Student Services and Learning
-                        Centre (SSLC) to resolve student issues effectively.
-                        Additionally, I took charge of organizing various
-                        events, including the School of Science and Technology's
-                        Christmas party, fostering a vibrant and inclusive
-                        community spirit within the department.
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          <!-- Experience 1: Braid Technologies -->
+          <div class="card mb-4 experience-card">
+            <div class="row g-0">
+              <div class="col-md-2 text-center my-auto">
+                <img
+                  src="assets\braid_technologies_ltd_logo.jpeg"
+                  class="img-fluid company-logo"
+                  alt="Braid Technologies Logo"
+                />
               </div>
-
-              <!-- Experience Card 3-->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-primary fw-bolder mb-2">
-                          July 22' - June 22'
-                        </div>
-                        <div class="small fw-bolder">ML Programmer Trainee</div>
-                        <div class="small text-muted">BITWISE INC.</div>
-                        <div class="small text-muted">Pune, India</div>
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div>
-                        At Bitwise Inc. from July 2022 to June 2023, I assisted
-                        the delivery team, led a project to develop an internal
-                        ETL workflow tool to identify similarities within ETL
-                        workflows, and conducted meetings with developers. I
-                        created Proof of Concepts (PoCs) for Azure Databricks,
-                        optimized Databricks clusters, and collaborated with
-                        cross-functional teams to demonstrate Azure Databricks'
-                        potential.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Experience Card 4-->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-primary fw-bolder mb-2">
-                          March 21' - June 21'
-                        </div>
-                        <div class="small fw-bolder">AI/ML Intern</div>
-                        <div class="small text-muted">
-                          PRESCIENT TECHNOLOGIES
-                        </div>
-                        <div class="small text-muted">Pune, India</div>
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div>
-                        At Prescient Technologies in Pune, India, I worked in
-                        the AI/ML domain. I developed a custom object detection
-                        model tailored to client needs by utilizing a
-                        specialized dataset. Additionally, I evaluated six
-                        different Artificial Neural Networks using transfer
-                        learning techniques to address the problem at hand. I
-                        meticulously documented project details and summarized
-                        key findings. Finally, I presented the project,
-                        providing valuable insights and recommendations for
-                        future improvements.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- Education Section-->
-            <section>
-              <h2 class="text-secondary fw-bolder mb-4">Education</h2>
-              <!-- Education Card 1-->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-secondary fw-bolder mb-2">
-                          2023-2024
-                        </div>
-                        <div class="mb-2">
-                          <div class="small fw-bolder">
-                            CITY, UNIVERSITY OF LONDON
-                          </div>
-                          <div class="small text-muted">
-                            London, United Kingdom
-                          </div>
-                        </div>
-                        <div class="fst-italic">
-                          <div class="small text-muted">MSc Data Science</div>
-                          <!-- <div class="small text-muted">Data Science</div> -->
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div>
-                        Relevant Coursework : <br />
-                        Principles of Data Science, Machine Learning, Computer
-                        Vision, Big Data, Neural Computing, Visual Analytics,
-                        Entrepreneurship in Practice
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Education Card 2-->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-secondary fw-bolder mb-2">
-                          2018-2022
-                        </div>
-                        <div class="mb-2">
-                          <div class="small fw-bolder">MIT-WPU</div>
-                          <div class="small text-muted">Pune, India</div>
-                        </div>
-                        <div class="fst-italic">
-                          <div class="small text-muted">B.Tech</div>
-                          <div class="small text-muted">
-                            Major: Electronics & Communication
-                          </div>
-                          <div class="small text-muted">
-                            Minor: Artificial Intelligence
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div>
-                        Relevant Coursework : <br />Data Structures and
-                        Algorithms, Data Science, Object Oriented
-                        Programming,Artificial Neural Networks, Digital Image
-                        Processing, Natural Language Processing,Math For AI,
-                        Python Programming.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- Divider-->
-            <div class="pb-5"></div>
-            <!-- Skills Section-->
-            <section>
-              <!-- Skillset Card-->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <!-- Languages list-->
-                  <div class="mb-0">
-                    <div class="d-flex align-items-center mb-4">
-                      <div
-                        class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"
-                      >
-                        <i class="bi bi-code-slash"></i>
-                      </div>
-                      <h3 class="fw-bolder mb-0">
-                        <span class="text-gradient d-inline"
-                          >Programming and Development Skills</span
-                        >
-                      </h3>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-3 mb-4">
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          Python
-                        </div>
-                      </div>
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          HTML5
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          JavaScript
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-3">
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          CSS
-                        </div>
-                      </div>
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          R
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          C, C++
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="pb-5"></div>
-                  <!-- Data Management and Analysis Skills list-->
-                  <div class="mb-5">
-                    <div class="d-flex align-items-center mb-4">
-                      <div
-                        class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"
-                      >
-                        <i class="bi bi-tools"></i>
-                      </div>
-                      <h3 class="fw-bolder mb-0">
-                        <span class="text-gradient d-inline"
-                          >Data Management and Analysis Skills</span
-                        >
-                      </h3>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-3 mb-4">
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          MySQL
-                        </div>
-                      </div>
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          MongoDB
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          Microsoft Excel
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-3">
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          Power BI
-                        </div>
-                      </div>
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          Tableau
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          Azure Databricks
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mb-5">
-                    <div class="d-flex align-items-center mb-4">
-                      <div
-                        class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"
-                      >
-                        <i class="bi bi-tools"></i>
-                      </div>
-                      <h3 class="fw-bolder mb-0">
-                        <span class="text-gradient d-inline"
-                          >Other Technical Skills</span
-                        >
-                      </h3>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-3 mb-4">
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          Computer Vision <br />OpenCV <br />PCB Design<br />
-                          Keras<br />
-                          Machine Learning Algorithms<br />
-                          Regression <br />
-                        </div>
-                      </div>
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          Pandas <br />Predictive analytics<br />
-                          Data visualisation<br />
-                          Cloud computing<br />
-                          Keras<br />
-                          Labelimg<br />
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
-                        >
-                          MATLAB<br />
-                          Arduino<br />
-                          Linux<br />
-                          NumPy<br />
-                          MySQL<br />
-                          NLP
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <style>
-              .card-link {
-                text-decoration: none;
-              }
-
-              .card-link:hover {
-                text-decoration: none;
-              }
-
-              .project-description {
-                color: black;
-              }
-            </style>
-
-            <!-- Projects Section-->
-            <section>
-              <div
-                class="d-flex align-items-center justify-content-between mb-4"
-              >
-                <h2 class="text-primary fw-bolder mb-0">Projects</h2>
-                <!-- Add any additional button or link if needed-->
-              </div>
-              <!-- Project Card 1-->
-              <a href="projects.html" class="card-link">
-                <div class="card shadow border-0 rounded-4 mb-5">
-                  <div class="card-body p-5">
-                    <div class="row align-items-center gx-5">
-                      <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                        <div class="bg-light p-4 rounded-4">
-                          <div class="text-primary fw-bolder mb-2">
-                            Real-Time Face Mask Detection System
-                          </div>
-                          <div class="small fw-bolder">Object Detection</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="project-description">
-                          Developed a real-time Face Mask Detector that captures
-                          input video feed from the provided camera, identifies
-                          faces, and draws a Region of Interest (ROI) around
-                          them while indicating whether individuals in the frame
-                          are wearing masks or not.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <!-- Project Card 2-->
-              <a href="projects.html" class="card-link">
-                <div class="card shadow border-0 rounded-4 mb-5">
-                  <div class="card-body p-5">
-                    <div class="row align-items-center gx-5">
-                      <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                        <div class="bg-light p-4 rounded-4">
-                          <div class="text-primary fw-bolder mb-2">
-                            Indian Vehicle Detection
-                          </div>
-                          <div class="small fw-bolder">Object Detection</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="project-description">
-                          Developed a custom object detection algorithm based on
-                          YOLO architecture which detects Vehicles found on
-                          Indian roads with industry-grade detection accuracy
-                          and speed trained on a dataset created and annotated
-                          from scratch.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <!-- Project Card 3-->
-              <a href="projects.html" class="card-link">
-                <div class="card shadow border-0 rounded-4 mb-5">
-                  <div class="card-body p-5">
-                    <div class="row align-items-center gx-5">
-                      <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                        <div class="bg-light p-4 rounded-4">
-                          <div class="text-primary fw-bolder mb-2">
-                            Object Detection Using YOLO
-                          </div>
-                          <div class="small fw-bolder">Object Detection</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="project-description">
-                          Devised Object Detection on real-time input video
-                          using YOLO algorithm to successfully detect different
-                          objects in the frame.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <!-- Project Card 4-->
-              <a href="projects.html" class="card-link">
-                <div class="card shadow border-0 rounded-4 mb-5">
-                  <div class="card-body p-5">
-                    <div class="row align-items-center gx-5">
-                      <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                        <div class="bg-light p-4 rounded-4">
-                          <div class="text-primary fw-bolder mb-2">
-                            Chatbot for Hospitals and Clinics
-                          </div>
-                          <div class="small fw-bolder">
-                            AI & Machine Learning
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="project-description">
-                          Designed a Chatbot with a user-friendly Graphical user
-                          interface with automated answering to aid patients of
-                          hospitals in tasks such as providing their medical
-                          reports, finding a pharmacy nearby, etc.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <!-- Project Card 5-->
-              <a href="projects.html" class="card-link">
-                <div class="card shadow border-0 rounded-4 mb-5">
-                  <div class="card-body p-5">
-                    <div class="row align-items-center gx-5">
-                      <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                        <div class="bg-light p-4 rounded-4">
-                          <div class="text-primary fw-bolder mb-2">
-                            Underwater Fish Breed Detector
-                          </div>
-                          <div class="small fw-bolder">Computer Vision</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="project-description">
-                          Engineered a classifier that identifies 9 different
-                          types of fish. Trained the model using MobileNet
-                          architecture.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <!-- Project Card 6-->
-              <a href="projects.html" class="card-link">
-                <div class="card shadow border-0 rounded-4 mb-5">
-                  <div class="card-body p-5">
-                    <div class="row align-items-center gx-5">
-                      <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                        <div class="bg-light p-4 rounded-4">
-                          <div class="text-primary fw-bolder mb-2">
-                            Success Prediction of a Film
-                          </div>
-                          <div class="small fw-bolder">Data Analysis</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="project-description">
-                          Developed a predictive algorithm that utilizes linear
-                          regression to forecast a movie's box office earnings
-                          based on its production budget.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </section>
-            <!-- Projects Button-->
-            <div class="text-center">
-              <a href="projects.html" class="btn btn-primary btn-lg px-4"
-                >View All Projects</a
-              >
-            </div>
-            <!-- Divider-->
-            <div class="pb-5"></div>
-            <!-- Projects Section-->
-            <section>
-              <div
-                class="d-flex align-items-center justify-content-between mb-4"
-              >
-                <h2 class="text-primary fw-bolder mb-0">
-                  Volunteering Experience
-                </h2>
-              </div>
-              <!-- Volunteer Experience Card 1 -->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <!-- Date and Location -->
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-primary fw-bolder mb-2">
-                          July 2019 - Oct 2019
-                        </div>
-                        <div class="small fw-bolder">English Tutor</div>
-                        <div class="small text-muted">
-                          JAZZ HANDS FOUNDATION
-                        </div>
-                        <div class="small text-muted">Pune, India</div>
-                      </div>
-                    </div>
-                    <!-- Description -->
-                    <div class="col-lg-8">
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">
+                    Generative AI Technical Intern
+                  </h3>
+                  <p class="card-text">
+                    <strong>Braid Technologies | London, UK (Hybrid)</strong>
+                  </p>
+                  <p class="card-text">July 2024 - Present</p>
+                  <ul class="text-muted">
+                    <li>
+                      Developed an AI chat assistant servicing over
+                      <strong>500M global customers</strong> for a leading
+                      telecommunications company.
+                    </li>
+                    <li>
+                      Reduced development time by <strong>30%</strong> by
+                      integrating generative AI and Python into a learning
+                      platform, streamlining project workflows.
+                    </li>
+                    <li>
+                      Upskilled <strong>24 junior AI developers</strong>,
+                      guiding them to become proficient AI engineers.
+                    </li>
+                  </ul>
+                  <!-- Key Project -->
+                  <div class="key-project mb-3">
+                    <h4 class="text-primary">
+                      Key Project: AI Learning Platform
+                    </h4>
+                    <div class="project-details">
                       <p class="text-muted">
-                        Taught English language to 80+ primary and secondary
-                        grade students from underprivileged backgrounds at the
-                        local Municipality School.
+                        Spearheaded the creation of an AI-powered learning
+                        platform that integrated Python, vector databases, and
+                        generative AI, reducing project delivery time by 30%.
                       </p>
-                      <p class="text-muted">
-                        Communicated and encouraged the students to learn
-                        English using drama and art-based techniques.
-                      </p>
-                      <p class="text-muted">
-                        Directed a 15-minute long Drama consisting of over 35
-                        participants.
+                      <p>
+                        <strong>Skills Used:</strong> Python, Microsoft Azure,
+                        Generative AI, Vector Databases
                       </p>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              <!-- Volunteer Experience Card 2 -->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <!-- Date and Location -->
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-primary fw-bolder mb-2">
-                          July 2020 - Sept 2020
-                        </div>
-                        <div class="small fw-bolder">
-                          Covid-19 Program Volunteer
-                        </div>
-                        <div class="small text-muted">
-                          HUMAN RIGHTS ASSOCIATION FOR PROTECTION
-                        </div>
-                        <div class="small text-muted">Pune, India</div>
-                      </div>
-                    </div>
-                    <!-- Description -->
-                    <div class="col-lg-8">
-                      <p class="text-muted">
-                        Led a team of 8 volunteers by delegating tasks and
-                        planning routes for team members as their leader.
-                      </p>
-                      <p class="text-muted">
-                        Distributed Hand sanitizers, Face masks, and Water among
-                        people from low-income backgrounds and migrating
-                        workers.
-                      </p>
-                    </div>
+                  <!-- Achievement Badge -->
+                  <div class="badge-container">
+                    <span class="badge bg-success"
+                      >Impact: Reduced Development Time</span
+                    >
+                    <span class="badge bg-info">Team Leadership</span>
                   </div>
                 </div>
               </div>
-
-              <!-- Volunteer Experience Card 3 -->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <!-- Date and Location -->
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-primary fw-bolder mb-2">
-                          March 2021 - May 2021
-                        </div>
-                        <div class="small fw-bolder">
-                          Elder Aid Program Volunteer
-                        </div>
-                        <div class="small text-muted">
-                          HUMAN RIGHTS ASSOCIATION FOR PROTECTION
-                        </div>
-                        <div class="small text-muted">Pune, India</div>
-                      </div>
-                    </div>
-                    <!-- Description -->
-                    <div class="col-lg-8">
-                      <p class="text-muted">
-                        Provided assistance to over 50 senior citizens residing
-                        in an elderly care facility, helping them overcome
-                        challenges related to using modern technological
-                        devices.
-                      </p>
-                      <p class="text-muted">
-                        Conducted a seminar to instruct senior citizens on
-                        online safety, including how to recognize and avoid
-                        common online scams and phishing attempts.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Volunteer Experience Card 4 -->
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <div class="row align-items-center gx-5">
-                    <!-- Date and Location -->
-                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                      <div class="bg-light p-4 rounded-4">
-                        <div class="text-primary fw-bolder mb-2">
-                          July 2018 - Sept 2018
-                        </div>
-                        <div class="small fw-bolder">
-                          Food Committee Volunteer
-                        </div>
-                        <div class="small text-muted">
-                          SPORTS SUMMIT MIT-WPU
-                        </div>
-                        <div class="small text-muted">Pune, India</div>
-                      </div>
-                    </div>
-                    <!-- Description -->
-                    <div class="col-lg-8">
-                      <p class="text-muted">
-                        Managed and delivered 3 meals each day to 250+ student
-                        athletes staying at 3 different locations over the
-                        course of sports summit.
-                      </p>
-                      <p class="text-muted">
-                        Recorded the number of student athletes staying and
-                        placed the food orders accordingly.
-                      </p>
-                      <p class="text-muted">
-                        Audited the meal boxes and food items.
-                      </p>
-                      <p class="text-muted">
-                        Contributed as a scorekeeper in 5 cricket matches.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <div class="d-flex justify-content-center fs-2 gap-4">
-              <!-- <a class="text-gradient" href="#!"
-                  ><i class="bi bi-twitter"></i
-                ></a> -->
-              <a class="text-gradient" href="mailto:prathamkuril@gmail.com"
-                ><i class="bi bi-envelope"></i
-              ></a>
-              <a class="text-gradient" href="tel:+447769490555"
-                ><i class="bi bi-telephone"></i
-              ></a>
-
-              <a
-                class="text-gradient"
-                href="https://www.linkedin.com/in/pratham-kuril/"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-              <a
-                class="text-gradient"
-                href="https://github.com/prathamkuril?tab=overview&from=2024-05-01&to=2024-05-01"
-                ><i class="bi bi-github"></i
-              ></a>
             </div>
           </div>
-        </div>
+
+          <!-- Experience 2: City University of London -->
+          <div class="card mb-4 experience-card">
+            <div class="row g-0">
+              <div class="col-md-2 text-center my-auto">
+                <img
+                  src="assets/city_university_london_logo.jpeg"
+                  class="img-fluid company-logo"
+                  alt="City University of London Logo"
+                />
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">
+                    Program Representative - MSc Data Science
+                  </h3>
+                  <p class="card-text">
+                    <strong>City, University of London | London, UK</strong>
+                  </p>
+                  <p class="card-text">September 2023 - Present</p>
+                  <ul class="text-muted">
+                    <li>
+                      Represented over <strong>100+ students</strong> at the
+                      Student-Staff Liaison Committee, improving student-faculty
+                      communication.
+                    </li>
+                    <li>
+                      Organized workshops on <strong>AI Ethics</strong> and
+                      <strong>Data Privacy</strong>, attended by 150+ students
+                      and AI researchers.
+                    </li>
+                    <li>
+                      Led the coordination of student events, fostering a sense
+                      of community and engagement within the faculty.
+                    </li>
+                  </ul>
+                  <!-- Key Project -->
+                  <div class="key-project mb-3">
+                    <h4 class="text-primary">
+                      Key Achievement: AI Ethics Workshop
+                    </h4>
+                    <div class="project-details">
+                      <p class="text-muted">
+                        Organized and moderated a university-wide workshop on AI
+                        Ethics and Data Privacy, attended by leading AI
+                        researchers and over 150 participants.
+                      </p>
+                      <p>
+                        <strong>Skills Used:</strong> Leadership, Event
+                        Planning, Public Speaking, AI Ethics
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Achievement Badge -->
+                  <div class="badge-container">
+                    <span class="badge bg-primary">Leadership</span>
+                    <span class="badge bg-success">Impact: 150+ Attendees</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 3: Bitwise Inc -->
+          <div class="card mb-4 experience-card">
+            <div class="row g-0">
+              <div class="col-md-2 text-center my-auto">
+                <img
+                  src="assets/bitwise_inc_logo.jpeg"
+                  class="img-fluid company-logo"
+                  alt="Bitwise Inc Logo"
+                />
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">
+                    Machine Learning Programmer Trainee
+                  </h3>
+                  <p class="card-text">
+                    <strong>Bitwise Inc | Pune, India (Hybrid)</strong>
+                  </p>
+                  <p class="card-text">July 2022 - June 2023</p>
+                  <ul class="text-muted">
+                    <li>
+                      Engineered a Python-based ETL tool, reducing manual
+                      workflow analysis time by
+                      <strong>20 hours per week</strong>.
+                    </li>
+                    <li>
+                      Created over 50 Proof of Concepts (PoCs) for real-time
+                      data processing pipelines using Azure Databricks.
+                    </li>
+                    <li>
+                      Improved ETL efficiency by implementing similarity
+                      algorithms such as Jaccard and Levenshtein distances.
+                    </li>
+                  </ul>
+                  <!-- Key Project -->
+                  <div class="key-project mb-3">
+                    <h4 class="text-primary">
+                      Key Project: Python-based ETL Tool
+                    </h4>
+                    <div class="project-details">
+                      <p class="text-muted">
+                        Developed a Python-based ETL analysis tool that
+                        automated workflow comparisons, saving over 20 hours of
+                        manual work per week and providing visualized insights
+                        for developers.
+                      </p>
+                      <p>
+                        <strong>Skills Used:</strong> Python, ETL Processes,
+                        Data Analysis, Azure Databricks
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Achievement Badge -->
+                  <div class="badge-container">
+                    <span class="badge bg-warning">Impact: Time Savings</span>
+                    <span class="badge bg-success">Automation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 4: Prescient Technologies -->
+          <div class="card mb-4 experience-card">
+            <div class="row g-0">
+              <div class="col-md-2 text-center my-auto">
+                <img
+                  src="assets/prescient_technologies_logo.jpeg"
+                  class="img-fluid company-logo"
+                  alt="Prescient Technologies Logo"
+                />
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">AI/ML Intern</h3>
+                  <p class="card-text">
+                    <strong>Prescient Technologies | Pune, India</strong>
+                  </p>
+                  <p class="card-text">March 2021 - June 2021</p>
+                  <ul class="text-muted">
+                    <li>
+                      Developed a YOLO-based object detection model, improving
+                      accuracy by <strong>15%</strong> for real-time
+                      applications.
+                    </li>
+                    <li>
+                      Conducted research on transfer learning for neural
+                      networks, boosting model efficiency and accuracy.
+                    </li>
+                    <li>
+                      Presented key findings and proposed further improvements
+                      to senior leadership.
+                    </li>
+                  </ul>
+                  <!-- Key Project -->
+                  <div class="key-project mb-3">
+                    <h4 class="text-primary">
+                      Key Project: Object Detection Model
+                    </h4>
+                    <div class="project-details">
+                      <p class="text-muted">
+                        Developed a YOLO-based object detection model,
+                        increasing object recognition accuracy by 15%, and
+                        applied transfer learning to improve efficiency.
+                      </p>
+                      <p>
+                        <strong>Skills Used:</strong> Python, Computer Vision,
+                        YOLO, Transfer Learning
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Achievement Badge -->
+                  <div class="badge-container">
+                    <span class="badge bg-info">Research & Development</span>
+                    <span class="badge bg-success">Model Accuracy</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+          <h2 class="fw-bolder">Education</h2>
+
+          <!-- Education 1: MSc Data Science - City, University of London -->
+          <div class="card mb-4 education-card">
+            <div class="row g-0">
+              <div class="col-md-2 text-center my-auto">
+                <img
+                  src="assets/city_university_london_logo.jpeg"
+                  class="img-fluid institute-logo"
+                  alt="City University of London Logo"
+                />
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">MSc Data Science</h3>
+                  <p class="card-text">
+                    <strong>City, University of London | London, UK</strong>
+                  </p>
+                  <p class="card-text">September 2023 - October 2024</p>
+                  <ul class="text-muted">
+                    <li>
+                      Served as the <strong>Program Representative</strong> for
+                      the MSc Data Science cohort, representing over 100
+                      students in academic and social settings.
+                    </li>
+                    <li>
+                      Awarded <strong>3rd Place at Pitch Day 2024</strong> for
+                      presenting a business pitch with a Minimum Viable Product.
+                    </li>
+                    <li>
+                      Led a group project on
+                      <strong>AI for Environmental Monitoring</strong>,
+                      utilizing machine learning and data visualization
+                      techniques.
+                    </li>
+                  </ul>
+
+                  <!-- Key Modules -->
+                  <div class="key-modules mb-3">
+                    <h4 class="text-primary">Key Modules:</h4>
+                    <p class="text-muted">
+                      Principles of Data Science, Machine Learning, Computer
+                      Vision, Big Data, Neural Computing, Visual Analytics,
+                      Research Methods and Practices, Entrepreneurship in
+                      Practice.
+                    </p>
+                  </div>
+
+                  <!-- Achievement Badges -->
+                  <div class="badge-container">
+                    <span class="badge bg-success"
+                      >3rd Place - Pitch Day 2024</span
+                    >
+                    <span class="badge bg-info">Program Representative</span>
+                    <span class="badge bg-primary"
+                      >AI for Environmental Monitoring Project</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education 2: BTech Electronics & Communications - MIT WPU -->
+          <div class="card mb-4 education-card">
+            <div class="row g-0">
+              <div class="col-md-2 text-center my-auto">
+                <img
+                  src="assets/mitwpuofficial_logo.jpeg"
+                  class="img-fluid institute-logo"
+                  alt="MIT World Peace University Logo"
+                />
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">
+                    BTech in Electronics & Communication
+                  </h3>
+                  <p class="card-text">
+                    <strong>MIT-World Peace University | Pune, India</strong>
+                  </p>
+                  <p class="card-text">2018 - June 2022 | Grade: 8.53 CGPA</p>
+                  <ul class="text-muted">
+                    <li>
+                      Runner-up at <strong>HackMITWPU-2022</strong>, developing
+                      an AI-based app for efficient energy consumption in urban
+                      settings.
+                    </li>
+                    <li>
+                      Volunteered as part of the
+                      <strong>Food Committee</strong> for MIT-WPU Summit 2019,
+                      organizing logistics for over 500 participants.
+                    </li>
+                    <li>
+                      Led a final year project on
+                      <strong>Real-Time Object Detection</strong> using YOLO for
+                      traffic analysis in urban areas.
+                    </li>
+                  </ul>
+
+                  <!-- Relevant Modules -->
+                  <div class="key-modules mb-3">
+                    <h4 class="text-primary">Relevant Modules:</h4>
+                    <p class="text-muted">
+                      Data Structures and Algorithms, Data Science,
+                      Object-Oriented Programming, Artificial Neural Networks,
+                      Digital Image Processing, Natural Language Processing,
+                      Math for AI, Python Programming.
+                    </p>
+                  </div>
+
+                  <!-- Achievement Badges -->
+                  <div class="badge-container">
+                    <span class="badge bg-warning"
+                      >Runner-up - HackMITWPU 2022</span
+                    >
+                    <span class="badge bg-success"
+                      >Volunteer - MIT-WPU Summit 2019</span
+                    >
+                    <span class="badge bg-info"
+                      >Real-Time Object Detection Project</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+          <h2 class="fw-bolder">Skills & Certifications</h2>
+          <div class="row">
+            <div class="col-lg-4">
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check"></i> Python</li>
+                <li><i class="bi bi-check"></i> HTML5 & CSS</li>
+                <li><i class="bi bi-check"></i> JavaScript</li>
+                <li><i class="bi bi-check"></i> React</li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check"></i> Azure Data Factory</li>
+                <li><i class="bi bi-check"></i> Azure Databricks</li>
+                <li><i class="bi bi-check"></i> MongoDB & mySQL</li>
+                <li><i class="bi bi-check"></i> AWS (SageMaker, Lambda)</li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check"></i> Machine Learning (ML)</li>
+                <li>
+                  <i class="bi bi-check"></i> Deep Learning (DL) with Keras
+                </li>
+                <li>
+                  <i class="bi bi-check"></i> Transformer Models (HuggingFace)
+                </li>
+                <li>
+                  <i class="bi bi-check"></i> Data Visualization (Tableau, Power
+                  BI)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
-    </main>
-    <!-- Footer-->
-    <footer class="bg-white py-4 mt-auto">
-      <div class="container px-5">
-        <div
-          class="row align-items-center justify-content-between flex-column flex-sm-row"
-        >
-          <div class="col-auto">
-            <div class="small m-0">Copyright &copy; Your Website 2023</div>
+
+      <!-- Projects Section -->
+      <section id="projects" class="my-5">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="fw-bolder">Projects</h2>
+            <!-- Button to navigate to projects.html -->
+            <a
+              href="projects.html"
+              class="btn btn-primary btn-lg animated-button"
+            >
+              Explore All Projects
+            </a>
           </div>
-          <div class="col-auto">
-            <a class="small" href="#!">Privacy</a>
-            <span class="mx-1">&middot;</span>
-            <a class="small" href="#!">Terms</a>
-            <span class="mx-1">&middot;</span>
-            <a class="small" href="#!">Contact</a>
+
+          <!-- Project 1: Assessing Europe's Industry Financial Health -->
+          <div class="card project-card mb-4">
+            <div class="row g-0">
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">
+                    Assessing Europe's Industry Financial Health in 2022
+                  </h3>
+                  <p class="card-text text-muted">Data Analysis</p>
+                  <p class="card-text">
+                    Conducted a comprehensive comparative analysis of Europe's
+                    industries post-COVID-19 and BREXIT, utilizing datasets on
+                    financial metrics, tax rates, cost of capital, and
+                    operational indicators to assess financial health.
+                  </p>
+                  <ul class="text-muted">
+                    <li>
+                      Highlighted top-performing industries and correlations
+                      between tax rates and financial outcomes.
+                    </li>
+                    <li>
+                      Employed clustering and principal component analysis (PCA)
+                      to identify tax efficiency profiles and influential
+                      financial variables.
+                    </li>
+                  </ul>
+                  <!-- Skills Used -->
+                  <div class="skills-used mb-3">
+                    <h5 class="text-primary">Skills Used:</h5>
+                    <p class="text-muted">
+                      Data Analysis, Clustering, PCA, Financial Metrics, Tax
+                      Efficiency Analysis
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 text-center my-auto">
+                <!-- View Project Report Button -->
+                <a href="#" class="btn btn-outline-primary btn-lg"
+                  >View Project Report</a
+                >
+              </div>
+            </div>
+            <!-- Hyperlinked Card -->
+            <a href="projects.html" class="stretched-link"></a>
+          </div>
+
+          <!-- Project 2: Online News Popularity: A Visual Analytics Approach -->
+          <div class="card project-card mb-4">
+            <div class="row g-0">
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">
+                    Online News Popularity: A Visual Analytics Approach
+                  </h3>
+                  <p class="card-text text-muted">Data Visualization</p>
+                  <p class="card-text">
+                    Analyzed the 'OnlineNewsPopularity' dataset to identify key
+                    factors influencing the virality and sharing metrics of
+                    online news content, using advanced data visualization
+                    techniques.
+                  </p>
+                  <ul class="text-muted">
+                    <li>
+                      Investigated patterns in article sharing across weekdays
+                      and channels, revealing critical insights for content
+                      strategy.
+                    </li>
+                    <li>
+                      Utilized K-Means clustering and PCA to analyze article
+                      virality, offering predictions based on content
+                      attributes.
+                    </li>
+                  </ul>
+                  <!-- Skills Used -->
+                  <div class="skills-used mb-3">
+                    <h5 class="text-primary">Skills Used:</h5>
+                    <p class="text-muted">
+                      Data Visualization, K-Means Clustering, PCA, Online
+                      Content Analysis
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 text-center my-auto">
+                <!-- View Project Report Button -->
+                <a href="#" class="btn btn-outline-primary btn-lg"
+                  >View Project Report</a
+                >
+              </div>
+            </div>
+            <!-- Hyperlinked Card -->
+            <a href="projects.html" class="stretched-link"></a>
+          </div>
+
+          <!-- Project 3: Car Evaluation for Insurance Firms -->
+          <div class="card project-card mb-4">
+            <div class="row g-0">
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">
+                    Car Evaluation for Insurance Firms
+                  </h3>
+                  <p class="card-text text-muted">Machine Learning - Finance</p>
+                  <p class="card-text">
+                    Conducted a comprehensive comparative analysis between
+                    Support Vector Machines (SVM) and Convolutional Neural
+                    Networks (CNN) for car evaluation, crucial in insurance risk
+                    assessment, utilizing a dataset from the UCI Machine
+                    Learning Repository with 1728 samples and seven attributes.
+                  </p>
+                  <ul class="text-muted">
+                    <li>
+                      Handled class imbalance through SMOTE, feature
+                      engineering, and categorical variable encoding to ensure
+                      data quality and model compatibility.
+                    </li>
+                    <li>
+                      Designed a custom CNN architecture and used SVM for
+                      comparative analysis, highlighting interpretability,
+                      computational efficiency, and scalability.
+                    </li>
+                    <li>
+                      Provided insights into trade-offs between SVM's simplicity
+                      and CNN's ability to capture non-linear relationships,
+                      with implications for insurance risk assessment.
+                    </li>
+                  </ul>
+                  <!-- Skills Used -->
+                  <div class="skills-used mb-3">
+                    <h5 class="text-primary">Skills Used:</h5>
+                    <p class="text-muted">
+                      Machine Learning, SVM, CNN, SMOTE, Feature Engineering,
+                      Insurance Risk Assessment
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 text-center my-auto">
+                <!-- View Project Report Button -->
+                <a href="#" class="btn btn-outline-primary btn-lg"
+                  >View Project Report</a
+                >
+              </div>
+            </div>
+            <!-- Hyperlinked Card -->
+            <a href="projects.html" class="stretched-link"></a>
+          </div>
+
+          <!-- Project 4: Bankruptcy Prediction using Logistic Regression and Random Forest Classifier -->
+          <div class="card project-card mb-4">
+            <div class="row g-0">
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">
+                    Bankruptcy Prediction using Logistic Regression and Random
+                    Forest Classifier
+                  </h3>
+                  <p class="card-text text-muted">Machine Learning - Finance</p>
+                  <p class="card-text">
+                    Developed predictive models using logistic regression and
+                    random forest classifier to forecast the likelihood of a
+                    company facing bankruptcy, utilizing Taiwan's economic data
+                    from 1999 to 2009.
+                  </p>
+                  <ul class="text-muted">
+                    <li>
+                      Performed data preprocessing, including handling class
+                      imbalance through SMOTE, feature selection, and 5-fold
+                      cross-validation.
+                    </li>
+                    <li>
+                      Identified trade-offs between model interpretability and
+                      performance, employing techniques like partial dependence
+                      plots and permutation importance for interpretability.
+                    </li>
+                    <li>
+                      Provided insights for improving model performance and
+                      understanding the implications for economic and financial
+                      forecasting.
+                    </li>
+                  </ul>
+                  <!-- Skills Used -->
+                  <div class="skills-used mb-3">
+                    <h5 class="text-primary">Skills Used:</h5>
+                    <p class="text-muted">
+                      Logistic Regression, Random Forest, SMOTE, Financial Data
+                      Analysis, Feature Selection, Model Interpretability
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 text-center my-auto">
+                <!-- View Project Report Button -->
+                <a href="#" class="btn btn-outline-primary btn-lg"
+                  >View Project Report</a
+                >
+              </div>
+            </div>
+            <!-- Hyperlinked Card -->
+            <a href="projects.html" class="stretched-link"></a>
           </div>
         </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section class="cta-section">
+        <div class="container">
+          <h2 class="display-4 fw-bolder">Looking for a hire with these skills?</h2>
+          <p class="lead">
+            Feel free to download my resume or connect with me on LinkedIn.
+          </p>
+          <a href="https://www.linkedin.com/in/pratham-kuril/"
+            >Visit LinkedIn Profile</a
+          >
+        </div>
+      </section>
+    </main>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container px-5">
+        <small>&copy; 2024 Pratham Kuril. All rights reserved.</small>
+        <p>
+          Want to get in touch? <a href="contact.html">Contact Me</a> or
+          <a href="mailto:prathamkuril@gmail.com">Email Me</a>.
+        </p>
+        <p>
+          Connect with me on
+          <a
+            href="https://www.linkedin.com/in/pratham-kuril-2b1182171/"
+            target="_blank"
+          >
+            <i class="bi bi-linkedin social-icons"></i>
+          </a>
+          <a href="https://github.com/prathamkuril" target="_blank">
+            <i class="bi bi-github social-icons"></i>
+          </a>
+        </p>
       </div>
     </footer>
-    <!-- Bootstrap core JS-->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
   </body>
 </html>

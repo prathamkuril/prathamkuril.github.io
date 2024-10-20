@@ -4,45 +4,162 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pratham's Resume Portfolio</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-          rel="stylesheet"
-        />
-        <!-- Bootstrap icons-->
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
-          rel="stylesheet"
-        />
-        <style>
-            /* Adjust the width of the cards */
-            .card {
-                max-width: 1000px; /* Adjust the value as needed */
-            }
-    
-            /* Set the text color of the description to black */
-            .card-body p {
-                color: black;
-            }
-        </style>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+      /* Global Styles */
+      body {
+        background-color: #ffffff;
+        color: #1c1c1c;
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+
+      /* Navbar */
+      .navbar-light {
+        background-color: #ffffff;
+        border-bottom: 1px solid #e0e0e0;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      .navbar-light .navbar-brand,
+      .navbar-light .nav-link {
+        color: #1c1c1c;
+      }
+
+      .navbar-light .nav-link:hover {
+        color: #007aff;
+      }
+
+      /* Hero Section */
+      .container h1 {
+        color: #1c1c1c;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 40px;
+      }
+
+      .text-gradient {
+        background: -webkit-linear-gradient(#007aff, #5ac8fa);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* New Card Styles */
+      .card {
+        width: 350px;
+        margin: 15px;
+        border: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.2s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+      }
+
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        padding: 20px;
+      }
+
+      .card-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #007aff;
+        margin-bottom: 15px;
+      }
+
+      .card-text {
+        color: #6d6d6d;
+      }
+
+      .card-footer {
+        text-align: center;
+        background-color: #f9fafb;
+        padding: 10px;
+      }
+
+      /* Call to Action Section */
+      .cta-section {
+        background-color: #f0f3f5;
+        color: #1c1c1c;
+        padding: 80px 0;
+        text-align: center;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.05);
+        margin-top: 40px;
+        border-radius: 12px;
+      }
+
+      .cta-section a {
+        background-color: #007aff;
+        color: #ffffff;
+        padding: 12px 25px;
+        border-radius: 25px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 122, 255, 0.2);
+        text-decoration: none;
+      }
+
+      .cta-section a:hover {
+        background-color: #005bb5;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #f9fafb;
+        color: #6d6d6d;
+        padding: 2rem 0;
+        text-align: center;
+        border-top: 1px solid #e0e0e0;
+      }
+
+      footer small {
+        color: #6d6d6d;
+      }
+
+      .card-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    </style>
   </head>
+
   <body class="d-flex flex-column h-100 bg-light">
     <main class="flex-shrink-0">
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top shadow-sm"
+      >
         <div class="container px-5">
-          <!-- <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Home</span></a> -->
+          <a class="navbar-brand fw-bold" href="index.html">Pratham Kuril</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -55,7 +172,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 small fw-bolder">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
@@ -75,181 +192,114 @@
           </div>
         </div>
       </nav>
+
       <!-- Page Content -->
       <section class="py-5">
         <div class="pb-5"></div>
         <div class="container px-5">
-          <div class="d-flex align-items-center justify-content-between mb-4">
-            <!-- <h2 class="text-primary fw-bolder mb-0">Volunteering Experience</h2> -->
-            <div class="text-center mb-2">
-                <h1 class="display-5 fw-bolder mb-0">
-                  <span class="text-gradient d-inline">Volunteering Experience</span>
-                </h1>
+          <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0">
+              <span class="text-gradient d-inline"
+                >Volunteering Experience</span
+              >
+            </h1>
+          </div>
+
+          <div class="card-container">
+            <!-- Volunteer Experience Card 1 -->
+            <div class="card">
+              <img
+                src="assets\950x350-black-olive-solid-color-background.jpg"
+                alt="English Tutor Image"
+              />
+              <div class="card-body">
+                <div class="card-title">English Tutor</div>
+                <p class="text-muted">Jazz Hands Foundation | Pune, India</p>
+                <p class="card-text">
+                  Taught English to 80+ students, used drama and art techniques
+                  to enhance learning, and directed a 15-minute drama with 35
+                  participants.
+                </p>
               </div>
-            <!-- Download resume button-->
-            <!-- Note: Set the link href target to a PDF file within your project-->
-            <!-- <a class="btn btn-primary px-4 py-3" href="#!">
-              <div class="d-inline-block bi bi-download me-2"></div>
-              Download Resume
-            </a> -->
-          </div>
-<!-- Volunteer Experience Card 1 -->
-<div class="card shadow border-0 rounded-4 mb-5">
-    <div class="card-body p-5">
-      <div class="row align-items-center gx-5">
-        <!-- Date and Location -->
-        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-          <div class="bg-light p-4 rounded-4">
-            <div class="text-primary fw-bolder mb-2">July 2019 - Oct 2019</div>
-            <div class="small fw-bolder">English Tutor</div>
-            <div class="small text-muted">JAZZ HANDS FOUNDATION</div>
-            <div class="small text-muted">Pune, India</div>
-          </div>
-        </div>
-        <!-- Description -->
-        <div class="col-lg-8">
-          <p class="text-muted">
-            Taught English language to 80+ primary and secondary grade students from underprivileged backgrounds at the local Municipality School.
-          </p>
-          <p class="text-muted">
-            Communicated and encouraged the students to learn English using drama and art-based techniques.
-          </p>
-          <p class="text-muted">
-            Directed a 15-minute long Drama consisting of over 35 participants.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Volunteer Experience Card 2 -->
-  <div class="card shadow border-0 rounded-4 mb-5">
-    <div class="card-body p-5">
-      <div class="row align-items-center gx-5">
-        <!-- Date and Location -->
-        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-          <div class="bg-light p-4 rounded-4">
-            <div class="text-primary fw-bolder mb-2">July 2020 - Sept 2020</div>
-            <div class="small fw-bolder">Covid-19 Program Volunteer</div>
-            <div class="small text-muted">HUMAN RIGHTS ASSOCIATION FOR PROTECTION</div>
-            <div class="small text-muted">Pune, India</div>
-          </div>
-        </div>
-        <!-- Description -->
-        <div class="col-lg-8">
-          <p class="text-muted">
-            Led a team of 8 volunteers by delegating tasks and planning routes for team members as their leader.
-          </p>
-          <p class="text-muted">
-            Distributed Hand sanitizers, Face masks, and Water among people from low-income backgrounds and migrating workers.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Volunteer Experience Card 3 -->
-  <div class="card shadow border-0 rounded-4 mb-5">
-    <div class="card-body p-5">
-      <div class="row align-items-center gx-5">
-        <!-- Date and Location -->
-        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-          <div class="bg-light p-4 rounded-4">
-            <div class="text-primary fw-bolder mb-2">March 2021 - May 2021</div>
-            <div class="small fw-bolder">Elder Aid Program Volunteer</div>
-            <div class="small text-muted">HUMAN RIGHTS ASSOCIATION FOR PROTECTION</div>
-            <div class="small text-muted">Pune, India</div>
-          </div>
-        </div>
-        <!-- Description -->
-        <div class="col-lg-8">
-          <p class="text-muted">
-            Provided assistance to over 50 senior citizens residing in an elderly care facility, helping them overcome challenges related to using modern technological devices.
-          </p>
-          <p class="text-muted">
-            Conducted a seminar to instruct senior citizens on online safety, including how to recognize and avoid common online scams and phishing attempts.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Volunteer Experience Card 4 -->
-  <div class="card shadow border-0 rounded-4 mb-5">
-    <div class="card-body p-5">
-      <div class="row align-items-center gx-5">
-        <!-- Date and Location -->
-        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-          <div class="bg-light p-4 rounded-4">
-            <div class="text-primary fw-bolder mb-2">July 2018 - Sept 2018</div>
-            <div class="small fw-bolder">Food Committee Volunteer</div>
-            <div class="small text-muted">SPORTS SUMMIT MIT-WPU</div>
-            <div class="small text-muted">Pune, India</div>
-          </div>
-        </div>
-        <!-- Description -->
-        <div class="col-lg-8">
-          <p class="text-muted">
-            Managed and delivered 3 meals each day to 250+ student athletes staying at 3 different locations over the course of sports summit.
-          </p>
-          <p class="text-muted">
-            Recorded the number of student athletes staying and placed the food orders accordingly.
-          </p>
-          <p class="text-muted">
-            Audited the meal boxes and food items.
-          </p>
-          <p class="text-muted">
-            Contributed as a scorekeeper in 5 cricket matches.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+              <div class="card-footer text-muted">July 2019 - Oct 2019</div>
+            </div>
 
+            <!-- Volunteer Experience Card 2 -->
+            <div class="card">
+              <img
+                src="assets\950x350-black-olive-solid-color-background.jpg"
+                alt="COVID-19 Program Volunteer Image"
+              />
+              <div class="card-body">
+                <div class="card-title">Covid-19 Program Volunteer</div>
+                <p class="text-muted">Human Rights Association | Pune, India</p>
+                <p class="card-text">
+                  Led a team of 8 volunteers, distributing sanitizers and face
+                  masks to low-income communities during the pandemic.
+                </p>
+              </div>
+              <div class="card-footer text-muted">July 2020 - Sept 2020</div>
+            </div>
+
+            <!-- Volunteer Experience Card 3 -->
+            <div class="card">
+              <img
+                src="assets\950x350-black-olive-solid-color-background.jpg"
+                alt="Elder Aid Program Volunteer Image"
+              />
+              <div class="card-body">
+                <div class="card-title">Elder Aid Program Volunteer</div>
+                <p class="text-muted">Human Rights Association | Pune, India</p>
+                <p class="card-text">
+                  Assisted 50+ senior citizens in using modern technology and
+                  conducted seminars on online safety.
+                </p>
+              </div>
+              <div class="card-footer text-muted">March 2021 - May 2021</div>
+            </div>
+
+            <!-- Volunteer Experience Card 4 -->
+            <div class="card">
+              <img
+                src="assets\950x350-black-olive-solid-color-background.jpg"
+                alt="Food Committee Volunteer Image"
+              />
+              <div class="card-body">
+                <div class="card-title">Food Committee Volunteer</div>
+                <p class="text-muted">Sports Summit MIT-WPU | Pune, India</p>
+                <p class="card-text">
+                  Managed food delivery for 250+ athletes, audited meal boxes,
+                  and contributed as a cricket match scorekeeper.
+                </p>
+              </div>
+              <div class="card-footer text-muted">July 2018 - Sept 2018</div>
+            </div>
+          </div>
+        </div>
       </section>
-      <div class="d-flex justify-content-center fs-2 gap-4">
-        <!-- <a class="text-gradient" href="#!"
-            ><i class="bi bi-twitter"></i
-          ></a> -->
-        <a class="text-gradient" href="mailto:prathamkuril@gmail.com"
-          ><i class="bi bi-envelope"></i
-        ></a>
-        <a class="text-gradient" href="tel:+447769490555"
-          ><i class="bi bi-telephone"></i
-        ></a>
 
-        <a
-          class="text-gradient"
-          href="https://www.linkedin.com/in/pratham-kuril/"
-          ><i class="bi bi-linkedin"></i
-        ></a>
-        <a
-          class="text-gradient"
-          href="https://github.com/prathamkuril?tab=overview&from=2024-05-01&to=2024-05-01"
-          ><i class="bi bi-github"></i
-        ></a>
-      </div>
-    </main>
-    <!-- Footer -->
-    <footer class="bg-white py-4 mt-auto">
-      <div class="container px-5">
-        <div
-          class="row align-items-center justify-content-between flex-column flex-sm-row"
-        >
-          <div class="col-auto">
-            <div class="small m-0">Copyright &copy; Your Website 2023</div>
-          </div>
-          <div class="col-auto">
-            <a class="small" href="#!">Privacy</a>
-            <span class="mx-1">&middot;</span>
-            <a class="small" href="#!">Terms</a>
-            <span class="mx-1">&middot;</span>
-            <a class="small" href="#!">Contact</a>
-          </div>
+      <!-- Call to Action Section -->
+      <section class="cta-section">
+        <div class="container">
+          <h2 class="display-4 fw-bolder">Looking for a Data Scientist?</h2>
+          <p class="lead">
+            Feel free to download my resume or connect with me on LinkedIn.
+          </p>
+          <a href="https://www.linkedin.com/in/pratham-kuril/"
+            >Visit LinkedIn Profile</a
+          >
         </div>
-      </div>
-    </footer>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-white py-4 mt-auto">
+        <div class="container px-5 text-center">
+          <small>&copy; 2024 Pratham Kuril. All rights reserved.</small>
+        </div>
+      </footer>
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </main>
   </body>
 </html>
