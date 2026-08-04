@@ -1,638 +1,525 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Pratham Kuril's Resume Portfolio showcasing experience in AI, data science, and web development."
-    />
-    <meta name="author" content="Pratham Kuril" />
-    <meta
-      name="keywords"
-      content="Resume, AI, Data Science, Web Development, Portfolio"
-    />
-    <title>Pratham's Resume Portfolio</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pratham Kuril — AI Engineer // Forward-Deployed</title>
+  <meta name="description" content="Pratham Kuril — AI Engineer at G3NR8. I build production LLM, RAG and agentic systems for enterprise clients. Python, TypeScript, FastAPI, Next.js." />
+  <meta name="author" content="Pratham Kuril" />
+  <meta name="keywords" content="Pratham Kuril, AI Engineer, Forward-Deployed Engineer, LLM, RAG, Agents, GenAI, Python, FastAPI, Portfolio" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/favicon.ico" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pratham Kuril — AI Engineer // Forward-Deployed" />
+  <meta property="og:description" content="I build AI systems enterprises actually put into production — not demos. Production LLM, RAG and agentic systems." />
+  <meta property="og:url" content="https://prathamkuril.github.io/" />
+  <meta property="og:image" content="https://prathamkuril.github.io/assets/profile.png" />
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="booting">
 
-    <!-- Core Theme CSS (includes Bootstrap) -->
-    <link href="css/styles.css" rel="stylesheet" />
+  <!-- ============================= BOOT ============================= -->
+  <div id="boot" aria-hidden="true">
+    <div class="boot-inner mono">
+      <div class="boot-line">[ boot ] initialising pratham.kuril::portfolio</div>
+      <div class="boot-line">[ <span class="ok">ok</span> ] mounting /experience /projects /skills</div>
+      <div class="boot-line">[ <span class="ok">ok</span> ] loading models: openai · gemini · claude</div>
+      <div class="boot-line">[ <span class="ok">ok</span> ] connecting retrieval :: pgvector + full-text</div>
+      <div class="boot-line">[ <span class="ok">ok</span> ] status: forward-deployed // ready</div>
+      <div class="boot-bar"><i></i></div>
+      <div class="boot-skip">press [enter] to skip &rsaquo;</div>
+    </div>
+  </div>
 
-    <style>
-      /* Global Styles */
-      body {
-        background-color: #ffffff;
-        color: #1c1c1c; /* Clean, readable black */
-        font-family: "Plus Jakarta Sans", sans-serif;
-      }
+  <a class="skip mono" href="#main">skip to content</a>
 
-      /* Navbar */
-      .navbar-light {
-        background-color: #ffffff; /* Minimalist white background */
-        border-bottom: 1px solid #e0e0e0; /* Subtle border for separation */
-        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
-      }
+  <!-- ============================= NAV ============================= -->
+  <header class="nav" id="top">
+    <div class="container nav-row">
+      <a class="brand" href="index.html">pratham<b>.kuril</b><span class="cursor" aria-hidden="true"></span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#experience">work</a>
+        <a href="projects.html">projects</a>
+        <a href="#skills">skills</a>
+        <a href="#education">education</a>
+        <a href="#contact">contact</a>
+        <a href="resume.html">résumé</a>
+        <button class="nav-kbd" data-cmdk-open aria-label="Open command palette">press <b>⌘K</b></button>
+      </nav>
+      <button class="nav-toggle mono" aria-expanded="false" aria-label="Toggle menu">[ menu ]</button>
+    </div>
+  </header>
 
-      .navbar-light .navbar-brand,
-      .navbar-light .nav-link {
-        color: #1c1c1c; /* High-contrast black text for readability */
-      }
+  <!-- ========================= STATUS STRIP ======================== -->
+  <div class="status-strip">
+    <div class="container">
+      <span class="live"><span class="dot" aria-hidden="true"></span> OPEN TO WORK — London · Remote · Hybrid · On-site</span>
+      <span class="clock mono" id="clock">--:--:-- LDN</span>
+    </div>
+  </div>
 
-      .navbar-light .nav-link:hover {
-        color: #007aff; /* Accent blue for hover effects */
-      }
+  <main id="main">
 
-      /* Hero Section */
-      .hero {
-        background-color: #f8f9fb; /* Light grayish background to create subtle contrast */
-        color: #1c1c1c;
-        padding-top: 80px;
-        padding-bottom: 80px;
-      }
-
-      .hero h1 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: #1c1c1c; /* Bold black heading */
-      }
-
-      .hero p {
-        font-size: 1.1rem;
-        color: #6d6d6d; /* Softer text for supporting information */
-      }
-
-      /* Button Styles */
-      .btn-primary {
-        background-color: #007aff; /* Accent blue */
-        border-color: #007aff;
-        color: #ffffff;
-        padding: 12px 30px;
-        font-weight: 600;
-        border-radius: 8px; /* Soft rounded buttons */
-        box-shadow: 0 4px 10px rgba(0, 122, 255, 0.15); /* Subtle button shadow for depth */
-        transition: background-color 0.3s ease;
-      }
-
-      .btn-primary:hover {
-        background-color: #005bb5; /* Darker blue on hover */
-      }
-
-      .btn-outline-secondary {
-        color: #007aff;
-        border-color: #007aff;
-        padding: 12px 30px;
-        font-weight: 600;
-        border-radius: 8px;
-        transition: background-color 0.3s ease;
-      }
-
-      .btn-outline-secondary:hover {
-        background-color: #007aff;
-        color: #ffffff;
-      }
-
-      /* Section Headings */
-      h2,
-      h5 {
-        color: #1c1c1c; /* High-contrast headings */
-        font-weight: 600;
-        margin-bottom: 20px;
-      }
-
-      .text-muted {
-        color: #6d6d6d; /* Softer text for body and descriptive content */
-      }
-
-      /* Experience Section */
-      .experience.bg-light {
-        background-color: #f9fafb; /* Very light gray background */
-        padding-top: 60px;
-        padding-bottom: 60px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Soft shadow to lift the section */
-      }
-
-      .card {
-        border: none;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Light shadow for card depth */
-        border-radius: 10px;
-      }
-
-      .card-body {
-        padding: 30px;
-      }
-
-      /* Call to Action Section */
-      .cta-section {
-        background-color: #f0f3f5; /* Light, calming background */
-        color: #1c1c1c;
-        padding: 80px 0;
-        text-align: center;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.05); /* Soft shadow for subtle emphasis */
-        margin-top: 40px;
-        border-radius: 12px; /* Rounded edges for a soft look */
-      }
-
-      .cta-section h2 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-bottom: 20px;
-        color: #1c1c1c;
-      }
-
-      .cta-section p {
-        font-size: 1.2rem;
-        margin-bottom: 30px;
-        color: #6d6d6d;
-      }
-
-      .cta-section a {
-        color: #ffffff;
-        text-decoration: none;
-        padding: 12px 25px;
-        background-color: #007aff;
-        border-radius: 25px;
-        font-weight: 600;
-        transition: background-color 0.3s ease;
-        box-shadow: 0 4px 12px rgba(0, 122, 255, 0.2); /* Blue shadow for button depth */
-      }
-
-      .cta-section a:hover {
-        background-color: #005bb5;
-      }
-
-      /* About Section */
-      .about {
-        background-color: #ffffff;
-        color: #1c1c1c;
-        padding: 60px 0;
-      }
-
-      .about p {
-        color: #6d6d6d;
-        line-height: 1.6; /* Increased line-height for readability */
-      }
-
-      /* Footer */
-      .footer.bg-light {
-        background-color: #f9fafb;
-        color: #6d6d6d;
-        padding: 20px 0;
-        border-top: 1px solid #e0e0e0;
-      }
-
-      /* Subtle Dividers */
-      .section-divider {
-        height: 1px;
-        width: 100%;
-        background-color: #e0e0e0; /* Very light dividers to separate sections */
-        margin: 50px 0;
-      }
-
-      /* Carousel for Featured Projects */
-      .carousel-item img {
-        max-width: 100%;
-        width: 950px;
-        height: 500px;
-        object-fit: cover;
-        border-radius: 10px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for images */
-      }
-
-      .carousel-caption {
-        background-color: rgba(0, 0, 0, 0.6);
-        padding: 15px;
-        border-radius: 10px;
-      }
-
-      .carousel-caption h5 {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: #ffffff;
-      }
-
-      .carousel-caption p {
-        color: #d3d3d3;
-      }
-
-      .carousel-indicators [data-bs-target] {
-        background-color: #007aff;
-      }
-    </style>
-  </head>
-  <body class="d-flex flex-column h-100">
-    <header>
-      <!-- Navigation -->
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm"
-      >
-        <div class="container px-4">
-          <a class="navbar-brand fw-bold" href="index.html">Pratham Kuril</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="resume.html">Resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="volunteering.html">Volunteering</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
+    <!-- ============================ HERO ============================ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="terminal reveal">
+          <div class="term-bar">
+            <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span class="title">pratham@g3nr8: ~/portfolio — zsh</span>
+          </div>
+          <div class="term-body" id="term-type" data-seq='[
+            {"cmd":true,"t":"whoami"},
+            {"cmd":false,"t":"Pratham Kuril — AI Engineer // Forward-Deployed"},
+            {"cmd":true,"t":"cat role.txt"},
+            {"cmd":false,"t":"AI Engineer @ G3NR8 (Contract) · London, UK · Hybrid"},
+            {"cmd":true,"t":"./what-i-do --tldr"},
+            {"cmd":false,"t":"I build AI systems enterprises actually put into production — not demos."},
+            {"cmd":true,"t":"stack --top"},
+            {"cmd":false,"t":"Python · TypeScript · FastAPI · Next.js · RAG · Agents · pgvector"},
+            {"cmd":true,"t":"status"},
+            {"cmd":false,"t":"[ ok ] MSc Data Science (Distinction) · AWS SA-Associate"}
+          ]'>
+            <div class="term-line"><span class="prompt">whoami</span><span class="term-cursor"></span></div>
           </div>
         </div>
-      </nav>
-    </header>
 
-    <main class="flex-shrink-0">
-      <!-- Hero Section -->
-      <section class="hero py-5 text-center text-md-start">
-        <div class="container px-4 py-4">
-          <div class="row align-items-center">
-            <div class="col-md-6">
-              <h1 class="display-4">Welcome to My Portfolio</h1>
-              <p class="lead text-muted">
-                Explore my experience in AI, data science, and web development.
-              </p>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <a class="btn btn-primary btn-lg" href="resume.html"
-                  >View Resume</a
-                >
-                <a class="btn btn-outline-secondary btn-lg" href="projects.html"
-                  >View Projects</a
-                >
+        <aside class="hero-aside reveal">
+          <div class="photo-frame">
+            <img src="assets/profile.png" alt="Portrait of Pratham Kuril" width="640" height="640" />
+            <span class="badge">// AI ENGINEER</span>
+          </div>
+          <ul class="hero-facts box" style="box-shadow:6px 6px 0 var(--yellow);padding:16px 18px;">
+            <li><span class="k">role</span><span class="v">AI Engineer @ <span class="lime">G3NR8</span></span></li>
+            <li><span class="k">focus</span><span class="v">LLM · RAG · Agents</span></li>
+            <li><span class="k">based</span><span class="v">London, UK</span></li>
+            <li><span class="k">edu</span><span class="v">MSc Data Science · Distinction</span></li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="container" style="margin-top:32px;">
+        <div class="hero-cta reveal">
+          <a class="btn primary" href="#projects">view work <span class="arw">→</span></a>
+          <a class="btn cyan" href="resume.html">résumé</a>
+          <a class="btn mag" href="#contact">get in touch</a>
+          <button class="btn" data-cmdk-open>⌘K <span class="dim">command palette</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== MARQUEE 1 ========================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span>PYTHON</span><span>TYPESCRIPT</span><span>FASTAPI</span><span>NEXT.JS</span><span>RAG</span><span>AGENTS</span><span>LANGGRAPH</span><span>PGVECTOR</span><span>OPENAI</span><span>GEMINI</span><span>CLAUDE</span><span>SUPABASE</span><span>DOCKER</span><span>AZURE</span><span>AWS</span>
+        <span>PYTHON</span><span>TYPESCRIPT</span><span>FASTAPI</span><span>NEXT.JS</span><span>RAG</span><span>AGENTS</span><span>LANGGRAPH</span><span>PGVECTOR</span><span>OPENAI</span><span>GEMINI</span><span>CLAUDE</span><span>SUPABASE</span><span>DOCKER</span><span>AZURE</span><span>AWS</span>
+      </div>
+    </div>
+
+    <!-- =========================== STATS =========================== -->
+    <section class="section" id="impact">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-path">impact</span>
+            <h2 class="section-title">Shipped, <em>measured</em>.</h2>
+          </div>
+          <p class="dim mono" style="max-width:34ch;font-size:.82rem;">production outcomes from forward-deployed delivery — not demo metrics.</p>
+        </div>
+        <div class="stats reveal">
+          <div class="stat"><div class="num"><span class="pre">€</span><span data-count="45">0</span><span class="suf">M</span></div><div class="lbl">at-risk revenue surfaced in 6 weeks</div></div>
+          <div class="stat"><div class="num"><span data-count="18500">0</span><span class="suf">+</span></div><div class="lbl">customers health-scored (5-tier)</div></div>
+          <div class="stat"><div class="num"><span data-count="85">0</span><span class="suf">%</span></div><div class="lbl">cited-answer accuracy over 3,000+ docs</div></div>
+          <div class="stat"><div class="num"><span data-count="24">0</span></div><div class="lbl">CodeQL security alerts closed</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= EXPERIENCE ======================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-path">experience</span>
+            <h2 class="section-title">Where I've <em>shipped</em>.</h2>
+          </div>
+          <a class="btn" href="resume.html" style="box-shadow:5px 5px 0 var(--cyan);">full résumé →</a>
+        </div>
+
+        <div class="xp-list">
+
+          <article class="xp reveal">
+            <div class="logo logo-fallback">G3</div>
+            <div>
+              <div class="xp-head">
+                <div><span class="xp-role">AI Engineer <span class="dim">·</span> <span class="xp-co">G3NR8</span></span></div>
+                <span class="xp-meta">Aug 2025 — Present · Contract</span>
+              </div>
+              <div class="xp-sub">London, UK · Hybrid · Forward-deployed, primary builder on enterprise client platforms</div>
+              <ul class="bullets">
+                <li>Built, as primary engineer, a production <b>order-book intelligence platform</b> for a PE-backed industrial distributor: SAP ingestion, multi-tenant Postgres (row-level security), 5-tier health scoring across <b>18,500+ customers</b> and LLM-generated at-risk alerts — surfacing <b>€45m of at-risk revenue in 6 weeks</b>.</li>
+                <li>Added a hybrid SQL + LLM reorder-detection engine (3/6/12-month projections) and a <b>geopolitical-risk module integrating 18 external feeds</b> (GDELT, IMF PortWatch, SEC EDGAR) with an LLM-narrated weekly CEO briefing and anomaly detection.</li>
+                <li>For a 17,000-person engineering firm, built a <b>content-intelligence platform</b>: full RAG with hybrid search (pgvector + full-text), reranking and cited streaming answers (<b>85% accuracy over 3,000+ docs</b>), plus a repurposing engine cutting manual effort ~70%.</li>
+                <li>Stood up LLM evaluation frameworks (persona-based, cross-model, embedding-similarity) and prompt-chain services with prefix caching; migrated GPT-4o → GPT-4.1 for <b>20–33% cost savings</b>.</li>
+                <li>Designed the <b>CI/CD & security baseline</b> across client repos (lint, type-check, Jest, Playwright, secrets + dependency scanning, ephemeral Supabase); a security audit <b>closed 24 CodeQL alerts</b>.</li>
+              </ul>
+              <div class="chips">
+                <span class="tag is-lime">Python</span><span class="tag is-lime">FastAPI</span><span class="tag is-cyan">Next.js</span><span class="tag">Supabase / Postgres</span><span class="tag is-mag">RAG</span><span class="tag is-mag">Agents</span><span class="tag">pgvector</span><span class="tag">CI/CD</span>
               </div>
             </div>
-            <div class="col-md-6 text-center">
-              <img
-                src="assets/profile.png"
-                alt="Pratham Kuril Profile"
-                class="img-fluid rounded-circle shadow"
-                loading="lazy"
-              />
+          </article>
+
+          <article class="xp reveal">
+            <img class="logo" src="assets/braid_technologies_ltd_logo.jpeg" alt="Braid Technologies logo" />
+            <div>
+              <div class="xp-head">
+                <div><span class="xp-role">Founding AI Engineer <span class="dim">·</span> <span class="xp-co">Braid Technologies</span></span></div>
+                <span class="xp-meta">Jan 2025 — Mar 2025 · Full-time</span>
+              </div>
+              <div class="xp-sub">London, UK · Hybrid</div>
+              <ul class="bullets">
+                <li>Architected an engineering toolkit that generates <b>C4 diagrams</b>, converts repos into LLM-optimized chunks, and auto-generates tests via the OpenAI Assistant API / Gemini 1.5-pro — pushing coverage above <b>90%</b> while cutting dev time <b>25%</b>.</li>
+                <li>Implemented structured <b>prompt-lifecycle management</b> with externalized templates and automated evaluation — maintenance −40%, response accuracy +25%.</li>
+                <li>Led technical standardization across enterprise applications (shared APIs, data models, reusable components) — code quality +35%, integration issues −70%.</li>
+              </ul>
+              <div class="chips"><span class="tag is-lime">OpenAI Assistants</span><span class="tag">Gemini 1.5-pro</span><span class="tag is-cyan">TypeScript</span><span class="tag">Node.js</span><span class="tag is-mag">Prompt Eng</span></div>
             </div>
+          </article>
+
+          <article class="xp reveal">
+            <img class="logo" src="assets/braid_technologies_ltd_logo.jpeg" alt="Braid Technologies logo" />
+            <div>
+              <div class="xp-head">
+                <div><span class="xp-role">Generative AI Technical Intern <span class="dim">·</span> <span class="xp-co">Braid Technologies</span></span></div>
+                <span class="xp-meta">Jul 2024 — Dec 2024 · Internship</span>
+              </div>
+              <div class="xp-sub">London, UK</div>
+              <ul class="bullets">
+                <li>Engineered an Azure-hosted AI chat assistant for a leading British telecom using GPT-4o and Gemini 1.5-pro, <b>upskilling 24 professionals</b> into AI developers.</li>
+                <li>Built a text-analysis system: a TypeScript Edge plugin for real-time web-page classification plus a Python backend for summarization and cluster analysis on Azure-hosted LLMs.</li>
+                <li>Improved LLM evaluation accuracy <b>30%</b> via persona-based strategies, cross-model validation and embedding similarity (text-embedding-3-large).</li>
+              </ul>
+              <div class="chips"><span class="tag is-lime">GPT-4o</span><span class="tag">Azure OpenAI</span><span class="tag is-cyan">TypeScript</span><span class="tag is-mag">LLM Eval</span><span class="tag">Embeddings</span></div>
+            </div>
+          </article>
+
+          <article class="xp reveal">
+            <img class="logo" src="assets/city_university_london_logo.jpeg" alt="City, University of London logo" />
+            <div>
+              <div class="xp-head">
+                <div><span class="xp-role">Program Representative — MSc Data Science <span class="dim">·</span> <span class="xp-co">City, University of London</span></span></div>
+                <span class="xp-meta">Sep 2023 — Dec 2024 · Part-time</span>
+              </div>
+              <div class="xp-sub">London, UK</div>
+              <ul class="bullets">
+                <li>Represented a <b>100+ student cohort</b> at Student-Staff Liaison Committee meetings, improving student–faculty communication.</li>
+                <li>Organized and moderated a university-wide <b>AI Ethics & Data Privacy workshop</b> (150+ attendees, including AI researchers).</li>
+                <li>Coordinated School of Science & Technology events, fostering community across students and faculty.</li>
+              </ul>
+              <div class="chips"><span class="tag">Leadership</span><span class="tag">Public Speaking</span><span class="tag is-mag">AI Ethics</span></div>
+            </div>
+          </article>
+
+          <article class="xp reveal">
+            <img class="logo" src="assets/bitwise_inc_logo.jpeg" alt="Bitwise Inc logo" />
+            <div>
+              <div class="xp-head">
+                <div><span class="xp-role">Machine Learning Programmer Trainee <span class="dim">·</span> <span class="xp-co">Bitwise Inc</span></span></div>
+                <span class="xp-meta">Jul 2022 — Jun 2023 · Full-time</span>
+              </div>
+              <div class="xp-sub">Pune, India · Hybrid</div>
+              <ul class="bullets">
+                <li>Engineered a Python CLI tool to detect similarity across Informatica <b>ETL workflows</b> in XML, classifying workflows into reusable patterns via point-based scoring, Jaccard similarity and Levenshtein distance, with linked Excel outputs and workflow visualizations.</li>
+                <li>Delivered <b>50+ Proofs of Concept</b> in Azure Databricks, including a real-time streaming pipeline over multiple sources.</li>
+              </ul>
+              <div class="chips"><span class="tag is-lime">Python</span><span class="tag">Azure Databricks</span><span class="tag is-cyan">ETL</span><span class="tag">Data Engineering</span></div>
+            </div>
+          </article>
+
+          <article class="xp reveal">
+            <img class="logo" src="assets/prescient_technologies_logo.jpeg" alt="Prescient Technologies logo" />
+            <div>
+              <div class="xp-head">
+                <div><span class="xp-role">AI/ML Intern <span class="dim">·</span> <span class="xp-co">Prescient Technologies</span></span></div>
+                <span class="xp-meta">Mar 2021 — Jun 2021 · Internship</span>
+              </div>
+              <div class="xp-sub">Pune, India</div>
+              <ul class="bullets">
+                <li>Developed a custom object detector on a self-built dataset and evaluated <b>6 neural networks</b> using transfer learning for a computer-vision problem.</li>
+                <li>Documented findings and presented results with recommendations for future scope.</li>
+              </ul>
+              <div class="chips"><span class="tag is-lime">Computer Vision</span><span class="tag">Transfer Learning</span><span class="tag is-cyan">Python</span></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== MARQUEE 2 ========================= -->
+    <div class="marquee alt" aria-hidden="true">
+      <div class="track">
+        <span>€45M AT-RISK REVENUE SURFACED</span><span>18,500+ CUSTOMERS SCORED</span><span>RAG · HYBRID SEARCH · RERANK</span><span>85% CITED-ANSWER ACCURACY</span><span>20–33% LLM COST SAVINGS</span><span>90%+ TEST COVERAGE</span><span>24 CODEQL ALERTS CLOSED</span>
+        <span>€45M AT-RISK REVENUE SURFACED</span><span>18,500+ CUSTOMERS SCORED</span><span>RAG · HYBRID SEARCH · RERANK</span><span>85% CITED-ANSWER ACCURACY</span><span>20–33% LLM COST SAVINGS</span><span>90%+ TEST COVERAGE</span><span>24 CODEQL ALERTS CLOSED</span>
+      </div>
+    </div>
+
+    <!-- ========================= PROJECTS ========================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-path">projects/featured</span>
+            <h2 class="section-title">Things I've <em>built</em>.</h2>
+          </div>
+          <a class="btn" href="projects.html" style="box-shadow:5px 5px 0 var(--magenta);">all projects →</a>
+        </div>
+
+        <div class="grid two">
+
+          <article class="card featured reveal" data-cats="ai agents llm">
+            <div class="thumb ascii" aria-hidden="true">   ┌─[ booking-agent ]──────┐
+   │ &gt; find me a table for 4 │
+   │ &lt; parsing date...       │
+   │ &lt; checking availability │
+   │ &lt; booked ✓  #A2F91      │
+   └── llama3 · langgraph ───┘</div>
+            <div class="body">
+              <div class="cats"><span class="tag is-mag">AI Agent</span><span class="tag">LangGraph</span><span class="tag is-cyan">FastAPI</span></div>
+              <h3>Restaurant Booking Agent</h3>
+              <p>An AI booking assistant using Llama3, LangGraph and FastAPI — natural-language conversations, real-time WebSocket chat, intelligent date parsing and a full booking lifecycle.</p>
+              <div class="links"><a class="gh" href="https://github.com/prathamkuril/restaurant-booking-agent" target="_blank" rel="noopener">↗ github</a></div>
+            </div>
+          </article>
+
+          <article class="card featured reveal" data-cats="ai llm web">
+            <div class="thumb ascii" aria-hidden="true">   ┌─[ lead-qualifier ]─────┐
+   │ leads      ▓▓▓▓▓░░ 71% │
+   │ enriched   ▓▓▓▓▓▓░ 88% │
+   │ score  ██████████  A+  │
+   │ react + fastapi + llm  │
+   └────────────────────────┘</div>
+            <div class="body">
+              <div class="cats"><span class="tag is-mag">LLM</span><span class="tag is-cyan">FastAPI</span><span class="tag">React + TS</span></div>
+              <h3>Lead Qualifier</h3>
+              <p>Full-stack lead-qualification app: FastAPI + SQLAlchemy backend, a React + TypeScript dashboard, event tracking, and LLM enrichment of leads with interactive filters and visualizations.</p>
+              <div class="links"><a class="gh" href="https://github.com/prathamkuril/lead-qualifier" target="_blank" rel="noopener">↗ github</a></div>
+            </div>
+          </article>
+
+          <article class="card featured reveal" data-cats="ai llm web">
+            <div class="thumb"><img src="assets/StoryGeneratorIndexCard.png" alt="Story Generator app screenshot" loading="lazy" /></div>
+            <div class="body">
+              <div class="cats"><span class="tag is-mag">LLM</span><span class="tag">Gemini 1.5</span><span class="tag is-cyan">Streamlit</span></div>
+              <h3>Story Generator (Gemini)</h3>
+              <p>End-to-end AI story-writing app on Google's Gemini 1.5 Pro / Flash — pick genre, tone and complexity, generate premises and outlines, then co-write and save/load stories interactively.</p>
+              <div class="links"><a class="gh" href="https://github.com/prathamkuril/story-writer-google-gemini-end-to-end" target="_blank" rel="noopener">↗ github</a></div>
+            </div>
+          </article>
+
+          <article class="card featured reveal" data-cats="ai llm web">
+            <div class="thumb"><img src="assets/ImageGeneratorVectorXIndexCard.png" alt="AI Image Generator app screenshot" loading="lazy" /></div>
+            <div class="body">
+              <div class="cats"><span class="tag is-mag">GenAI</span><span class="tag">Vertex AI</span><span class="tag is-cyan">Web App</span></div>
+              <h3>AI Image Generator (Vertex AI)</h3>
+              <p>A web app powered by Google Vertex AI that generates images from user prompts — customizable count and size, with real-time results rendered directly in the browser.</p>
+              <div class="links">
+                <a class="live" href="https://prathamkuril.github.io/image-generator-webApp-google-vertex-ai/" target="_blank" rel="noopener">▶ live</a>
+                <a class="gh" href="https://github.com/prathamkuril/image-generator-webApp-google-vertex-ai" target="_blank" rel="noopener">↗ github</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card featured reveal" data-cats="data engineering">
+            <div class="thumb ascii" aria-hidden="true">  ┌ netflix-azure-e2e ──────┐
+  │ ADLS → ADF → Databricks │
+  │  bronze ▸ silver ▸ gold │
+  │  ▓▓▓▓▓▓▓▓▓▓ delta lake  │
+  │  synapse ▸ dashboards   │
+  └─────────────────────────┘</div>
+            <div class="body">
+              <div class="cats"><span class="tag is-mag">Data Eng</span><span class="tag">Azure</span><span class="tag is-cyan">Databricks</span></div>
+              <h3>Netflix Azure Data Engineering</h3>
+              <p>End-to-end Azure data-engineering pipeline on the Netflix dataset — medallion architecture (bronze/silver/gold) with Data Factory, Databricks and Delta Lake.</p>
+              <div class="links"><a class="gh" href="https://github.com/prathamkuril/Netflix-Azure-end-to-end-data-engineering" target="_blank" rel="noopener">↗ github</a></div>
+            </div>
+          </article>
+
+          <article class="card featured reveal" data-cats="ai cv ml">
+            <div class="thumb"><img src="assets/IndianVehicleDetectionIndexCard.jpg" alt="Indian vehicle detection sample" loading="lazy" /></div>
+            <div class="body">
+              <div class="cats"><span class="tag is-mag">Computer Vision</span><span class="tag">YOLOv4</span><span class="tag is-cyan">Darknet</span></div>
+              <h3>Indian Vehicle Detection</h3>
+              <p>A custom YOLOv4 detector trained on a self-annotated dataset to detect and classify five vehicle types in Indian traffic — GPU-trained on Colab + Darknet for real-time detection.</p>
+              <div class="links"><a class="gh" href="https://github.com/prathamkuril/Indian-Vehicle-Detection-YOLOv4" target="_blank" rel="noopener">↗ github</a></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== SKILLS ========================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-path">skills</span>
+            <h2 class="section-title">The <em>toolkit</em>.</h2>
           </div>
         </div>
-      </section>
+        <div class="skill-cols">
+          <div class="skill-group reveal"><h3>languages</h3><div class="chips"><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">SQL</span></div></div>
+          <div class="skill-group reveal"><h3>genai / llm</h3><div class="chips"><span class="tag is-lime">OpenAI</span><span class="tag is-lime">Google Gemini</span><span class="tag is-lime">Anthropic Claude</span><span class="tag">RAG</span><span class="tag">Agents</span><span class="tag">LangGraph</span><span class="tag">Vector Search / pgvector</span><span class="tag">LLM Evaluation</span><span class="tag">Prompt Engineering</span></div></div>
+          <div class="skill-group reveal"><h3>frameworks</h3><div class="chips"><span class="tag is-cyan">FastAPI</span><span class="tag is-cyan">Next.js</span><span class="tag">React</span><span class="tag">Streamlit</span><span class="tag">Node.js</span></div></div>
+          <div class="skill-group reveal"><h3>data &amp; storage</h3><div class="chips"><span class="tag">Supabase / PostgreSQL</span><span class="tag">pgvector</span><span class="tag">MongoDB</span><span class="tag">MySQL</span></div></div>
+          <div class="skill-group reveal"><h3>cloud &amp; devops</h3><div class="chips"><span class="tag is-mag">Azure</span><span class="tag is-mag">AWS (SageMaker, Lambda)</span><span class="tag">Docker</span><span class="tag">CI/CD</span><span class="tag">GitHub Actions</span><span class="tag">Jest</span><span class="tag">Playwright</span></div></div>
+          <div class="skill-group reveal"><h3>ml / data science</h3><div class="chips"><span class="tag">Deep Learning (Keras)</span><span class="tag">Transformers (HuggingFace)</span><span class="tag">Computer Vision</span><span class="tag">Tableau</span><span class="tag">Power BI</span><span class="tag">MLOps</span></div></div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Divider -->
-      <div class="section-divider"></div>
+    <!-- ========================= EDUCATION ========================= -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-path">education</span>
+            <h2 class="section-title">The <em>foundations</em>.</h2>
+          </div>
+        </div>
+        <div class="edu-grid">
+          <article class="edu reveal">
+            <div class="edu-head">
+              <img src="assets/city_university_london_logo.jpeg" alt="City, University of London logo" />
+              <div><h3>MSc Data Science</h3><div class="school">City St George's, University of London</div></div>
+            </div>
+            <div class="meta">Sep 2023 — Jan 2025 · London, UK · <span class="lime">Distinction</span></div>
+            <ul>
+              <li>Thesis: <em>Evaluating AI Learning Assistants — Persona-Based Evaluation & Content-Gap Analysis</em>.</li>
+              <li>3rd place at Pitch Day 2024 for a business pitch with a working MVP.</li>
+              <li>Program Representative for the MSc Data Science cohort.</li>
+            </ul>
+            <div class="modules">// ML · Computer Vision · Big Data · Neural Computing · Visual Analytics · Research Methods</div>
+          </article>
 
-      <!-- Experience Section -->
-      <section class="experience bg-light py-5">
-        <div class="container px-4">
-          <div class="d-flex align-items-center justify-content-between mb-4">
-            <h2 class="fw-bold text-primary">Work Experience</h2>
-            <a
-              class="btn btn-primary"
-              href="https://drive.google.com/file/d/1regQBv0RPn926Z80haFydwURa5ricnqT/view?usp=sharing"
-            >
-              <i class="bi bi-download me-2"></i> Download Resume
+          <article class="edu reveal">
+            <div class="edu-head">
+              <img src="assets/mitwpuofficial_logo.jpeg" alt="MIT World Peace University logo" />
+              <div><h3>BTech — Electronics & Communication</h3><div class="school">MIT World Peace University</div></div>
+            </div>
+            <div class="meta">2018 — 2022 · Pune, India · 8.53 CGPA · Minor: AI/ML</div>
+            <ul>
+              <li>Runner-up at HackMITWPU-2022.</li>
+              <li>Final-year project: real-time object detection with YOLO for traffic analysis.</li>
+            </ul>
+            <div class="modules">// DSA · ANN · Digital Image Processing · NLP · Math for AI · Python</div>
+          </article>
+        </div>
+
+        <!-- Certifications -->
+        <div class="section-head reveal" style="margin-top:56px;margin-bottom:26px;">
+          <div><span class="section-path">certifications</span><h2 class="section-title" style="font-size:clamp(1.5rem,4vw,2rem);">Credentials.</h2></div>
+          <a class="btn" href="https://www.linkedin.com/in/pratham-kuril/" target="_blank" rel="noopener" style="box-shadow:5px 5px 0 var(--cyan);">all 37 on linkedin →</a>
+        </div>
+        <div class="cert-row">
+          <div class="cert reveal"><div class="n">// cloud</div><h4>AWS Certified Solutions Architect – Associate</h4><div class="issuer">Amazon Web Services</div></div>
+          <div class="cert reveal"><div class="n">// data</div><h4>IBM Data Analyst Specialization</h4><div class="issuer">IBM · Oct 2024</div></div>
+          <div class="cert reveal"><div class="n">// data</div><h4>Data Analysis with Python</h4><div class="issuer">IBM · Oct 2024</div></div>
+          <div class="cert reveal"><div class="n">// +34 more</div><h4>34 further certifications</h4><div class="issuer">IBM, DeepLearning.AI, Google & more</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= VOLUNTEERING ======================== -->
+    <section class="section" id="volunteering">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-path">volunteering</span>
+            <h2 class="section-title">Giving <em>back</em>.</h2>
+          </div>
+        </div>
+        <div class="vol-grid">
+          <article class="vol reveal"><h4>English Tutor</h4><div class="org">Jazz Hands Foundation</div><p>Taught English to 80+ primary & secondary students from underprivileged backgrounds using drama- and art-based techniques; directed a 15-minute play with 35 student actors.</p><div class="when">Jul 2019 — Oct 2019 · Pune</div></article>
+          <article class="vol reveal"><h4>Covid-19 Program Volunteer</h4><div class="org">Human Rights Association</div><p>Led a team of 8 volunteers distributing sanitizers and face masks to low-income communities during the pandemic.</p><div class="when">Jul 2020 — Sep 2020 · Pune</div></article>
+          <article class="vol reveal"><h4>Elder Aid Program Volunteer</h4><div class="org">Human Rights Association</div><p>Helped 50+ senior citizens use modern technology and ran seminars on online safety.</p><div class="when">Mar 2021 — May 2021 · Pune</div></article>
+          <article class="vol reveal"><h4>Food Committee Volunteer</h4><div class="org">MIT-WPU Summit</div><p>Managed meal delivery for 250+ student athletes across 3 venues, audited meal boxes, and scorekept 5 cricket matches.</p><div class="when">Aug 2018 — Sep 2018 · Pune</div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== CONTACT ========================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-wrap">
+          <div class="contact-lead reveal">
+            <span class="section-path">contact</span>
+            <h2>Let's build something<br><em class="lime">production-ready</em>.</h2>
+            <p>Always happy to talk applied GenAI — RAG, agents, and forward-deployed AI delivery. Open to work across London, remote and hybrid.</p>
+          </div>
+          <div class="contact-actions reveal">
+            <a class="contact-btn email" href="mailto:prathamkuril@gmail.com" data-copy="prathamkuril@gmail.com">
+              <span class="l"><span class="lime">✉</span> prathamkuril@gmail.com</span>
+              <span class="tag-mini">click to copy</span>
+            </a>
+            <a class="contact-btn linkedin" href="https://www.linkedin.com/in/pratham-kuril/" target="_blank" rel="noopener">
+              <span class="l"><span class="cyan">in</span> linkedin.com/in/pratham-kuril</span>
+              <span class="tag-mini">↗ open</span>
+            </a>
+            <a class="contact-btn github" href="https://github.com/prathamkuril" target="_blank" rel="noopener">
+              <span class="l"><span class="mag">‹/›</span> github.com/prathamkuril</span>
+              <span class="tag-mini">↗ open</span>
+            </a>
+            <a class="contact-btn cv" href="resume.html">
+              <span class="l"><span class="yel">▤</span> view &amp; download CV</span>
+              <span class="tag-mini">résumé →</span>
             </a>
           </div>
-
-          <!-- Experience Cards -->
-          <div class="row gy-4">
-            <div class="col-lg-6">
-              <div class="card border-0 shadow-sm rounded">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Founding AI Engineer</h5>
-                  <p class="card-subtitle text-muted mb-2">
-                    Braid Technologies | London, UK
-                  </p>
-                  <p class="card-text small mb-0">Jan 2025 - Mar 2025</p>
-                  <p>
-                    Architected an engineering toolkit for system diagrams,
-                    repository analysis, and automated test generation, boosting
-                    coverage above 90% and cutting development time by 25%.
-                    Implemented structured prompt lifecycle management and led
-                    enterprise API standardization.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="card border-0 shadow-sm rounded">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">AI Technical Intern</h5>
-                  <p class="card-subtitle text-muted mb-2">
-                    Braid Technologies | London, UK
-                  </p>
-                  <p class="card-text small mb-0">Jul 2024 - Dec 2024</p>
-                  <p>
-                    Engineered an Azure-hosted chat assistant using GPT-4o and Gemini, upskilling 24 professionals. Developed a text analysis pipeline with Edge plugins and Python backend, improving LLM evaluation accuracy by 30%.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="card border-0 shadow-sm rounded">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">
-                    Program Representative
-                  </h5>
-                  <p class="card-subtitle text-muted mb-2">
-                    City, University of London | London, UK
-                  </p>
-                  <p class="card-text small mb-0">Sept 2023 - Oct 2024</p>
-                  <p>
-                    Facilitated communication between students and faculty for
-                    the MSc Data Science program, organized department events,
-                    and coordinated resolutions to student issues.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- New Experience: Bitwise Inc -->
-            <div class="col-lg-6">
-              <div class="card border-0 shadow-sm rounded">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">
-                    Machine Learning Programmer Trainee
-                  </h5>
-                  <p class="card-subtitle text-muted mb-2">
-                    Bitwise Inc | Pune, India
-                  </p>
-                  <p class="card-text small mb-0">Jul 2022 - Jun 2023</p>
-                  <p>
-                    Engineered a Python-based tool to analyze similarities
-                    across ETL workflows in XML files, delivering a linked Excel
-                    sheet visualizing workflow structures, using a point-based
-                    systems based Jaccard similarity, and Levenshtein distance.
-                    Built 50+ Proof of Concepts in Azure Databricks.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- New Experience: Prescient Technologies -->
-            <div class="col-lg-6">
-              <div class="card border-0 shadow-sm rounded">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">AI/ML Intern</h5>
-                  <p class="card-subtitle text-muted mb-2">
-                    Prescient Technologies | Pune, India
-                  </p>
-                  <p class="card-text small mb-0">Mar 2021 - Jun 2021</p>
-                  <p>
-                    Developed a custom object detector using a custom dataset.
-                    Reviewed performance of 6 Artificial Neural Networks,
-                    employing transfer learning. Documented project findings and
-                    provided future scope suggestions.
-                    <br /><br />
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-
-      <!-- Divider -->
-      <div class="section-divider"></div>
-
-      <!-- Featured Projects Carousel -->
-      <section class="py-5 text-center bg-light">
-        <div class="container px-4">
-          <h2 class="fw-bold text-primary">Featured Projects</h2>
-
-          <div
-            id="featuredProjectsCarousel"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#featuredProjectsCarousel"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#featuredProjectsCarousel"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#featuredProjectsCarousel"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#featuredProjectsCarousel"
-                data-bs-slide-to="3"
-                aria-label="Slide 4"
-              ></button>
-            </div>
-
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="assets\StoryGeneratorIndexCard.png"
-                  loading="lazy"
-                  class="d-block w-100"
-                  alt="Story Generator Project"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Story Generator using Gemini LLM</h5>
-                  <p>
-                    An end-to-end AI-powered story generation app that lets
-                    users create, customize, and continue writing stories. Built
-                    with Streamlit, it allows for interactive story generation
-                    with support for saving and loading progress.
-                  </p>
-                  <a href="story_generator.html" class="btn btn-primary"
-                    >Learn More</a
-                  >
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <img
-                  src="assets\ImageGeneratorVectorXIndexCard.png"
-                  loading="lazy"
-                  class="d-block w-100"
-                  alt="Europe Industry Health"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Image Generator WebApp with Google Vertex AI</h5>
-                  <p>
-                    A web application powered by Google Vertex AI that generates
-                    AI-driven images based on user prompts. Users can customize
-                    the number of images, size, and prompt. The app provides
-                    real-time image generation and displays results directly in
-                    the browser.
-                  </p>
-                  <a href="europe_analysis.html" class="btn btn-primary"
-                    >Learn More</a
-                  >
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <img
-                  src="assets\950x350-deep-ruby-solid-color-background.jpg"
-                  loading="lazy"
-                  class="d-block w-100"
-                  alt="Online News Popularity"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Online News Popularity</h5>
-                  <p>
-                    Visual analytics approach to discover patterns behind viral
-                    news articles.
-                  </p>
-                  <a href="news_popularity.html" class="btn btn-primary"
-                    >Learn More</a
-                  >
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <img
-                  src="assets\IndianVehicleDetectionIndexCard.jpg"
-                  loading="lazy"
-                  class="d-block w-100"
-                  alt="Car Evaluation"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Indian Vehicle Detection</h5>
-                  <p>
-                    A project to train and deploy YOLOv4 for detecting Indian
-                    vehicles using custom datasets. Built with Google Colab and
-                    Darknet, this project enables efficient GPU-based training
-                    and real-time object detection, tailored for vehicles in
-                    Indian traffic scenarios.
-                  </p>
-                  <a href="car_evaluation.html" class="btn btn-primary"
-                    >Learn More</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#featuredProjectsCarousel"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#featuredProjectsCarousel"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Divider -->
-      <div class="section-divider"></div>
-
-      <!-- Call to Action Section -->
-      <section class="cta-section">
-        <div class="container">
-          <h2 class="display-4 fw-bolder">Looking for a Data Scientist?</h2>
-          <p class="lead">
-            Feel free to download my resume or connect with me on LinkedIn.
-          </p>
-          <a href="https://www.linkedin.com/in/pratham-kuril/"
-            >Visit LinkedIn Profile</a
-          >
-        </div>
-      </section>
-
-      <!-- Divider -->
-      <div class="section-divider"></div>
-
-      <!-- About Section -->
-      <section class="about py-5">
-        <div class="container px-4">
-          <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-              <h2 class="fw-bold text-primary">About Me</h2>
-              <p class="text-muted">
-                I am a data science enthusiast with a strong background in AI,
-                machine learning, and web development. With a Master's in Data
-                Science from City, University of London, I have developed
-                expertise in AI, machine learning, and generative technologies.
-              </p>
-              <div class="d-flex justify-content-center fs-4 gap-1">
-                <a class="text-primary" href="mailto:prathamkuril@gmail.com"
-                  ><i class="bi bi-envelope"></i
-                ></a>
-                <a class="text-primary" href="tel:+447769490555"
-                  ><i class="bi bi-telephone"></i
-                ></a>
-                <a
-                  class="text-primary"
-                  href="https://www.linkedin.com/in/pratham-kuril/"
-                  ><i class="bi bi-linkedin"></i
-                ></a>
-                <a class="text-primary" href="https://github.com/prathamkuril"
-                  ><i class="bi bi-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer bg-light py-4 mt-auto">
-      <div class="container px-4 text-center">
-        <small>&copy; 2024 Pratham Kuril. All rights reserved.</small>
       </div>
-    </footer>
+    </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+  </main>
+
+  <!-- =========================== FOOTER =========================== -->
+  <footer class="footer">
+    <div class="container row">
+      <div class="who mono">© <span data-year>2025</span> <b>Pratham Kuril</b> — built from scratch, no templates. <span class="dim">// hand-coded HTML · CSS · JS</span></div>
+      <div class="socials">
+        <a href="mailto:prathamkuril@gmail.com">email</a>
+        <a href="https://www.linkedin.com/in/pratham-kuril/" target="_blank" rel="noopener">linkedin</a>
+        <a href="https://github.com/prathamkuril" target="_blank" rel="noopener">github</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================= COMMAND PALETTE ====================== -->
+  <div class="cmdk" id="cmdk" role="dialog" aria-modal="true" aria-label="Command palette">
+    <div class="cmdk-box">
+      <div class="cmdk-input"><span>&gt;</span><input type="text" placeholder="jump to… (type to filter)" aria-label="Command palette search" autocomplete="off" spellcheck="false" /></div>
+      <div class="cmdk-list">
+        <div class="cmdk-item" data-label="experience work" data-href="#experience"><span><span class="ic">→</span>Work Experience</span><span class="hint">section</span></div>
+        <div class="cmdk-item" data-label="projects" data-href="projects.html"><span><span class="ic">→</span>All Projects</span><span class="hint">page</span></div>
+        <div class="cmdk-item" data-label="skills toolkit" data-href="#skills"><span><span class="ic">→</span>Skills</span><span class="hint">section</span></div>
+        <div class="cmdk-item" data-label="education" data-href="#education"><span><span class="ic">→</span>Education</span><span class="hint">section</span></div>
+        <div class="cmdk-item" data-label="contact" data-href="#contact"><span><span class="ic">→</span>Contact</span><span class="hint">section</span></div>
+        <div class="cmdk-item" data-label="resume cv download" data-href="resume.html"><span><span class="ic">▤</span>Résumé / Download CV</span><span class="hint">page</span></div>
+        <div class="cmdk-item" data-label="github code" data-href="https://github.com/prathamkuril" data-ext="1"><span><span class="ic">↗</span>Open GitHub</span><span class="hint">external</span></div>
+        <div class="cmdk-item" data-label="linkedin" data-href="https://www.linkedin.com/in/pratham-kuril/" data-ext="1"><span><span class="ic">↗</span>Open LinkedIn</span><span class="hint">external</span></div>
+        <div class="cmdk-item" data-label="email mail" data-href="mailto:prathamkuril@gmail.com"><span><span class="ic">✉</span>Email me</span><span class="hint">mailto</span></div>
+      </div>
+      <div class="cmdk-foot mono"><span><b>↑↓</b> navigate</span><span><b>↵</b> select</span><span><b>esc</b> close</span></div>
+    </div>
+  </div>
+
+  <div class="copy-toast mono" id="copy-toast" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
