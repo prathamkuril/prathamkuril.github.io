@@ -250,7 +250,7 @@ body.boot-done #boot { opacity: 0; visibility: hidden; transition: opacity .4s e
 
 .hero-aside { display: flex; flex-direction: column; gap: 20px; }
 .photo-frame { position: relative; border: 2px solid var(--border); box-shadow: 10px 10px 0 var(--cyan); background: var(--panel-2); padding: 12px; }
-.photo-frame img { width: 100%; border: 2px solid var(--border); background: #111; }
+.photo-frame img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center; border: 2px solid var(--border); background: #111; }
 .photo-frame .badge {
   position: absolute; bottom: -14px; left: -14px; background: var(--yellow); color: #000;
   font-family: var(--font-mono); font-weight: 700; font-size: .72rem; padding: 6px 10px; border: 2px solid #000;
